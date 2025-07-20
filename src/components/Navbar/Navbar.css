@@ -1,0 +1,88 @@
+:root {
+  --color-gradient-start: #fb596f; /* Fiery Rose */
+  --color-gradient-end: #5b00c6;   /* Deep purple */
+  --color-primary-text: #2c2c2c;
+  --color-accent: #7155d9;         /* Link highlight */
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.navbar-top-border {
+  height: 5px;
+  background: linear-gradient(to right, var(--color-gradient-start), #ca53cd, var(--color-gradient-end));
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--color-primary-text);
+}
+
+.logo-icon {
+  font-size: 2rem;
+  color: #a04fff;
+  margin-right: 0.5rem;
+}
+
+.navbar-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--color-primary-text);
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a.active {
+  color: var(--color-accent);
+}
+
+.navbar-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-accent);
+  border-radius: 1px;
+}
+
+.navbar-links a:hover {
+  color: var(--color-accent);
+}
+
+.get-started {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #fb596f, #ff6da1);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 10px 20px rgba(251, 89, 111, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.get-started:hover {
+  transform: scale(1.05);
+}

@@ -1,13 +1,13 @@
-import './App.css'
+import Navbar from "./components/Navbar/Navbar";
+import HeroSection from "./components/HeroSection/HeroSection";
 
 function App() {
   return (
-    <div className="container">
-      <h1 className='hello'>Hello React + Vite + Bootstrap!</h1>
-      <button>Click Me</button>
+    <div>
+      <Navbar />
+      <HeroSection />
     </div>
   );
 }
 
 export default App;
-
