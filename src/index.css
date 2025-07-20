@@ -69,9 +69,19 @@ button:focus-visible {
 
 
 /* ##################################################################################### */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Nunito','Courier New', Courier, monospace;
+}
 
 :root {
-
+  /* ###################################################################################### */
   /* PADDING AND MARGIN SPACING */
   --space-xxs: 5px;  /* Extra-small */
   --space-xs: 10px;    /* Very-small */
@@ -80,6 +90,8 @@ button:focus-visible {
   --space-lg: 50px;    /* Large */
   --space-xl: 100px;      /* Very-large */
   --space-xxl: 150px;     /* Extra-large */
+
+  /* ###################################################################################### */
 
   /* FONT SIZES */
   --font-xxs: 0.875rem;   /* Extra-small (14px) */
@@ -90,10 +102,16 @@ button:focus-visible {
   --font-xl: 2rem;        /* Very-large (32px) */
   --font-xxl: 2.5rem;     /* Extra-large (40px) */
 
+/* ########################################################################################### */
+  
+  /* Brand Colors 2*/
+  --color-blue: #00AFEF;     /* Primary brand color */
+  --color-yellow: #FFFF8F;     /* Primary brand color light*/
+  --color-purple: #9A00FF;   /* Secondary brand color */
   
   /* Brand Colors */
   --color-primary: #FB596F;     /* Primary brand color */
-  --color-primary: #F4AF37;     /* Primary brand color light*/
+  --color-primary-light: #F4AF37;     /* Primary brand color light*/
   --color-secondary: #743CDB;   /* Secondary brand color */
   --color-secondary-light: #A770F9;   /* Secondary brand color light */
   --color-accent: #FA2B56;      /* Accent or highlight color */
@@ -124,6 +142,8 @@ button:focus-visible {
   --border-color: #dee2e6;
 }
 
+
+/* ############################################################################################# */
 /* styles.css or App.css */
 /* Base container styles for all screen sizes */
 .container {
@@ -167,5 +187,24 @@ button:focus-visible {
   .container {
     max-width: 1320px;
   }
+}
+
+
+/* ########################################################################################## */
+
+/* BUTTON TEMPLATE */
+.btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
 }
 
