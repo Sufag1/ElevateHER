@@ -23,28 +23,29 @@ const HeroSection = () => {
   return (
     <section className="hero">
       <div className="container">
-        <p className="tagline">
-          <span role="img" aria-label="wave">👋</span> We Are WordPress Agency
-        </p>
+        <div className="hero-image">
+          <img className="hero-person" src={HeroImage} alt="Hero" />
+        </div>
+        {/* <p className="tagline">
+          <span role="img" aria-label="wave">👋</span> We Are Shaping the Future of Women!
+        </p> */}
         <h1>
-          Digital Age<br /> Adventure In <br />
+          Empowering Digital<br /> Dreams Through<br />
           <span
             className={`rotating-word ${isSliding ? "slide-bounce" : ""}`}
           >
             {rotatingWords[currentIndex]}
           </span>
         </h1>
-        <p className="subtitle">
-          When, while lovely valley teems with vapour around me and meridian sun strikes the upper impenetrable.
+        <p className="hero-subtitle">
+          We train women to excel and connect them to global  remote opportunities around the world.
         </p>
         <div className="hero-buttons">
-          <button className="btn btn-purple">Get Start Today</button>
-          <button className="btn btn-orange">Get Start Today</button>
+          <button className="btn btn-purple">Get Started</button>
+          <button className="btn btn-orange">Apply Now</button>
         </div>
       </div>
-      {/* <div className="hero-image">
-        <img className="person-placeholder" src={HeroImage} alt="Hero" />
-      </div> */}
+
     </section>
   );
 };
