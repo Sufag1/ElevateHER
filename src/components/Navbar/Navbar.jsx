@@ -6,7 +6,6 @@ const Navbar = () => {
       <div className="navbar-top-border"></div>
       <div className="navbar-container">
         <div className="navbar-logo">
-          {/* Placeholder logo icon */}
           <span className="logo-icon">❄</span>
           <span className="logo-text">
             PHLOX <strong>Business</strong>

@@ -17,12 +17,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 8%;
+  padding: 20px 8%;
   flex-wrap: wrap;
 }
 
 .hero-content {
-  max-width: 600px;
+  /* max-width: 600px; */
   z-index: 2;
 }
 
