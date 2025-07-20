@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,28 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+
+/* ##################################################################################### */
+
+:root {
+
+  /* PADDING AND MARGIN SPACING */
+  --space-xxs: 5px;  /* Extra-small */
+  --space-xs: 10px;    /* Very-small */
+  --space-sm: 20px;   /* Small */
+  --space-md: 30px;      /* Medium*/
+  --space-lg: 50px;    /* Large */
+  --space-xl: 100px;      /* Very-large */
+  --space-xxl: 150px;     /* Extra-large */
+
+  /* FONT SIZES */
+  --font-xxs: 0.625rem;  /* Extra-small (10px) */
+  --font-xs: 0.75rem;    /* Very-small (12px) */
+  --font-sm: 0.875rem;   /* Small (14px) */
+  --font-md: 1rem;       /* Medium / Base (16px) */
+  --font-lg: 1.25rem;    /* Large (20px) */
+  --font-xl: 1.5rem;     /* Very-large (24px) */
+  --font-xxl: 2rem;      /* Extra-large (32px) */
 }
