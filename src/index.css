@@ -82,11 +82,44 @@ button:focus-visible {
   --space-xxl: 150px;     /* Extra-large */
 
   /* FONT SIZES */
-  --font-xxs: 0.625rem;  /* Extra-small (10px) */
-  --font-xs: 0.75rem;    /* Very-small (12px) */
-  --font-sm: 0.875rem;   /* Small (14px) */
-  --font-md: 1rem;       /* Medium / Base (16px) */
-  --font-lg: 1.25rem;    /* Large (20px) */
-  --font-xl: 1.5rem;     /* Very-large (24px) */
-  --font-xxl: 2rem;      /* Extra-large (32px) */
+  --font-xxs: 0.875rem;   /* Extra-small (14px) */
+  --font-xs: 1rem;        /* Very-small (16px) */
+  --font-sm: 1.25rem;     /* Small (20px) */
+  --font-md: 1.5rem;      /* Medium (24px) */
+  --font-lg: 1.75rem;     /* Large (28px) */
+  --font-xl: 2rem;        /* Very-large (32px) */
+  --font-xxl: 2.5rem;     /* Extra-large (40px) */
+
+  
+  /* Brand Colors */
+  --color-primary: #FB596F;     /* Primary brand color */
+  --color-primary: #F4AF37;     /* Primary brand color light*/
+  --color-secondary: #743CDB;   /* Secondary brand color */
+  --color-secondary-light: #A770F9;   /* Secondary brand color light */
+  --color-accent: #FA2B56;      /* Accent or highlight color */
+
+  /* Background Colors */
+  --bg-primary: #EEFBFF;
+  --bg-light: #FFFFFF;
+  --bg-dark: #EFF2FB;
+
+    /* Text Colors */
+  --text-primary: #1A3760;      /* Primary text */
+  --text-secondary: #787878;    /* Secondary text */
+  --text-muted: #adb5bd;        /* Muted or placeholder text */
+
+  /* Status Colors */
+  --color-success: #198754;     /* Success messages, alerts */
+  --color-warning: #ffc107;     /* Warning states */
+  --color-danger:  #dc3545;     /* Error or critical alerts */
+  --color-info:    #0dcaf0;     /* Informational notes */
+
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-light: #f8f9fa;
+  --color-dark:  #212529;
+  --color-black: #000000;
+
+  /* Border Colors */
+  --border-color: #dee2e6;
 }
