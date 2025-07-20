@@ -146,49 +146,67 @@ button:focus-visible {
 /* ############################################################################################# */
 /* styles.css or App.css */
 /* Base container styles for all screen sizes */
+/* Base container - for screens <320px */
 .container {
-  width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+/* Base container - for screens <320px */
+.container {
+  max-width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
 }
 
-/* Small devices (≥576px) - e.g., portrait phones */
-@media (min-width: 576px) {
+/* Extra small devices (≥320px) - e.g., very small phones */
+@media (min-width: 320px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
+/* Small devices (≥375px) - e.g., typical phones like iPhone SE */
+@media (min-width: 375px) {
+  .container {
+    max-width: 350px;
+  }
+}
+
+/* Small-medium devices (≥425px) - e.g., larger phones */
+@media (min-width: 425px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
+/* Custom breakpoint (≥593px) - e.g., small tablets or landscape phones */
+@media (min-width: 593px) {
   .container {
     max-width: 540px;
   }
 }
 
-/* Medium devices (≥768px) - e.g., tablets */
+/* Medium devices (≥768px) - e.g., tablets in portrait mode */
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
 }
 
-/* Large devices (≥992px) - e.g., small laptops */
-@media (min-width: 992px) {
+/* Large devices (≥1024px) - e.g., tablets in landscape, small laptops */
+@media (min-width: 1024px) {
   .container {
     max-width: 960px;
   }
 }
 
-/* Extra large devices (≥1200px) - e.g., desktops */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-/* Extra extra large devices (≥1400px) - e.g., large desktops, 4K screens */
-@media (min-width: 1400px) {
+/* Extra large devices (≥1440px) - e.g., desktops, wide laptops */
+@media (min-width: 1440px) {
   .container {
     max-width: 1320px;
   }
 }
-
 
 /* ########################################################################################## */
 
