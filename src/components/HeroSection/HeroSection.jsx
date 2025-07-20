@@ -21,8 +21,8 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="hero container">
-      <div className="hero-content">
+    <section className="hero">
+      <div className="container">
         <p className="tagline">
           <span role="img" aria-label="wave">👋</span> We Are WordPress Agency
         </p>
@@ -42,9 +42,9 @@ const HeroSection = () => {
           <button className="btn btn-orange">Get Start Today</button>
         </div>
       </div>
-      <div className="hero-image">
+      {/* <div className="hero-image">
         <img className="person-placeholder" src={HeroImage} alt="Hero" />
-      </div>
+      </div> */}
     </section>
   );
 };

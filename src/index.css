@@ -126,20 +126,20 @@ button:focus-visible {
   --text-secondary: #787878;    /* Secondary text */
   --text-muted: #adb5bd;        /* Muted or placeholder text */
 
-  /* Status Colors */
-  --color-success: #198754;     /* Success messages, alerts */
-  --color-warning: #ffc107;     /* Warning states */
-  --color-danger:  #dc3545;     /* Error or critical alerts */
-  --color-info:    #0dcaf0;     /* Informational notes */
+  /* Status Colors
+  --color-success: #198754;     
+  --color-warning: #ffc107;     
+  --color-danger:  #dc3545;     
+  --color-info:    #0dcaf0;     
 
-  /* Neutral Colors */
+  Neutral Colors
   --color-white: #ffffff;
   --color-light: #f8f9fa;
   --color-dark:  #212529;
   --color-black: #000000;
 
-  /* Border Colors */
-  --border-color: #dee2e6;
+  Border Colors
+  --border-color: #dee2e6; */
 }
 
 

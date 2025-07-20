@@ -1,11 +1,9 @@
-import Navbar from "./components/Navbar/Navbar";
-import HeroSection from "./components/HeroSection/HeroSection";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <HeroSection />
+      <Home />
     </div>
   );
 }

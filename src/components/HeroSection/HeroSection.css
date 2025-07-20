@@ -1,43 +1,26 @@
-:root {
-  --color-purple: #7c3aed;
-  --color-orange: #f97316;
-  --color-dark: #0f172a;
-  --color-muted: #64748b;
-  --font-headline: 'Segoe UI', sans-serif;
-  --font-body: 'Segoe UI', sans-serif;
-}
-
-body {
-  margin: 0;
-  font-family: var(--font-body);
-  background: #f8fafc;
-}
-
 .hero {
+  padding-top: var(--space-xxl);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px 8%;
+  justify-content: center;
   flex-wrap: wrap;
-}
-
-.hero-content {
-  /* max-width: 600px; */
-  z-index: 2;
+  background-color: var(--bg-primary);
 }
 
 .tagline {
   color: var(--color-purple);
   font-weight: 600;
-  margin-bottom: 1rem;
+  font-size: var(--font-xs);
+  margin-bottom: var(--space-sm);
+  text-align: center;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-  color: var(--color-dark);
-  margin: 0;
-  font-family: var(--font-headline);
+  font-size: var(--font-xxl);
+  line-height: 1.5;
+  color: var(--text-primary);
+  font-family: Outfit;
+  text-align: center;
 }
 
 .rotating-word {
@@ -81,24 +64,14 @@ body {
   gap: 1rem;
 }
 
-.btn {
-  padding: 0.8rem 1.5rem;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  color: white;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.btn-purple {
+.btn.btn-purple {
   background: linear-gradient(to right, #6d28d9, #9333ea);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.btn-orange {
+.btn.btn-orange {
   background: linear-gradient(to right, #f97316, #facc15);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .btn:hover {
