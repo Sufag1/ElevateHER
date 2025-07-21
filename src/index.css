@@ -152,12 +152,6 @@ button:focus-visible {
   padding: 0 1rem;
   margin: 0 auto;
 }
-/* Base container - for screens <320px */
-.container {
-  max-width: 100%;
-  padding: 0 1rem;
-  margin: 0 auto;
-}
 
 /* Extra small devices (≥320px) - e.g., very small phones */
 @media (min-width: 320px) {
@@ -220,6 +214,7 @@ button:focus-visible {
   font-weight: 400;
   cursor: pointer;
   transition: transform 0.2s ease;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .btn:hover {
