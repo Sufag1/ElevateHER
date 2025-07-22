@@ -1,6 +1,12 @@
+.navbar-section {
+  position: relative;
+}
+
 .navbar {
-  width: 100%;
   position: fixed;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   top: var(--space-xs);
   background-color: white;
   box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1607843137254902);
@@ -61,6 +67,13 @@
 .btn.get-started {
   display: none;
   background: linear-gradient(135deg, #fb596f, #ff6da1);
+}
+
+
+@media (min-width: 375px) {
+  .navbar {
+  max-width: calc(350px - 2rem);
+  }
 }
 
 
