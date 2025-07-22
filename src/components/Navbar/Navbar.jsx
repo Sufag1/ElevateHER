@@ -39,7 +39,7 @@
 // export default Navbar;
 import React, { useRef, useState, useEffect } from "react";
 import "./Navbar.css";
-import Logo from "../../assets/elevateher_logo_black.svg";
+import Logo from "../../assets/elevateher_new_logo.svg";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

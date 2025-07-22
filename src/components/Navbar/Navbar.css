@@ -201,7 +201,7 @@
 }
 
 .navbar-links a:first-of-type {
-  margin-top: var(--space-sm);
+  margin-top: var(--space-xxl);
 }
 
 .navbar-links a:hover,
