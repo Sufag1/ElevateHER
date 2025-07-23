@@ -196,7 +196,7 @@ button:focus-visible {
 }
 
 /* Extra large devices (≥1440px) - e.g., desktops, wide laptops */
-@media (min-width: 1440px) {
+@media (min-width: 1440px) {  
   .container {
     max-width: 1320px;
   }
