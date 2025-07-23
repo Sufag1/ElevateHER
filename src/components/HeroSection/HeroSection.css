@@ -68,12 +68,12 @@
   gap: var(--space-sm);
 }
 
-.btn.btn-purple {
-  background: linear-gradient(to right, #6d28d9, #9333ea);
+.btn.btn-blue {
+  background: linear-gradient(to right, var(--color-secondary), var(--color-secondary-light));
 }
 
 .btn.btn-orange {
-  background: linear-gradient(to right, #f97316, #facc15);
+  background: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
 }
 
 .btn:hover {
@@ -149,6 +149,10 @@
 }
 
 @media (min-width: 1024px) {
+
+  .hero h1, .hero span {
+    font-size: var(--font-xl);
+  }
 
   html {
     font-size: 20px;

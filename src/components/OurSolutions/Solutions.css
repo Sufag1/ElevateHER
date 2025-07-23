@@ -1,0 +1,219 @@
+.solutions-section {
+    padding-top: var(--space-md) ;
+    background: var(--bg-dark);
+}
+
+
+.solutions-texts-div h1 {
+    font-size: var(--font-md);
+    font-weight: 800;
+    line-height: 1.5; 
+    color: var(--text-primary);
+    font-family: Outfit;
+    text-align: center;
+    background: var(--bg-dark);
+}
+
+.solutions-texts-div span {
+    color: var(--color-primary-light);
+    background: linear-gradient(to right, #f43f5e, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.solutions-texts-div p {
+    font-size: var(--font-xs);
+    color: var(--text-secondary);
+    margin: var(--space-sm) 0;
+    text-align: center;
+}
+
+.solutions-cards-div {
+    background: var(--bg-dark);
+
+}
+
+.solution-card {
+    background: var(--bg-light);
+    padding-top: var(--space-lg);
+    margin: var(--space-md) var(--space-xs);
+    border-radius: var(--space-md);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1)
+    
+}   
+
+.card-text h2, .card-text p {
+    padding: var(--space-xs) var(--space-md);
+} 
+
+.card-text h2 {
+    font-size: var(--font-md);
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.card-text p {
+    font-size: var(--font-xs);
+    color: var(--text-secondary);
+    margin: var(--space-sm) 0;
+}
+
+.card-text a {
+    padding: var(--space-md) var(--space-md);
+    color: var(--color-purple);
+    font-size: var(--font-xxs);
+}
+.learn-more-link {
+    padding: var(--space-md) 0;
+}
+
+.responsive-br {
+    display: inline;
+}
+
+.card-style {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: var(--space-md);
+}
+
+.number {
+  background: #808080;
+  margin-right: 0px;
+}
+.number h2{
+    font-size: var(--font-xxl);
+    font-weight: 900;
+    font-family: "Poppins", Sans-serif;
+    -webkit-text-stroke-width: 2px;
+    stroke-width: 2px;
+    -webkit-text-stroke-color: #FB577014;
+    stroke: #FB577014;
+    color: red;
+}
+
+
+/* Small devices (≥375px) - e.g., typical phones like iPhone SE */
+@media (min-width: 375px) {
+  .container {
+    max-width: 350px;
+  }
+
+  .solution-card {
+    margin: var(--space-md) var(--space-sm);
+  }
+}
+
+/* Small-medium devices (≥425px) - e.g., larger phones */
+@media (min-width: 425px) {
+  .container {
+    max-width: 400px;
+  }
+  
+}
+
+/* Custom breakpoint (≥593px) - e.g., small tablets or landscape phones */
+@media (min-width: 593px) {
+  .container {
+    max-width: 540px;
+  }
+
+  html {
+    font-size: 19px;
+  }
+
+  .solution-card {
+    margin: var(--space-md) var(--space-lg);
+
+
+  }
+}
+
+/* Medium devices (≥768px) - e.g., tablets in portrait mode */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .responsive-br {
+    display: none;
+  }
+
+  html {
+    font-size: 17px;
+  }
+
+  .solutions-texts-div h1 {
+    font-size: var(--space-md);
+    font-weight: 900;
+  }
+
+  .solutions-texts-div p {
+    margin: var(--space-sm);
+    
+  }
+
+  .solutions-cards-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: var(--space-md); 
+    justify-items: center;
+    margin: var(--space-xs) var(--space-md);
+
+}
+
+.solution-card:nth-child(3) {
+    grid-column: 1 / -1; /* span full width */
+    justify-self: center; /* center the card */
+    width: 50%; /* optional: control its width */
+    margin: 0 ;
+
+}
+
+.solution-card:nth-child(6) {
+    grid-column: 1 / -1; /* span full width */
+    justify-self: center; /* center the card */
+    width: 50%; /* optional: control its width */
+    margin: 0 ;
+
+}
+
+.solution-card {
+    width: 100%;
+
+}
+
+
+
+}
+
+/* Large devices (≥1024px) - e.g., tablets in landscape, small laptops */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+
+  html {
+    font-size: 20px;
+  }
+
+  .solutions-texts-div h1 {
+    font-weight: 900;
+    font-size: var(--font-lg);
+  }
+
+}
+
+/* Extra large devices (≥1440px) - e.g., desktops, wide laptops */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  html {
+    font-size: 25px;
+  }
+
+  .solutions-cards-div {
+    margin: 0 60px;
+  }
+}
