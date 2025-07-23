@@ -42,7 +42,7 @@ const HeroSection = () => {
             We train women to excel and connect them to global  remote opportunities around the world.
           </p>
           <div className="hero-buttons">
-            <button className="btn btn-purple">Get Started</button>
+            <button className="btn btn-blue">Get Started</button>
             <button className="btn btn-orange">Apply Now</button>
           </div>
         </div>
