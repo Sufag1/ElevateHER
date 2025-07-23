@@ -1,20 +1,17 @@
 import Navbar from "../../components/Navbar/Navbar";
 import HeroSection from "../../components/HeroSection/HeroSection";
+import ClientsReview from "../../components/Clients-Review/ClientsReview";
 import OurSolutions from "../../components/OurSolutions/Solutions";
-
 import BlogSection from "../../components/Blog/Blog";
- dev
 
 function Home() {
   return (
     <div>
         <Navbar />
         <HeroSection />
- our-solutions-and-features
+        <ClientsReview />
         <OurSolutions />
-
         <BlogSection />
- dev
     </div>
   )
 }
