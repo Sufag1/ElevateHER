@@ -83,7 +83,7 @@
 }
 .number h2{
     font-size: var(--font-xxl);
-    font-weight: 900;
+    font-weight: 700;
     font-family: "Poppins", Sans-serif;
     -webkit-text-stroke-width: 2px;
     stroke-width: 2px;

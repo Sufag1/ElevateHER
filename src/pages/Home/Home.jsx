@@ -9,8 +9,9 @@ function Home() {
     <div>
         <Navbar />
         <HeroSection />
+        <OurSolutions /> 
         {/* <ClientsReview /> */}
-        {/* <OurSolutions /> */}
+        
         <BlogSection />
     </div>
   )
