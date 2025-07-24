@@ -76,52 +76,10 @@ export default function EmpowerImpact() {
         />
       </div>
 
-      {/* Stylish Badge Below Image */}
-      {/* <div className="engageCard-badge">
-        <span className="engageCard-icon">✨</span>
-        <div className="engageCard-stats">
-          <span className="engageCard-value">120%</span>
-          <span className="engageCard-label">ENGAGEMENT</span>
-        </div>
-      </div> */}
+      
     </div>
-{/*  
-               <div className="successChart-wrapper">
-  <div className="successChart-card">
-    <div className="successChart-header">
-      <span className="successChart-value">+65.4%</span>
-      <span className="successChart-label">Student Success Growth</span>
-    </div>
-
-    <div className="successChart-track">
-      <div className="success-step">
-        <div className="step-dot"></div>
-        <span className="step-label">Started</span>
-      </div>
-
-      <div className="step-connector"></div>
-
-      <div className="success-step">
-        <div className="step-dot"></div>
-        <span className="step-label">Learning</span>
-      </div>
-
-      <div className="step-connector"></div>
-
-      <div className="success-step">
-        <div className="step-dot"></div>
-        <span className="step-label">Mastery</span>
-      </div>
-
-      <div className="step-connector"></div>
-
-      <div className="success-step">
-        <div className="step-dot final"></div>
-        <span className="step-label">Success</span>
-      </div>
-    </div>
-  </div>
-</div> */}
+ 
+             
 
       </section>
 

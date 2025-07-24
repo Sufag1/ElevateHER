@@ -185,9 +185,6 @@ html{
         min-width: 0;         
     }
 
-    .btn{
-        flex: 0.4;  
-    }
     .maintext-div{
         justify-items: left;
     }

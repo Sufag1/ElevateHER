@@ -5,6 +5,8 @@
 
 .empowerImpact-hero h1{
     font-size:  var(--font-lg);
+          font-weight: 700;
+
     text-align: center;
     padding-top: var(--space-sm);
     padding-bottom: var(--space-sm);
@@ -30,7 +32,11 @@ text-align: center;
 
 }
 .empowerImpact-hero span{
-    color:  var(--color-purple);
+      font-weight: 700;
+
+     background: linear-gradient(to right, #f43f5e, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .empowerImpact-divider {

@@ -74,16 +74,6 @@ const Navbar = () => {
             <span className="bar"></span>
             <span className="bar"></span>
           </div>  
-          {/* <div className="mobile-menu-wrapper" ref={menuRef}>
-            <nav className="navbar-links">
-              <a href="#" className="active">Home</a>
-              <a href="#">Courses</a>
-              <a href="#">Events</a>
-              <a href="#">About Us</a>
-              <a href="#">Contact Us</a>
-            </nav>
-            <div className="navbar-bottom-border"></div>
-          </div> */}
           <div className="mobile-menu-wrapper" ref={menuRef}>
             <nav className="navbar-links">
               <a
