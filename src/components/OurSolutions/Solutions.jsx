@@ -11,10 +11,8 @@ const Solutions = () => {
 
         <div className="solutions-section">
             <div className="solutions-container solutions-texts-div">
-                <h1>Our <span>Solutions</span> & <br class="responsive-br" /> Features</h1>
-
+                <h1>Our <span>Solutions</span> & <br className="responsive-br" /> Features</h1>
                 <p>Erat dolore consequuntur facere consectetuer beatae beatae habitant conubia porttitor ridiculus cillum animi hic enim dolor, excepteur sapienteriav perspiciatis aliquet.</p>
-
             </div>
 
             <div className=" solutions-cards-div">
