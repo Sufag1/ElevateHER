@@ -1,0 +1,7 @@
+.page-header-section {
+    background-color: var(--bg-dark);
+}
+
+.page-header-container {
+    height: 200px;
+}

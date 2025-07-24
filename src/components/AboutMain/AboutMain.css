@@ -1,0 +1,142 @@
+.about-us-section {
+  /* padding: 3rem 2rem; */
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.about-us-left, .about-us-right {
+  flex: 1 1 45%;
+}
+
+.about-us-title > *,  .about-us-title {
+  text-align: center;
+  font-size: var(--font-md);
+  font-family: 'Outfit','Courier New', Courier, monospace;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.about-us-title {
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+}
+
+.highlight-about {
+   background: linear-gradient(to right, #f43f5e, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.about-us-description {
+  font-size: var(--font-xxs);
+  text-align: center;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--space-md);
+}
+
+.about-us-metrics {
+  display: flex;
+  justify-content: center;
+}
+
+.about-us-person-img {
+  width: 200px;
+}
+
+.about-us-engagement-box {
+  background-color: #f5f7fb;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.engagement-percent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-circle {
+  background-color: #ff4fc3;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.sales-chart img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.video-thumbnail {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.video-img {
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(120, 80, 220, 0.8);
+  color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.about-us-list {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+}
+
+.about-us-list li {
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.testimonial {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonial-img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.testimonial-role {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.testimonial-rating {
+  margin-left: auto;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #444;
+}
