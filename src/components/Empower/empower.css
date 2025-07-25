@@ -1,19 +1,18 @@
 
 .empowerImpact-section{
     background-color: var(--bg-light);
+    display: grid;
 }
 
 .empowerImpact-hero h1{
     font-size:  var(--font-lg);
-          font-weight: 700;
-
+     font-weight: 700;
     text-align: center;
     padding-top: var(--space-sm);
     padding-bottom: var(--space-sm);
     font-size: var(--font-md);
-  font-weight: 700;
-  line-height: 1.5;
-  
+   font-weight: 700;
+   line-height: 1.5;
   color: var(--text-primary);
   font-family: Outfit;
 }
@@ -33,17 +32,15 @@ text-align: center;
 }
 .empowerImpact-hero span{
       font-weight: 700;
-
-     background: linear-gradient(to right, #f43f5e, #f59e0b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+      background: linear-gradient(to right, #f43f5e, #f59e0b);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
 }
 
 .empowerImpact-divider {
   width: 100%;
   height: 4px;
-    background: linear-gradient(to right, var(--color-blue), var(--color-yellow), var(--color-purple));
-
+  background: linear-gradient(to right, var(--color-blue), var(--color-yellow), var(--color-purple));
   margin: 2rem 0;
   border-radius: 2px;
 }
@@ -54,6 +51,41 @@ text-align: center;
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+.impact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.impact-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.impact-item {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-xxs);
+  font-weight: 600;
+  color: var(--text-secondary);
+  justify-content: center;
+  align-items: center !important;
+
+}
+
+.circle-badge {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-purple);
+  border-radius: 50%;
+  margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .profile-image {
@@ -66,13 +98,11 @@ text-align: center;
 .profile-name {
   font-weight: 700;
   color: var(--color-purple);
-
   margin: 0;
 }
 
 .profile-title {
-    color: var(--text-secondary);
-
+  color: var(--text-secondary);
   font-size: var( --font-xxs);
   margin: 0;
 }
@@ -80,6 +110,7 @@ text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+    margin-top: var(--space-sm) ;
   align-items: center;
 }
 
@@ -93,14 +124,18 @@ text-align: center;
 }
 
 .engageCard-card {
-  background-color: #ffffff;
+  background-color: var(--bg-light);
   border-radius: 1rem;
   padding: var(--space-xs);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   transform: translateY(0);
   transition: transform 0.3s ease;
 }
-
+.btn-blue-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .engageCard-card:hover {
   transform: translateY(-4px);
 }
@@ -110,328 +145,6 @@ text-align: center;
   border-radius: 0.75rem;
   object-fit: cover;
 }
-
-.engageCard-badge {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-    background: linear-gradient(to right, var(--color-blue), var(--color-yellow), var(--color-purple));
-  color: white;
-  padding: var(--space-xxs) var(--space-xxs);
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  margin-top: -1rem;
-  z-index: 0;
-  position: relative;
-  color: var(--text-primary) ;
-}
-
-.engageCard-icon {
-  font-size: var(--font-lg);
-  margin-right: var(--space-md);
-  animation: sparkle 2s infinite ease-in-out;
-}
-
-.engageCard-stats {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.engageCard-value {
-  font-weight: 700;
-  font-size: var(--font-xxs);
-}
-
-.engageCard-label {
-  font-size: var(--font-xxs);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  opacity: 0.9;
-}
-
-@keyframes sparkle {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.2); opacity: 0.8; }
-}
-
-.salesImpact-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 340px;
-  margin: var(--space-xxl) auto;
-  padding: 0 var(--space-xxl);
-}
-
-.salesImpact-card {
-  background-color: var(--bg-light);
-  border-radius: 1rem;
-  padding: var(--space-xxl);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
-  position: relative;
-  z-index: 2;
-}
-
-.salesImpact-image {
-  width: 100%;
-  border-radius: 0.75rem;
-  object-fit: cover;
-}
-
-.salesImpact-cover {
-    background: linear-gradient(to right, var(--color-blue), var(--color-yellow), var(--color-purple));
-
-  color: var(--bg-light);
-  padding: var(--space-xxl) var(--space-xs);
-  border-radius: 0.75rem;
-  margin-top: -1rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  z-index: 1;
-}
-
-.salesImpact-icon {
-  font-size: var(--font-md);
-  animation: pulseUp 1.5s infinite ease-in-out;
-}
-
-.salesImpact-stat {
-  display: flex;
-  flex-direction: column;
-}
-
-.salesImpact-value {
-  font-weight: 700;
-  font-size: var(--font-md);
-}
-
-.salesImpact-label {
-  font-size: var(--font-xs) ;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  opacity: 0.85;
-}
-
-@keyframes pulseUp {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.1); opacity: 0.85; }
-}
-
-.graphStat-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: var(--space-xxl) var(--font-xs);
-}
-
-.graphStat-card {
-    background: linear-gradient(to right, var(--color-blue), var(--color-yellow), var(--color-purple));
-
-  color: var(--bg-light);
-  padding: var(--space-md) var(--space-md);
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  max-width: 320px;
-  width: 100%;
-}
-
-.graphStat-icon {
-  font-size: var(--font-md);
-  animation: pulseGlow 2s infinite ease-in-out;
-}
-
-.graphStat-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.graphStat-value {
-  font-weight: bold;
-  font-size: var(--font-md);
-}
-
-.graphStat-label {
-  font-size: var(--font-xxs);
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  opacity: 0.85;
-}
-
-@keyframes pulseGlow {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.1); opacity: 0.7; }
-}
-
-.successChart-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-  font-family: 'Poppins', sans-serif;
-}
-
-.successChart-card {
-  background: var(--bg-light);
-  border-radius: 16px;
-  padding: 1.2rem 1.5rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  width: 1200px;
-  max-width: 1200px;
-  /* width: 100%; */
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-.engageCard-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 340px;
-  margin: 3rem auto;
-  padding: 0 1rem;
-}
-
-.engageCard-card {
-  background-color: var(--bg-light);
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  transform: translateY(0);
-  transition: transform 0.3s ease;
-}
-
-.engageCard-card:hover {
-  transform: translateY(-4px);
-}
-
-.engageCard-image {
-  width: 100%;
-  border-radius: 0.75rem;
-  object-fit: cover;
-}
-
-.engageCard-badge {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-      background: linear-gradient(to right, var(--color-blue), var(--color-yellow), var(--color-purple));
-
-  color: var(--bg-light);
-  padding: 0.8rem 1.2rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  margin-top: -1rem;
-  z-index: 0;
-  position: relative;
-}
-
-.engageCard-icon {
-  font-size: 1.6rem;
-  margin-right: 0.5rem;
-  animation: sparkle 2s infinite ease-in-out;
-}
-
-.engageCard-stats {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.engageCard-value {
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-
-.engageCard-label {
-  font-size: 0.75rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  opacity: 0.9;
-}
-
-@keyframes sparkle {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.2); opacity: 0.8; }
-}
-
-.successChart-card:hover {
-  transform: scale(1.01);
-}
-
-.successChart-header {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.successChart-value {
-  font-size: var(--font-lg);
-  font-weight: 700;
-  color: var(--color-purple);
-;
-  display: block;
-}
-
-.successChart-label {
-  font-size: var(--font-xs);
-  color: var(--text-secondary);
-  font-weight: 500;
-}
-
-.successChart-track {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 1.2rem;
-}
-
-.success-step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-  position: relative;
-}
-
-.step-dot {
-  width: 16px;
-  height: 16px;
-    background: linear-gradient(to right, var(--color-blue), var(--color-yellow), var(--color-purple));
-
-  border-radius: 50%;
-  box-shadow: 0 0 8px var(--color-purple);
-  transition: background 0.3s ease;
-}
-
-.final {
-    background: linear-gradient(to right, var(--color-blue), var(--color-yellow), var(--color-purple));
-
-  box-shadow: 0 0 12px var(--color-purple);
-}
-
-.step-label {
-  margin-top: 6px;
-  font-size: var(--font-xxs);
-  color: var(--text-secondary);
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.step-connector {
-  height: 4px;
-  flex: 1;
-    background: linear-gradient(to right, var(--color-blue), var(--color-yellow), var(--color-purple));
-
-  border-radius: 10px;
-  margin: 0 6px;
-}
-
-
-
-
-
 
 @media (min-width: 375px) {
    html {
@@ -450,13 +163,13 @@ text-align: center;
   html {
     font-size: 17px;
   }
-    .empowerImpact-title {
+  .empowerImpact-title {
     text-align: left;
   }
    .empowerImpact-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-        gap: 120px;
+     /* gap: 120px; */
 
   }
   .empowerImpact-hero h1{
@@ -484,9 +197,7 @@ text-align: left;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    /* gap: 2rem; */
-    /* padding: 2rem; */
-    /* margin-left: 100px; */
+    
   }
 
   .engageCard-card {
@@ -497,7 +208,18 @@ text-align: left;
     /* margin-left: 100px; */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   }
-
+.empowerImpact-founder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile-card{
+  margin-top: -10px;
+}
+ .impact-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
   }
 
 
@@ -511,9 +233,7 @@ text-align: left;
     grid-template-columns: 1fr 1fr;
   }
   
-   
-  
-  
+
 }
 
 @media (min-width: 1440px) {
