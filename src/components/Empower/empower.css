@@ -1,94 +1,92 @@
-
 .empowerImpact-section{
-    background-color: var(--bg-light);
-    display: grid;
+  background-color: var(--bg-light);
 }
 
-.empowerImpact-hero h1{
-    font-size:  var(--font-lg);
-     font-weight: 700;
-    text-align: center;
-    padding-top: var(--space-sm);
-    padding-bottom: var(--space-sm);
-    font-size: var(--font-md);
-   font-weight: 700;
-   line-height: 1.5;
+.empowerImpact-title, .empowerImpact-title > *{
+  text-align: center;
+  font-size: var(--font-md);
+  font-family: 'Outfit','Courier New', Courier, monospace;
+  font-weight: 700;
   color: var(--text-primary);
-  font-family: Outfit;
+  margin-top: var(--space-lg);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.empowerImpact-list li{
-  font-family: Outfit;
 
-text-align: center;
-}
 .empowerImpact-description{
-      font-family: Outfit;
-    text-align: center;
-        padding-bottom: var(--space-md);
-    font-size: var(--font-xs);
+  text-align: center;
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
   color: var(--text-secondary);
-  margin: var(--space-sm) 0;
-
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .empowerImpact-hero span{
-      font-weight: 700;
-      background: linear-gradient(to right, #f43f5e, #f59e0b);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  background: linear-gradient(to right, #f43f5e, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.empowerImpact-divider {
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(to right, var(--color-blue), var(--color-yellow), var(--color-purple));
-  margin: 2rem 0;
-  border-radius: 2px;
+.empower-image-container {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
 }
 
-.profile-card {
+.engageCard-image {
+  width: 250px;
+}
+
+/* .profile-card {
   margin-top: var(--space-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-}
-.impact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  gap: var(--space-sm);
+} */
 
 .impact-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  margin: var(--space-sm) 0px var(--space-xs) 0px;
 }
 
 .impact-item {
   display: flex;
   align-items: center;
   font-size: var(--font-xxs);
-  font-weight: 600;
+  justify-content: start;
+  margin-bottom: var(--space-xs);
   color: var(--text-secondary);
-  justify-content: center;
-  align-items: center !important;
-
 }
 
-.circle-badge {
-  display: inline-block;
+.circle {
   width: 15px;
   height: 15px;
-  background-color: var(--color-purple);
   border-radius: 50%;
   margin-right: 10px;
-  flex-shrink: 0;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
-.profile-image {
+.accent {
+  background-color: var(--color-accent);
+}
+
+.blue {
+  background-color: var(--color-blue);
+}
+
+.purple {
+  background-color: var(--color-purple);
+}
+
+.dark {
+  background-color: var(--text-primary);
+}
+
+/* .profile-image {
   width: 50px;
   height: 50px;
   object-fit: cover;
@@ -105,45 +103,17 @@ text-align: center;
   color: var(--text-secondary);
   font-size: var( --font-xxs);
   margin: 0;
-}
-.empowerImpact-founder{
+} */
+
+.impact-btn {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-    margin-top: var(--space-sm) ;
-  align-items: center;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-lg);
 }
 
-.engageCard-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 340px;
-  margin: 3rem auto;
-  padding: 0 var(--space-sm);
-}
-
-.engageCard-card {
-  background-color: var(--bg-light);
-  border-radius: 1rem;
-  padding: var(--space-xs);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  transform: translateY(0);
-  transition: transform 0.3s ease;
-}
-.btn-blue-1{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.engageCard-card:hover {
-  transform: translateY(-4px);
-}
-
-.engageCard-image {
-  width: 100%;
-  border-radius: 0.75rem;
-  object-fit: cover;
+.engageCard-image-desktop {
+  display: none;
 }
 
 @media (min-width: 375px) {
@@ -163,60 +133,24 @@ text-align: center;
   html {
     font-size: 17px;
   }
-  .empowerImpact-title {
-    text-align: left;
-  }
-   .empowerImpact-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;    
-  }
-  .empowerImpact-hero h1{
-text-align: left;
 
+  .empower-lower {
+    display: flex;
   }
-  .empowerImpact-hero p{
-    text-align: left;
-  }
-  .div-of-tabs{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
-  }
-  .tabs-look{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .buttons-divider{
-     display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .engageCard-wrapper {
-    max-width: 1000px;
-    flex-direction: row;
-    align-items: flex-start;
+  .impact-list {
+    display: flex;
     justify-content: center;
-    
+    gap: var(--space-lg);
   }
 
-  .engageCard-card {
-    width: 100%;
-    position: relative;
-    /* padding: 1.5rem; */
-    border-radius: 1.5rem;
-    /* margin-left: 100px; */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  .engageCard-image-desktop {
+    width: 250px;
+    display: block;
   }
-.empowerImpact-founder{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.profile-card{
-  margin-top: -10px;
-}
- .impact-list {
-    grid-template-columns: repeat(2, 1fr);
+
+  .engageCard-image {
+    width: 250px;
   }
   }
 
@@ -226,12 +160,15 @@ text-align: left;
   html {
     font-size: 20px;
   }
-.empowerImpact-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+  .engageCard-image-desktop {
+    width: 300px;
+  }
+
+  .engageCard-image {
+    width: 300px;
   }
   
-
 }
 
 @media (min-width: 1440px) {
@@ -239,5 +176,15 @@ text-align: left;
     font-size: 25px;
   }
 
+   .engageCard-image-desktop {
+    width: 400px;
+  }
 
+  .engageCard-image {
+    width: 400px;
+  }
+
+.empowerImpact-description{
+  max-width: 800px;
+}
 }

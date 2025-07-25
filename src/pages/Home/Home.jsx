@@ -11,8 +11,8 @@ function Home() {
         <Navbar />
         <HeroSection />
         <Empower />
-        <ClientsReview />
-        <OurSolutions />
+        {/* <ClientsReview />
+        <OurSolutions /> */}
         <BlogSection />
     </div>
   )
