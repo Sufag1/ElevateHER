@@ -4,6 +4,7 @@ import "./Solutions.css";
 import WebDev from "../../assets/Solutions-Assets/WebDev.svg";
 import AI from "../../assets/Solutions-Assets/AI.svg";
 import DevOps from "../../assets/Solutions-Assets/Devops.svg";
+import ServiceBG from "../../assets/Solutions-Assets/Services-BG2.png";
 
 const Solutions = () => {
   return (
@@ -22,11 +23,12 @@ const Solutions = () => {
             <div className=" solutions-cards ">
 
               <div className="solution-card">
+                <img src={ServiceBG} alt="service" className="bg-image" />
                 <div className="card-text">
                   <div className="solution-icon">
                     <div className="card-style">
                       <div className="shapes webdev">
-                        <img src={WebDev} alt="card-logo" />
+                        <img src={WebDev} alt="card-logo" className="fg-image"/>
                       </div>
                       <div className="number">
                         <h2>01</h2>
@@ -46,11 +48,12 @@ const Solutions = () => {
               </div>
 
               <div className="solution-card">
+                <img src={ServiceBG} alt="service" className="bg-image" />
                 <div className="card-text">
                   <div className="solution-icon">
                     <div className="card-style">
                       <div className="shapes ai">
-                        <img src={AI} alt="card-logo" />
+                        <img src={AI} alt="card-logo" className="fg-image"/>
                       </div>
                       <div className="number">
                         <h2>02</h2>
@@ -70,11 +73,12 @@ const Solutions = () => {
               </div>
 
               <div className="solution-card">
+                <img src={ServiceBG} alt="service" className="bg-image" />
                 <div className="card-text">
                   <div className="solution-icon">
                     <div className="card-style">
                       <div className="shapes devops">
-                        <img src={DevOps} alt="card-logo" />
+                        <img src={DevOps} alt="card-logo" className="fg-image"/>
                       </div>
                       <div className="number">
                         <h2>03</h2>
