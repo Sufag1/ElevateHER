@@ -192,14 +192,26 @@
   html {
     font-size: 18px;
   }
-
 }
 
 /* Custom breakpoint (≥593px) - e.g., small tablets or landscape phones */
 @media (min-width: 593px) {
+
+  .container {
+    max-width: 540px;
+  }
+
   html {
     font-size: 19px;
   }
+
+  .solution-card {
+    max-width: 280px;
+  }
+
+  .solutions-subtitle {
+    max-width: 600px;
+}
 
 }
 
@@ -214,11 +226,6 @@
 
   html {
     font-size: 17px;
-  }
-
-  .solutions-title {
-    font-size: var(--space-md);
-    font-weight: 900;
   }
 
   .solutions-subtitle {
