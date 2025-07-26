@@ -236,6 +236,14 @@
 .bg-image {
   left: -80px;
 }
+
+.solution-card {
+  transition: transform 0.3s;
+}
+
+.solution-card:hover {
+  transform: translateY(-5px);
+}
 }
 
 /* Large devices (≥1024px) - e.g., tablets in landscape, small laptops */
