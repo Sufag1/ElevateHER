@@ -13,7 +13,6 @@ function Home() {
         <Empower />
         {/* <ClientsReview /> */}
         <OurSolutions />
-        <ClientsReview />
         <BlogSection />
     </div>
   )
