@@ -57,7 +57,7 @@ const ClientsReview = () => {
         }
     ];
 
-    // Auto slide every 3 seconds
+
     useEffect(() => {
         const slide = setInterval(() => {
         setIndex((prev) => (prev + 1) % reviews.length);
@@ -65,11 +65,15 @@ const ClientsReview = () => {
         return () => clearInterval(slide);
     }, []);
 
-    //
+
+
+    //This one is or screen to show just one div especially when it gets to the screen space from 593 to 768
     useEffect(() => {
     const updateSlidesToShow = () => {
-        if (window.innerWidth >= 593) {
+        if (window.innerWidth >= 768) {
         setSlidesToShow(2);
+        } else if (window.innerWidth >= 593 && window.innerWidth < 768) {
+        setSlidesToShow(1);
         } else {
         setSlidesToShow(1);
         }
@@ -81,7 +85,6 @@ const ClientsReview = () => {
 
 
 
-    // Manual slide
     const next = () => {
         setIndex((prev) => (prev + 1) % reviews.length);
     };
@@ -109,11 +112,10 @@ const ClientsReview = () => {
                     <p className="secondtext">
                         Erat dolore consequuntur facere consectetuer beatae beatae habitant conubia porttitor ridiculus cillum animi hic enim dolor, excepteur.
                     </p>
-                    <button className="btn btn-purple">More About Us</button>
+                    <button className="btn btn-blue">More About Us</button>
                 </div>
 
                     <div className="reviewsRow">
-                        <button onClick={prev} className="navButton">←</button>
                         <div className="Review-divContainer">
                                 {visibleReviews.map((review) => (
                                 <div key={review.id} className={review.id}>
@@ -132,11 +134,19 @@ const ClientsReview = () => {
                                     <hr className="otherhr" />
                                 </div>
                             ))}
-
-                            
                         </div>
-                        <button onClick={next} className="navButton">→</button>
+
                     </div>
+                        <div className="review-dots">
+                        {reviews.map((_, idx) => (
+                            <span
+                            key={idx}
+                            className={idx === index ? "dot active" : "dot"}
+                            onClick={() => setIndex(idx)}
+                            />
+                        ))}
+                        </div> 
+
             </div>
         </section>
     );
