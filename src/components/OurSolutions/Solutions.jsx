@@ -1,128 +1,87 @@
 import { Link } from "react-router-dom";
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 import "./Solutions.css";
+import WebDev from "../../assets/code.svg";
+import AI from "../../assets/robot.svg";
+import DevOps from "../../assets/devops.svg";
+import Bizdev from "../../assets/chart.svg";
+import ServiceBG from "../../assets/Solutions-Assets/Services-BG2.png";
 
 
+const solutionsData = [
+  {
+    id: 1,
+    title: "Web Development",
+    icon: WebDev,
+    shapeClass: "webdev",
+  },
+  {
+    id: 2,
+    title: "Artificial Intelligence",
+    icon: AI,
+    shapeClass: "ai",
+  },
+  {
+    id: 3,
+    title: "DevOps",
+    icon: DevOps,
+    shapeClass: "devops",
+  },
+  {
+    id: 4,
+    title: "Business Development",
+    icon: Bizdev,
+    shapeClass: "bizdev",
+  },
+];
 
 const Solutions = () => {
-    return ( 
-        <>
-        <BrowserRouter>
 
-        <div className="solutions-section">
-            <div className="container solutions-texts-div">
-                <h1>Our <span>Solutions</span> & <br class="responsive-br" /> Features</h1>
-
-                <p>Erat dolore consequuntur facere consectetuer beatae beatae habitant conubia porttitor ridiculus cillum animi hic enim dolor, excepteur sapienteriav perspiciatis aliquet.</p>
-
+  return (
+    <>
+      <BrowserRouter>
+        <section className="solutions-section">
+          <div className="solutions-container container">
+            <h2 className="solutions-title container">
+              Our <span>Solutions</span> & <br class="responsive-br" /> Features
+            </h2>
+            <p className="solutions-subtitle">
+              Erat dolore consequuntur facere consectetuer beatae beatae
+              habitant conubia porttitor ridiculus cillum animi hic enim dolor,
+              excepteur sapienteriav perspiciatis aliquet.
+            </p>
+            <div className="solutions-cards">
+              {solutionsData.map((item) => (
+                <div className="solution-card" key={item.id}>
+                  <img src={ServiceBG} alt="service" className="bg-image" />
+                  <div className="card-text">
+                    <div className="solution-icon">
+                      <div className="card-style">
+                        <div className={`shapes ${item.shapeClass}`}>
+                          <img src={item.icon} alt="card-logo" className="fg-image" />
+                        </div>
+                        <div className="number">
+                          <h2>{String(item.id).padStart(2, "0")}</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <h2>{item.title}</h2>
+                    <p>
+                      Assumenda maecenas senectus, dignissimos phasellus recusandae felis
+                      venenatis distinctio netus convallis? Odit volutpat per.
+                    </p>
+                    <div className="learn-more-link">
+                      <Link to="/learn">Learn more...</Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
+          </div>
+        </section>
+      </BrowserRouter>
+    </>
+  );
+};
 
-            <div className=" solutions-cards-div">
-
-                <div className="solution-card">
-                    <div className="card-text">
-                        <div className="solution-icon">
-                            <div className="card-style">
-                                <div className="shapes">shapes</div><div className="number"><h2>01</h2></div>
-                            </div>
-
-                        </div>
-                        <h2>Email Marketing</h2>
-                        <p>Assumenda maecenas senectus, dignissimos phasellus recusandae felis venenatis distinctio netus convallis? Odit volutpat per.</p>
-                        <div className="learn-more-link">
-                            <Link to="/learn">LEARN MORE...</Link>
-                        </div>
-                    
-                    </div>
-                </div>
-
-                <div className="solution-card">
-                    <div className="card-text">
-                        <div className="solution-icon">
-                            <div className="card-style">
-                                <div className="shapes">shapes</div><div className="number"><h2>02</h2></div>
-                            </div>
-
-                        </div>
-                        <h2>SEO Management</h2>
-                        <p>Assumenda maecenas senectus, dignissimos phasellus recusandae felis venenatis distinctio netus convallis? Odit volutpat per.</p>
-                        <div className="learn-more-link">
-                            <Link to="/learn">LEARN MORE...</Link>
-                        </div>
-                    
-                    </div>
-                </div>
-
-                <div className="solution-card">
-                    <div className="card-text">
-                        <div className="solution-icon">
-                            <div className="card-style">
-                                <div className="shapes">shapes</div><div className="number"><h2>03</h2></div>
-                            </div>
-
-                        </div>
-                        <h2>Content Writing</h2>
-                        <p>Assumenda maecenas senectus, dignissimos phasellus recusandae felis venenatis distinctio netus convallis? Odit volutpat per.</p>
-                        <div className="learn-more-link">
-                            <Link to="/learn">LEARN MORE...</Link>
-                        </div>
-                    
-                    </div>
-                </div>
-
-                <div className="solution-card">
-                    <div className="card-text">
-                        <div className="solution-icon">
-                            <div className="card-style">
-                                <div className="shapes">shapes</div><div className="number"><h2>04</h2></div>
-                            </div>
-
-                        </div>
-                        <h2>Business Strategy</h2>
-                        <p>Assumenda maecenas senectus, dignissimos phasellus recusandae felis venenatis distinctio netus convallis? Odit volutpat per.</p>
-                        <div className="learn-more-link">
-                            <Link to="/learn">LEARN MORE...</Link>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="solution-card">
-                    <div className="card-text">
-                        <div className="solution-icon">
-                            <div className="card-style">
-                                <div className="shapes">shapes</div><div className="number"><h2>05</h2></div>
-                            </div>
-
-                        </div>
-                        <h2>Media Management</h2>
-                        <p>Assumenda maecenas senectus, dignissimos phasellus recusandae felis venenatis distinctio netus convallis? Odit volutpat per.</p>
-                        <div className="learn-more-link">
-                            <Link to="/learn">LEARN MORE...</Link>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="solution-card">
-                    <div className="card-text">
-                        <div className="solution-icon">
-                            <div className="card-style">
-                                <div className="shapes">shapes</div><div className="number"><h2>06</h2></div>
-                            </div>
-
-                        </div>
-                        <h2>Product Management</h2>
-                        <p>Assumenda maecenas senectus, dignissimos phasellus recusandae felis venenatis distinctio netus convallis? Odit volutpat per.</p>
-                        <div className="learn-more-link">
-                            <Link to="/learn">LEARN MORE...</Link>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        </BrowserRouter>
-        </>
-     );
-}
- 
 export default Solutions;
