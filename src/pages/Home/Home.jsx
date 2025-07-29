@@ -12,7 +12,7 @@ function Home() {
         <Navbar />
         <HeroSection />
         <Empower />
-        {/* <ClientsReview /> */}
+        <ClientsReview />
         <OurSolutions />
         <Testimonial />
         <BlogSection />
