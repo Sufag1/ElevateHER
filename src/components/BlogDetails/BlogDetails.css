@@ -41,6 +41,7 @@
 .article-details p {
     font-size: var(--font-xxs);
     color: var(--text-secondary);
+    padding-top: var(--space-xxs);
 }
 
 .newsletter {

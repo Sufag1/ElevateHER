@@ -22,17 +22,21 @@
 
 .blog-article-img {
   position: relative;
+  height: 200px;
 }
 
 .blog-article-img img {
   width: 100%;
   object-fit: cover;
+  height: 100%;
+  overflow: hidden;
 }
 
 
 
 .blog-article-content {
   padding: var(--space-sm);
+  padding-top: 0;
 }
 
 
@@ -78,6 +82,10 @@
     html {
     font-size: 19px;
   }
+
+  .blog-article-img {
+    height: 400px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -115,6 +123,16 @@
 
   .blog-article-img {
     padding-top: var(--space-sm);
+  }
+
+  @media (min-width: 1024px) {
+    .blog-article {
+      height: 350px;
+    }
+
+    .blog-article-img {
+      height: 90%;
+    }
   }
 
 }
