@@ -1,0 +1,157 @@
+.about-author h2, .popular-posts h2, .newsletter h2{
+    font-size: var(--font-sm);
+    color: #3d3d3d;
+    text-align: center;
+    padding-bottom: var(--space-sm);
+    border-bottom: 3px solid;
+    border-image: linear-gradient(0.25turn, rgba(255, 249, 34), rgba(255, 0, 128), rgba(56, 2, 155, 0));
+    border-image-slice: 1;
+    width: 100%;
+    margin-bottom: var(--space-md);
+}
+
+.about-author p {
+    font-size: var(--font-xxs);
+    color: #444444;
+}
+
+.about-author {
+    margin-bottom: var(--space-lg);
+}
+
+.article-image {
+    width: 100%;
+}
+.article-image img{
+    width: 100%;
+}
+
+.popular-article {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-sm);
+}
+
+.article-details h3{
+    font-size: var(--font-xxs);
+    color: #3d3d3d;
+    width: 100%;
+}
+
+.article-details p {
+    font-size: var(--font-xxs);
+    color: var(--text-secondary);
+}
+
+.newsletter {
+    margin-top: var(--space-lg);
+}
+
+.newsletter input, .newsletter button {
+    width: 100%;
+    height: 45px;
+
+}
+
+.newsletter button {
+    background: #3d3d3d;
+    font-size: 12px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    margin: var(--space-md) 0;
+    gap: var(--space-xs);
+    color: #fff;
+
+    
+}
+
+.social-icons img {
+    width: 15%;
+    padding: var(--space-xxs);
+    border-radius: 100%;
+}
+
+/* .facebook img {
+    background: #0866FF;
+    width: 100%;
+    
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.youtube {
+    background: #FF0000;
+}
+
+.pinterest {
+    background: #E60122;
+}
+
+.tiktok {
+    background: #000000;
+} */
+
+@media (min-width: 593px) {
+    html {
+    font-size: 19px;
+  }
+
+  .social-icons img {
+    width: 10%;
+  }
+
+  .newsletter input, .newsletter button {
+    width: 100%;
+    height: 50px;
+
+}
+.social-icons img {
+    width: 12%;
+    padding: var(--space-xxs);
+
+}
+
+
+}
+
+@media (min-width: 768px) {
+
+    .popular-article {
+        padding: 0;
+        gap: 5px;
+    }
+
+    .about-author h2 {
+        padding-top: var(--space-lg);
+    }
+
+    .newsletter {
+        padding: 0;
+    }
+    .social-icons img {
+        width: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+    .popular-article {
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+        .newsletter input {
+        height: 70px;
+        font-size: 20px;
+    }
+
+    .newsletter button {
+        height: 70px;
+    }
+    
+}

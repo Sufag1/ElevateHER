@@ -1,9 +1,19 @@
 import Home from "./pages/Home/Home";
+import Events from "./pages/Events/Events";
+import IndividualBlog from "./components/BlogIndividual/IndividualBlog";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <div>
-      <Home />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/blogs" element={<Events />}/>
+          <Route path="/blogs/:id" element={<IndividualBlog/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }

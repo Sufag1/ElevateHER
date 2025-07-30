@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+  .events-div {
+    display: flex;
+    width: 100%;
+  }
+  .blogdetails {
+    width: 40%;
+    border-left: 1px solid #c4bcbc;
+  }
+
+}
+

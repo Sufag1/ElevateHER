@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
 import "./Solutions.css";
 import WebDev from "../../assets/code.svg";
 import AI from "../../assets/robot.svg";
 import DevOps from "../../assets/devops.svg";
 import Bizdev from "../../assets/chart.svg";
-import ServiceBG from "../../assets/Solutions-Assets/Services-BG2.png";
+import ServiceBG from "../../assets/Services-BG2.png";
 
 
 const solutionsData = [
@@ -39,7 +38,6 @@ const Solutions = () => {
 
   return (
     <>
-      <BrowserRouter>
         <section className="solutions-section">
           <div className="solutions-container container">
             <h2 className="solutions-title container">
@@ -79,7 +77,6 @@ const Solutions = () => {
             </div>
           </div>
         </section>
-      </BrowserRouter>
     </>
   );
 };
