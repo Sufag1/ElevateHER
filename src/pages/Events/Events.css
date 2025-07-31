@@ -5,8 +5,51 @@
   }
   .blogdetails {
     width: 40%;
-    border-left: 1px solid #c4bcbc;
+    border-left: 1px solid #c9c9c9;
+  }
+
+  .blogswrapper {
+    height: max-content;
+  }
+}
+
+@media (min-width: 1440px) {  
+  .container {
+    max-width: 1320px;
+  }
+
+  
+}
+
+@media (min-width: 375px) {
+   html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 593px) {
+   html {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  html {
+    font-size: 17px;
   }
 
 }
 
+@media (min-width: 1024px) {
+
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 25px;
+  }
+}

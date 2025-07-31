@@ -20,16 +20,28 @@
 }
 
 .article-image {
-    width: 100%;
+    max-width: 100px;
+    max-height: 200px;
+    margin-top: var(--space-sm);
+
 }
 .article-image img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .popular-article {
     display: flex;
     gap: var(--space-md);
     margin-bottom: var(--space-sm);
+}
+
+.article-details {
+    max-height: 200px;
+    display: block;
+    align-items: center;
+    padding-top: var(--space-sm);
 }
 
 .article-details h3{
@@ -55,7 +67,7 @@
 }
 
 .newsletter button {
-    background: #3d3d3d;
+    background: black;
     font-size: 12px;
     color: white;
 }
@@ -75,35 +87,10 @@
     border-radius: 100%;
 }
 
-/* .facebook img {
-    background: #0866FF;
-    width: 100%;
-    
-}
-
-.twitter {
-    background-color: #1DA1F2;
-}
-
-.youtube {
-    background: #FF0000;
-}
-
-.pinterest {
-    background: #E60122;
-}
-
-.tiktok {
-    background: #000000;
-} */
 
 @media (min-width: 593px) {
     html {
     font-size: 19px;
-  }
-
-  .social-icons img {
-    width: 10%;
   }
 
   .newsletter input, .newsletter button {
@@ -111,20 +98,106 @@
     height: 50px;
 
 }
+
+.article-image {
+    height: 100px;
+    width: 300px;
+}
 .social-icons img {
-    width: 12%;
+    width: 10%;
     padding: var(--space-xxs);
 
 }
 
+.article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.article-details {
+    height: 150px;
+}
+
+
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+/* Extra small devices (≥320px) - e.g., very small phones */
+@media (min-width: 320px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
+/* Small devices (≥375px) - e.g., typical phones like iPhone SE */
+@media (min-width: 375px) {
+  .container {
+    max-width: 350px;
+  }
+
+  .social-icons img {
+    width: 12%;
+  }
+}
+
+/* Small-medium devices (≥425px) - e.g., larger phones */
+@media (min-width: 425px) {
+  .container {
+    max-width: 400px;
+  }
+
+  .social-icons img {
+    width: 12%;
+  }
+}
+
+/* Custom breakpoint (≥593px) - e.g., small tablets or landscape phones */
+@media (min-width: 593px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .social-icons img {
+    width: 10%;
+  }
+}
+
+/* Medium devices (≥768px) - e.g., tablets in portrait mode */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .article-details {
+    height: auto;
+  }
+}
+
+/* Large devices (≥1024px) - e.g., tablets in landscape, small laptops */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (≥1440px) - e.g., desktops, wide laptops */
+@media (min-width: 1440px) {  
+  .container {
+    max-width: 1320px;
+  }
 }
 
 @media (min-width: 768px) {
 
     .popular-article {
-        padding: 0;
-        gap: 5px;
+        padding-right: 0;
+        gap: 10px;
     }
 
     .about-author h2 {
@@ -135,13 +208,16 @@
         padding: 0;
     }
     .social-icons img {
-        width: 20%;
+        width: 15%;
   }
 }
 
 @media (min-width: 1024px) {
     .popular-article {
         gap: 2rem;
+    }
+    .social-icons img{
+        width: 12%;
     }
 }
 
@@ -152,7 +228,45 @@
     }
 
     .newsletter button {
-        height: 70px;
+        height: 50px;
+    }
+
+    .social-icons img {
+        width: 10%;
     }
     
+}
+
+
+@media (min-width: 375px) {
+   html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 593px) {
+   html {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  html {
+    font-size: 17px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 25px;
+  }
 }

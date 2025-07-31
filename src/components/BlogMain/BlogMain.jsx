@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const BlogMain = () => {
   return (
     <div className="blog-page">
-      <div className="blog-posts container">
+      <div className="blog-posts">
         {blogPosts.map((post) => (
           <article className="blog-article" key={post.id}>
             <div className="blog-article-img">
@@ -26,7 +26,8 @@ const BlogMain = () => {
               </div>
             </div>
             <div className="blog-article-content">
-              <h2>{post.title}</h2>
+              <h2>{post.title.length > 15 ? post.title.slice(0, 25) + '...' : post.title}</h2>
+
 
                 <div className="blog-info-tab">
                   <div className="date">
@@ -35,11 +36,11 @@ const BlogMain = () => {
                     </span>
                   </div>
                   <div className="content">
-                    <span className="content">Content</span>
+                    <Link to={`/blog/${post.id}`} className="content-link">Content</Link>
                   </div>
                 </div>
-              <p>{post.description}</p>
-              <Link to={`/blogs/${post.id}`}>
+              <p>{post.description.length > 10 ? post.description.slice(0, 25) + '...' : post.description}</p>
+              <Link to={`/blog/${post.id}`}>
                 <button>Read More</button>
               </Link>
             </div>

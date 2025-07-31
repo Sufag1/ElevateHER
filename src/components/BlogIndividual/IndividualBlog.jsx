@@ -1,16 +1,33 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { blogPosts } from "../Blog/Blog";
 import "./IndividualBlog.css";
+import LeftArrow from "../../assets/left-arrow.svg";
 import RightArrow from "../../assets/right-arrow.svg";
+import Share from "../../assets/share.svg";
 import BlogDetails from "../BlogDetails/BlogDetails";
+import { useState } from "react";
+
 
 const IndividualBlog = () => {
   const { id } = useParams();
-  const post = blogPosts.find((post) => post.id === parseInt(id));
+  const currentId = parseInt(id);
+  const post = blogPosts.find((post) => post.id === currentId);
+  const [showShareOptions, setShowShareOptions] = useState(false);
+
+  const toggleShareOptions = () => {
+    setShowShareOptions(!showShareOptions);
+  };
+
   if (!post) return <h2>Blog post not found</h2>;
+
+  // Determine current index and next/prev blog posts
+  const currentIndex = blogPosts.findIndex((post) => post.id === currentId);
+  const prevPost = blogPosts[currentIndex - 1];
+  const nextPost = blogPosts[currentIndex + 1];
+
   return (
     <div className="blog-page container">
-      <div className="main-blog">
+      <div className="main-blog container">
         <div className="blog-article">
           <div className="blog-article-img">
             <img src={post.image} alt={post.title} />
@@ -24,32 +41,90 @@ const IndividualBlog = () => {
                 </span>
               </div>
               <div className="content">
-                <span>Content</span>
-              </div>
+                <Link to={`/blog/${post.id}`} className="content-link">Content</Link>
+            </div>
+
             </div>
             <p>{post.description}</p>
           </div>
         </div>
 
-        <div className="tags-div">
-          <i className="tag">Tags:</i>{" "}
-          <i className="tags">
-            <a href="#">Web Development,</a>
-            <a href="#">Artificial Intelligence,</a>
-            <a href="#">DevOps,</a>
-            <a href="#">Business Development,</a>
-          </i>
-        </div>
-
-        <a href="#">
-          <div className="left-arrow">
-            <img src={RightArrow} alt="left arrow" />
+        <div className="tag-share">
+          <div className="tags-div">
+            <i className="tag">Tags:</i>{" "}
+            <i className="tags">
+              <a href="#">Web Development,</a>
+              <a href="#">Artificial Intelligence,</a>
+              <a href="#">DevOps,</a>
+              <a href="#">Business Development,</a>
+            </i>
           </div>
-        </a>
-        <div className="next-blog">
-          <a href="#" className="next">
-            <span>Next Blog</span>
-          </a>
+          <div className="share">
+  <button onClick={toggleShareOptions} className="share-btn">
+    <img src={Share} alt="Share" />
+  </button>
+
+  {showShareOptions && (
+    <div className="share-options">
+      <a
+        href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Facebook
+      </a>
+      <a
+        href={`https://twitter.com/intent/tweet?url=${window.location.href}&text=${post.title}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Twitter
+      </a>
+      <a
+        href={`https://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}&title=${post.title}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+      <a
+        href={`https://api.whatsapp.com/send?text=${post.title} ${window.location.href}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp
+      </a>
+    </div>
+  )}
+</div>
+
+        </div>
+        <div className="blog-navigation">
+          {prevPost && (
+            <Link to={`/blog/${prevPost.id}`} className="prev-blog">
+              <div className="left-arrow">
+                <img
+                  src={LeftArrow}
+                  alt="left arrow"
+                  style={{ transform: "rotate(180deg)" }}
+                />
+              </div>
+              <span>Previous Blog</span>
+            </Link>
+          )}
+
+          {nextPost && (
+            <Link to={`/blog/${nextPost.id}`} className="next-blog">
+              <span>Next Blog</span>
+              <div className="left-arrow">
+                <img
+                  src={RightArrow}
+                  alt="left arrow"
+                  style={{ transform: "rotate(180deg)" }}
+                />
+              </div>
+            </Link>
+          )}
         </div>
 
         <div className="comment-section">
@@ -63,16 +138,18 @@ const IndividualBlog = () => {
             className="your-input"
             type="text"
             placeholder="Name (required)"
-          /> <br />
+          />{" "}
+          <br />
           <input
             className="your-input"
             type="email"
             placeholder="E-mail (required)"
-          /> <br />
+          />{" "}
+          <br />
           <input className="your-input" type="text" placeholder="Website" />
 
-          <div class="checkbox-line">
-            <input type="checkbox" id="agree" />
+          <div className="checkbox-line">
+            <input type="checkbox" id="agree" placeholder="Comment" />
             <p className="save-my-name">
               Save my name, email, and website in this browser for the next time
               I comment.

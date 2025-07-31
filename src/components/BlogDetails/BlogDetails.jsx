@@ -31,7 +31,7 @@ const BlogDetails = () => {
                     <img src={post.image} alt={post.title} />
                   </div>
                   <div className="article-details">
-                    <h3>{post.title}</h3>
+                    <h3>{post.title.length > 15 ? post.title.slice(0, 45) + '...' : post.title}</h3>
                     <i><p>{post.month}, {post.date}</p></i>
                   </div>
                 </div>

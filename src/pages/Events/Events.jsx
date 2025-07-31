@@ -5,7 +5,8 @@ const Events = () => {
   return (
 
     <>
-    <div className="events-div">
+    <div className="container">
+      <div className="events-div">
         <div className="blogswrapper">
             <BlogMain />
         </div>
@@ -13,6 +14,9 @@ const Events = () => {
             <BlogDetails />
         </div>
     </div>
+
+    </div>
+    
     
     </>
     

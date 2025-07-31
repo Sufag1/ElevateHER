@@ -22,7 +22,7 @@
 
 .blog-article-img {
   position: relative;
-  height: 200px;
+  height: 300px;
 }
 
 .blog-article-img img {
@@ -36,7 +36,6 @@
 
 .blog-article-content {
   padding: var(--space-sm);
-  padding-top: 0;
 }
 
 
@@ -51,7 +50,7 @@
   color: var(--text-secondary);
 }
 
-.date span, .content span, .blog-info-tab {
+.date span, .content span, .blog-info-tab, .content a {
     font-size: var(--font-xxs);
     color: var(--text-secondary);
 }
@@ -78,24 +77,46 @@
   display: none;
 }
 
+.container {
+    max-width: 300px;
+
+}
+
+@media (min-width: 375px) {
+    .container {
+      max-width: 350px;
+  }
+   html {
+    font-size: 18px;
+  }
+}
+
 @media (min-width: 593px) {
     html {
     font-size: 19px;
   }
-
   .blog-article-img {
     height: 400px;
   }
+   html {
+    font-size: 19px;
+  }
+
+
 }
 
 @media (min-width: 768px) {
+
+   html {
+    font-size: 17px;
+  }
   .blog-posts {
     grid-template-columns: 1fr;
     width: 100%;
   }
 
   .blog-article-img {
-    height: 50%;
+    height: 100%;
     width: 100%;
   }
   .blog-article-img img {
@@ -104,7 +125,10 @@
 
   .blog-article {
     display: flex;
+    height: 320px;
   }
+
+  
 
   .blog-info {
     display: none;
@@ -125,15 +149,99 @@
     padding-top: var(--space-sm);
   }
 
-  @media (min-width: 1024px) {
+  .blog-flex {
+    padding-top: var(--space-sm);
+  }
+  
+
+  
+}
+
+
+
+
+ 
+  
+
+@media (min-width: 1024px) {
+
+     html {
+    font-size: 20px;
+  }
     .blog-article {
-      height: 350px;
+      height: 360px;
     }
 
     .blog-article-img {
       height: 90%;
     }
   }
+@media (min-width: 1440px) {
 
+     html {
+    font-size: 25px;
+  }
+    .blog-flex {
+      height: 360px;
+      width: 100%;
+      padding-top: 0;
+    }
+
+    .blog-article-img {
+      height: 85%;
+    }
+
+    .blog-article {
+     height: 390px;
+    }
+  }
+/* Extra small devices (≥320px) - e.g., very small phones */
+@media (min-width: 320px) {
+  .container {
+    max-width: 300px;
+  }
 }
 
+/* Small devices (≥375px) - e.g., typical phones like iPhone SE */
+@media (min-width: 375px) {
+  .container {
+    max-width: 350px;
+  }
+}
+
+/* Small-medium devices (≥425px) - e.g., larger phones */
+@media (min-width: 425px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
+/* Custom breakpoint (≥593px) - e.g., small tablets or landscape phones */
+@media (min-width: 593px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* Medium devices (≥768px) - e.g., tablets in portrait mode */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    max-height: fit-content;
+  }
+  
+}
+
+/* Large devices (≥1024px) - e.g., tablets in landscape, small laptops */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (≥1440px) - e.g., desktops, wide laptops */
+@media (min-width: 1440px) {  
+  .container {
+    max-width: 1320px;
+  }
+}

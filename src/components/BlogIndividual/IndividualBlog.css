@@ -1,3 +1,99 @@
+/* .blog-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.prev-blog,
+.next-blog .next {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.left-arrow img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+} */
+
+.prev-blog, .next-blog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-md);
+}
+
+.prev-blog,
+.next-blog  {
+  text-decoration: none;
+  color: #333;
+}
+
+
+
+.prev-blog span, .next-blog span {
+  padding-top: var(--space-xs);
+  color: var(--text-secondary);
+
+} 
+
+.tag-share {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.share {
+  position: absolute;
+  left: 90%;
+  top: 10%
+}
+.share img{
+  width: 15px;
+}
+
+
+.share-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.share-options {
+  position: absolute;
+  top: 10%;
+  right: 200%;
+  background: linear-gradient(to right, #f43f5e, #f59e0b);
+  border: 1px solid #ccc;
+  padding: var(--space-sm);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.share-options a {
+  text-decoration: none;
+  font-size: var(--font-xs);
+  color: blue;
+}
+
+.share-options a:hover {
+  text-decoration: underline;
+  color: var(--text-secondary);
+  background: linear-gradient(to right, #504e4e, #f59e0b);
+
+}
+
+
 .blog-page {
   background: var(--bg-light);
   padding-top: var(--space-lg);
@@ -15,6 +111,7 @@
   overflow: hidden;
   transition: transform 0.3s ease;
   margin-bottom: var(--space-lg);
+  margin-top: var(--space-lg);
 }
 .blog-article:hover {
   transform: translateY(-5px);
@@ -90,12 +187,15 @@
   border-top: 1px solid #b1acac ;
   border-bottom: 1px solid #b1acac ;
 }
-
+.tags-div i, .tags-div a {
+  font-size: 14px;
+  font-weight: 400;
+}
 .left-arrow {
-  margin-top: var(--space-lg) ;
-  width: 30px;
-  border: 1px solid black;
-  border-radius: 100%;
+  /* margin-top: var(--space-lg) ; */
+  width: 50px;
+  /* border: 1px solid black; */
+  /* border-radius: 100%; */
 }
 .left-arrow img {
   width: 100%;
@@ -160,6 +260,11 @@
   transform: scale(1.05);
 }
 
+.content a {
+      font-size: var(--font-xxs);
+    color: var(--text-secondary);
+}
+
 
 @media (min-width: 593px) {
     html {
@@ -180,19 +285,22 @@
   }
 
   .blog-article-img {
-    height: 100%;
-    width: 150%;
+    height: 88%;
+    width: 100%;
     padding-top: var(--space-sm);
 
     
   }
   .blog-article-img img {
     height: 100%;
+    object-fit: cover;
   }
 
   .blog-article {
     display: flex;
     margin-bottom: 0;
+            margin-top: var(--space-lg);
+
   }
 
   .blog-info {
@@ -212,11 +320,12 @@
 
   .blog-page {
     display: flex;
+
   }
 
   .main-blog{
     width: 100%;
-    border-right: 1px solid black;
+    border-right: 1px solid #c9c9c9;
   }
   .blog-details {
     width: 40%;
@@ -229,6 +338,8 @@
   .text-area {
     width: 70%;
   }
+
+ 
 }
 
 @media (min-width: 1024px) {
@@ -249,6 +360,95 @@
     }
 
     .blog-article {
-      height: 400px;
+      height: 390px;
     }
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+/* Extra small devices (≥320px) - e.g., very small phones */
+@media (min-width: 320px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
+/* Small devices (≥375px) - e.g., typical phones like iPhone SE */
+@media (min-width: 375px) {
+  .container {
+    max-width: 350px;
+  }
+}
+
+/* Small-medium devices (≥425px) - e.g., larger phones */
+@media (min-width: 425px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
+/* Custom breakpoint (≥593px) - e.g., small tablets or landscape phones */
+@media (min-width: 593px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* Medium devices (≥768px) - e.g., tablets in portrait mode */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Large devices (≥1024px) - e.g., tablets in landscape, small laptops */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (≥1440px) - e.g., desktops, wide laptops */
+@media (min-width: 1440px) {  
+  .container {
+    max-width: 1320px;
+  }
+}
+
+
+@media (min-width: 375px) {
+   html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 593px) {
+   html {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  html {
+    font-size: 17px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 25px;
+  }
 }
