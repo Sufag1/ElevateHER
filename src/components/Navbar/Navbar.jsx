@@ -37,6 +37,7 @@
 // };
 
 // export default Navbar;
+
 import React, { useRef, useState, useEffect } from "react";
 import "./Navbar.css";
 import Logo from "../../assets/elevateher_logo_black.svg";
@@ -84,7 +85,7 @@ const Navbar = () => {
                 Home
               </a>
               <a
-                href="#"
+                href="/portfolio"
                 className={activeLink === "Courses" ? "active" : ""}
                 onClick={() => handleLinkClick("Courses")}
               >
