@@ -1,4 +1,3 @@
-import Navbar from "../../components/Navbar/Navbar";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import Empower from "../../components/Empower/empower"
 import ClientsReview from "../../components/Clients-Review/ClientsReview";
@@ -9,7 +8,6 @@ import Testimonial from "../../components/Testimonial/Testimonial";
 function Home() {
   return (
     <div>
-        <Navbar />
         <HeroSection />
         <Empower />
         <ClientsReview />

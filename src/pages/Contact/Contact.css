@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Outfit', sans-serif;
+}
+
+.contact-container{
+    display: flex;
+    padding: 100px 52px;
+    gap: 50px;
+}
+.contact-info{
+    width: 55%;
+}
+.follow h3{
+    color: var(--text-primary);
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-sm);
+}
+.social{
+    display: flex;
+    gap: 10px;
+}
+.social img{
+    width: 35px;
+    height: 35px;
+}
+.contact-info span{
+    color: var(--color-primary);
+}
+.contact-info h2{
+    font-size: var(--font-xxl);
+    color: var(--text-primary);
+    font-weight: 800;
+    margin-bottom: var( --space-sm);
+    font-family: Nunito, sans-serif;
+}
+.contact-info p{
+    font-size: var(--font-xs);
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+.contact-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-top: var(--space-md);
+}
+
+.icon-wrapper {
+  width: 60px;
+  height: 60px;
+  background-color: #f0f3ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-info h3 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--text-primary);
+}
+.contact-card p{
+    font-size: 16px;
+}
+
+ .contact-form{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: var(--font-xxs);
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #888;
+}
+.btn{
+    background: linear-gradient(to right, var(--color-purple), var(--color-purple-light));
+    align-self: flex-start;
+}
+.google{
+    width: 100%;
+    height: 450px;
+}
+
+/* Extra small devices (≥320px) - very small phones */
+@media (min-width: 320px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+  .contact-info h2, p{
+    text-align: center;
+  }
+  .contact-card p{
+    text-align: start;
+  }
+}
+
+/* Small devices (≥375px) */
+@media (min-width: 375px) {
+  .contact-container {
+    padding: 50px 25px;
+  }
+}
+
+/* Small-medium devices (≥425px) */
+@media (min-width: 425px) {
+  .contact-container {
+    padding: 60px 30px;
+  }
+}
+
+/* Custom breakpoint (≥593px) */
+@media (min-width: 593px) {
+  .contact-container {
+    padding: 70px 40px;
+    gap: 40px;
+  }
+}
+
+/* Medium devices (≥768px) - tablets in portrait mode */
+@media (min-width: 986px) {
+  .contact-container {
+    flex-direction: row;
+    padding: 80px 50px;
+  }
+
+  .contact-info {
+    width: 55%;
+  }
+
+  .contact-form {
+    width: 45%;
+  }
+   .contact-info h2{
+    text-align: start;
+    font-size: var(--font-xxl);
+  }
+}
+
+/* Large devices (≥1024px) */
+@media (min-width: 1024px) {
+  .contact-container {
+    padding: 100px 52px;
+  }
+  .contact-info h2{
+    font-size: var(--font-xxl);
+  }
+}
+
+/* Extra large devices (≥1440px) */
+@media (min-width: 1440px) {
+  .contact-container {
+    padding: 100px 72px;
+    gap: 60px;
+  }
+}
+
+
+
