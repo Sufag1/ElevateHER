@@ -1,0 +1,127 @@
+.Ai-container{
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: var(--space-xxl);
+}
+
+.ai-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 400px;
+  text-align: left;
+}
+
+.ai-image-wrapper img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ai-paragraph {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.ai-quote-card {
+  flex: 1 1 400px;
+  /* padding: 2rem; */
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+.ai-quote-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.ai-quote-paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.share-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+.share-text {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #444;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.share-text:hover {
+  color: var(--color-purple);
+}
+
+.share-options-popup {
+  position: absolute;
+  top: -160px;
+  left: 0;
+  background-color: var( --bg-primary);
+  padding: 1rem;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  z-index: 100;
+}
+
+.popup-icon {
+  font-size: 1.2rem;
+  background-color: var( --bg-dark);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.popup-icon:hover {
+  transform: scale(1.1);
+}
+
+.project-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 1.2rem;
+}
+
+.project-info {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  text-align: left; 
+  line-height: 1.6;
+}
+
+.project-info a {
+  text-decoration: underline;
+}
+
+.launch-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start; 
+}
+
+
