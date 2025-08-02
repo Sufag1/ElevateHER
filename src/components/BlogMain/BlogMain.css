@@ -1,3 +1,8 @@
+h1 {
+  text-align: center;
+  color: aqua;
+}
+
 .blog-page {
   background: var(--bg-light);
   padding-top: var(--space-lg);
@@ -7,6 +12,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-lg);
+  margin-top: var(--space-md);
+
 }
 .blog-article {
   background: #fff;
@@ -22,7 +29,7 @@
 
 .blog-article-img {
   position: relative;
-  height: 300px;
+  height: 250px;
 }
 
 .blog-article-img img {
@@ -77,32 +84,42 @@
   display: none;
 }
 
-.container {
-    max-width: 300px;
 
-}
 
 @media (min-width: 375px) {
     .container {
       max-width: 350px;
   }
-   html {
+    html {
     font-size: 18px;
   }
 }
 
+@media (min-width: 425px) {
+  .container {
+    max-width: 400px;
+  }
+}
 @media (min-width: 593px) {
     html {
     font-size: 19px;
   }
   .blog-article-img {
     height: 400px;
+    max-height: 300px;
   }
    html {
     font-size: 19px;
   }
+  .container {
+    max-width: 540px;
+  }
 
-
+  .blog-article-img img{
+    height: 100%;
+    object-fit: cover;
+    
+  }
 }
 
 @media (min-width: 768px) {
@@ -113,6 +130,16 @@
   .blog-posts {
     grid-template-columns: 1fr;
     width: 100%;
+    margin-top: var(--space-md);
+    border-right: 1px solid #C1D3EB;
+  }
+
+  .blog-details {
+    width: 50%;
+  }
+
+  .about-author h2 {
+    padding-top: 0;
   }
 
   .blog-article-img {
@@ -124,124 +151,97 @@
   }
 
   .blog-article {
+    max-height: 400px;
     display: flex;
-    height: 320px;
   }
-
-  
-
   .blog-info {
     display: none;
   }
 
   .blog-info-tab {
-    display: flex;
-    justify-content: space-between;
+    max-height: 400px;
     padding: var(--space-sm) 0;
   }
 
-  .date span{
+  .blog-page {
     display: flex;
-    justify-content: space-between;
   }
 
   .blog-article-img {
     padding-top: var(--space-sm);
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .blog-article-content {
+    height: 100%;
+    /* padding:var(--space-sm); */
   }
 
   .blog-flex {
-    padding-top: var(--space-sm);
+    /* padding-top: var(--space-sm); */
+    width: 100%;
   }
-  
 
-  
-}
+  .blog-article-content h2 {
+    margin-top: 0;
+  }
 
-
-
-
- 
-  
+  .about-author  {
+    padding-top: 0px;
+  }
+  .container {
+    max-width: 720px;
+    max-height: fit-content;
+  } 
+} 
 
 @media (min-width: 1024px) {
 
-     html {
-    font-size: 20px;
-  }
+    html {
+      font-size: 20px;
+    }
     .blog-article {
       height: 360px;
     }
-
     .blog-article-img {
-      height: 90%;
+      max-height: 300px;
     }
-  }
+    .container {
+      max-width: 960px;
+      height: fit-content;
+    }
+
+    
+
+    .blog-article-img img {
+        height: 350px;
+        object-fit: cover;
+}
+}
 @media (min-width: 1440px) {
 
      html {
-    font-size: 25px;
-  }
+      font-size: 25px;
+    }
+
     .blog-flex {
       height: 360px;
       width: 100%;
       padding-top: 0;
     }
 
-    .blog-article-img {
-      height: 85%;
+    .blog-article-img img {
+      height: 100%;
     }
 
-    .blog-article {
-     height: 390px;
-    }
+    .container {
+      max-width: 1320px;
+      height: fit-content;
   }
-/* Extra small devices (≥320px) - e.g., very small phones */
-@media (min-width: 320px) {
-  .container {
-    max-width: 300px;
-  }
-}
 
-/* Small devices (≥375px) - e.g., typical phones like iPhone SE */
-@media (min-width: 375px) {
-  .container {
-    max-width: 350px;
+  .blog-article-content button {
+    margin-top: 5px;
   }
-}
 
-/* Small-medium devices (≥425px) - e.g., larger phones */
-@media (min-width: 425px) {
-  .container {
-    max-width: 400px;
-  }
-}
-
-/* Custom breakpoint (≥593px) - e.g., small tablets or landscape phones */
-@media (min-width: 593px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-/* Medium devices (≥768px) - e.g., tablets in portrait mode */
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-    max-height: fit-content;
-  }
-  
-}
-
-/* Large devices (≥1024px) - e.g., tablets in landscape, small laptops */
-@media (min-width: 1024px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-/* Extra large devices (≥1440px) - e.g., desktops, wide laptops */
-@media (min-width: 1440px) {  
-  .container {
-    max-width: 1320px;
-  }
 }

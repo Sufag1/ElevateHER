@@ -9,11 +9,10 @@ import Twitter from "../../assets/Twitter.svg";
 
 const BlogDetails = () => {
     return ( 
-      <div className="blog-additional-details">
-        <div className="container">
+      <div className="blog-additional-detail">
+        <div>
           <div className="about-author">
             <h2>About Author</h2>
-            {/* <h3>{post.author}</h3> */}
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat vel
               provident et velit eum omnis nesciunt. Placeat provident neque at
@@ -26,7 +25,7 @@ const BlogDetails = () => {
             <h2>Popular Posts</h2>
             <div className="popular-articles">
               {blogPosts.map((post) => (
-                <div className="popular-article container">
+                <div className="popular-article">
                   <div className="article-image ">
                     <img src={post.image} alt={post.title} />
                   </div>
@@ -40,14 +39,14 @@ const BlogDetails = () => {
           </div>
 
           <div className="social-icons">
-              <img className='facebook' src={Facebook} alt="Facebook" />
+              a<img className='facebook' src={Facebook} alt="Facebook" />
               <img className='twitter' src={Twitter} alt="Twitter" />
               <img className='youtube' src={Youtube} alt="Youtube" />
               <img className='pinterest' src={Pinterest} alt="Pinterest" />
               <img className='tiktok' src={TikTok} alt="Tik Tok" />
           </div>
 
-          <div className="newsletter container">
+          <div className="newsletter">
               <h2>Newsletter</h2>
               <input type="email" placeholder='Enter Your Email'/><br />
               <button>SUBMIT</button>

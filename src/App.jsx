@@ -1,20 +1,20 @@
 import Home from "./pages/Home/Home";
-import Events from "./pages/Events/Events";
-import IndividualBlog from "./components/BlogIndividual/IndividualBlog";
+import AllBlogs from "./pages/BlogPage/AllBlogs";
+import OneBlog from "./pages/BlogPage/OneBlog";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 function App() {
   return (
-    <div>
+    <>
       <Router>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/blog" element={<Events />}/>
-          <Route path="/blog/:id" element={<IndividualBlog/>}/>
+          <Route path="/blog" element={<AllBlogs />}/>
+          <Route path="/blog/:id" element={<OneBlog/>}/>
         </Routes>
       </Router>
-    </div>
+    </>
   );
 }
 

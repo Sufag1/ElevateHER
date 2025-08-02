@@ -20,19 +20,20 @@ const IndividualBlog = () => {
 
   if (!post) return <h2>Blog post not found</h2>;
 
-  // Determine current index and next/prev blog posts
   const currentIndex = blogPosts.findIndex((post) => post.id === currentId);
   const prevPost = blogPosts[currentIndex - 1];
   const nextPost = blogPosts[currentIndex + 1];
 
   return (
+    <>
+    <h1>NAVIGATION BAR</h1>
     <div className="blog-page container">
-      <div className="main-blog container">
-        <div className="blog-article">
-          <div className="blog-article-img">
+      <div className="main-blog ">
+        <div className="individual-blog-article">
+          <div className="individual-blog-article-img container">
             <img src={post.image} alt={post.title} />
           </div>
-          <div className="blog-article-content">
+          <div className="individual-blog-article-content">
             <h2>{post.title}</h2>
             <div className="blog-info-tab">
               <div className="date">
@@ -102,27 +103,13 @@ const IndividualBlog = () => {
         <div className="blog-navigation">
           {prevPost && (
             <Link to={`/blog/${prevPost.id}`} className="prev-blog">
-              <div className="left-arrow">
-                <img
-                  src={LeftArrow}
-                  alt="left arrow"
-                  style={{ transform: "rotate(180deg)" }}
-                />
-              </div>
-              <span>Previous Blog</span>
+              <button className="btn blue">Previous</button>
             </Link>
           )}
 
           {nextPost && (
             <Link to={`/blog/${nextPost.id}`} className="next-blog">
-              <span>Next Blog</span>
-              <div className="left-arrow">
-                <img
-                  src={RightArrow}
-                  alt="left arrow"
-                  style={{ transform: "rotate(180deg)" }}
-                />
-              </div>
+              <button className="btn orange">Next</button>
             </Link>
           )}
         </div>
@@ -164,10 +151,12 @@ const IndividualBlog = () => {
         </div>
       </div>
 
-      <div className="blog-details">
+      <div className="blog-details container">
         <BlogDetails />
       </div>
     </div>
+    <h1>FOOTER</h1>
+    </>
   );
 };
 
