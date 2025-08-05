@@ -83,10 +83,7 @@ const Contact = () => {
           loading="lazy">
         </iframe>
       </div>
-      <Footer
-          wavePosition="top"
-          waveColor={{ primary: '#000000', secondary: '#423f3fff', tetiary: '#ffffff' }}
-      />
+      <Footer wavePosition="top"/>
     </div>
   )
 }

@@ -15,10 +15,7 @@ function Home() {
         <OurSolutions />
         <Testimonial />
         <BlogSection />
-        <Footer
-          wavePosition="bottom"
-          waveColor={{ primary: '#000000', secondary: '#423f3fff', tetiary: '#ffffff' }}
-      />
+        <Footer wavePosition="bottom"/>
     </div>
   )
 }
