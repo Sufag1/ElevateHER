@@ -10,6 +10,8 @@ import youtube from "../../assets/youtube.png"
 import instagram from "../../assets/instagram.png"
 import whatsapp from "../../assets/whatsapp.png"
 import pinterest from "../../assets/pinterest.png"
+import Footer from "../../components/Footer/Footer";
+
 
 
 const Contact = () => {
@@ -81,6 +83,10 @@ const Contact = () => {
           loading="lazy">
         </iframe>
       </div>
+      <Footer
+          wavePosition="top"
+          waveColor={{ primary: '#000000', secondary: '#423f3fff', tetiary: '#ffffff' }}
+      />
     </div>
   )
 }

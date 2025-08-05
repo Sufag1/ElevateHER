@@ -4,6 +4,7 @@ import ClientsReview from "../../components/Clients-Review/ClientsReview";
 import OurSolutions from "../../components/OurSolutions/Solutions";
 import BlogSection from "../../components/Blog/Blog";
 import Testimonial from "../../components/Testimonial/Testimonial";
+import Footer from "../../components/Footer/Footer";
 
 function Home() {
   return (
@@ -14,6 +15,10 @@ function Home() {
         <OurSolutions />
         <Testimonial />
         <BlogSection />
+        <Footer
+          wavePosition="bottom"
+          waveColor={{ primary: '#000000', secondary: '#423f3fff', tetiary: '#ffffff' }}
+      />
     </div>
   )
 }
