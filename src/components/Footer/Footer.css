@@ -22,6 +22,7 @@
   gap: var(--space-sm);
   padding: 0 var(--space-sm);
   grid-template-columns: 1fr; 
+  margin-top: 60px;
 }
 
 .footer-box {
