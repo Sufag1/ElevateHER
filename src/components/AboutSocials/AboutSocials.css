@@ -1,5 +1,4 @@
 .About-Socials{
-
     background-color: var(--bg-dark);
     justify-items: center;
 }
@@ -11,7 +10,6 @@
     justify-items: center;
     align-items: center;
     gap: var(--space-lg);
-
 }
 
 .SocialDiv{
@@ -25,9 +23,9 @@
     justify-items: center;
     align-content: center;
     text-align: center;
-    display: flex;                /* new */
-    flex-direction: column;       /* new */
-    justify-content: center;      /* new: center content vertically */
+    display: flex;                
+    flex-direction: column;       
+    justify-content: center;      
     align-items: center;    
     gap: var(--space-xs);   
 }
@@ -61,7 +59,6 @@
     width: 99px;
     height: 101px;
 }
-
 
 .Percentbar-Div{
     text-align: center;
@@ -135,11 +132,7 @@
     transition: width 0.3s ease-in-out;
     }
 
-
 @media (min-width: 320px) {
-.container {
-    max-width: 300px;
-}
 
 .SocialDiv{
         width: 280px;
@@ -165,15 +158,10 @@
 
 }
 
-
-
-
 @media (min-width: 768px) {
     html {
     font-size: 17px;
 }
-
-
 
 .SocialDiv{
     width: 360px;
@@ -236,8 +224,6 @@
 .maintextsocial-span {
     text-align: left;
     }
-
-
 }
 
 @media (min-width: 1440px) {

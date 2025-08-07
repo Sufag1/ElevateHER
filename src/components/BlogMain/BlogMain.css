@@ -207,12 +207,10 @@ h1 {
     .blog-article-img {
       max-height: 300px;
     }
-    .container {
+    /* .container {
       max-width: 960px;
       height: fit-content;
-    }
-
-    
+    } */
 
     .blog-article-img img {
         height: 350px;

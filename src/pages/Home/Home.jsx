@@ -5,9 +5,7 @@ import ClientsReview from "../../components/Clients-Review/ClientsReview";
 import OurSolutions from "../../components/OurSolutions/Solutions";
 import BlogSection from "../../components/Blog/Blog";
 import Testimonial from "../../components/Testimonial/Testimonial";
-// import ClientsReview from "../../components/Clients-Review/ClientsReview";
-// import OurSolutions from "../../components/OurSolutions/Solutions";
-import AboutMain from "../../components/AboutMain/AboutMain";
+
 
 function Home() {
   return (
@@ -15,10 +13,7 @@ function Home() {
         <Navbar />
         <HeroSection />
         <Empower />
-        {/* <ClientsReview /> */}
-        {/* <OurSolutions /> */}
         <Testimonial />
-        <AboutMain />
         <ClientsReview />
         <OurSolutions />
         <BlogSection />
