@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-<<<<<<< HEAD
 
 import Home from "./pages/Home/Home";
 import AllBlogs from "./pages/BlogPage/AllBlogs";
@@ -11,17 +10,13 @@ import Fulstack from './pages/Fullstack-page/Fullstack-page'
 import Frontend from './pages/Frontend-page/Frontend-page'
 import Backend from './pages/Backend-page/Backend-page'
 import Business from './pages/BusinessPage/Business-page'
-=======
-import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
->>>>>>> about-main
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-<<<<<<< HEAD
         <Route path="/blog" element={<AllBlogs />}/>
         <Route path="/blog/:id" element={<OneBlog/>}/>
         <Route path="/portfolio" element={<Portfolio />} />
@@ -31,9 +26,7 @@ function App() {
         <Route path="/Frontend-development" element={ <Frontend />} />
         <Route path="/backend-development" element={<Backend />} />
         <Route path="/business-development" element={<Business />} />
-=======
         <Route path="/about" element={<About />} />
->>>>>>> about-main
       </Routes>
     </Router>
   );

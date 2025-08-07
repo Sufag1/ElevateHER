@@ -1,5 +1,4 @@
 .about-us-section {
-  padding: 3rem 2rem;
   /* padding: 3rem 2rem; */
   background-color: #fff;
   font-family: 'Segoe UI', sans-serif;
@@ -14,21 +13,6 @@
 
 .about-us-left, .about-us-right {
   flex: 1 1 45%;
-}
-
-.about-us-title {
-  font-size: 2.5rem;
-  color: #1a1a3c;
-}
-
-.highlight {
-  color: #ff4fc3;
-}
-
-.about-us-description {
-  margin: 1rem 0;
-  color: #666;
-  line-height: 1.6;
 }
 
 .about-us-title > *,  .about-us-title {
@@ -63,13 +47,6 @@
 
 .about-us-metrics {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.about-us-person-img {
-  width: 180px;
-  border-radius: 1rem;
   justify-content: center;
 }
 
