@@ -1,8 +1,8 @@
 import React from 'react';
-import './AboutUsSection.css'; // Import your CSS here
-import profileImage from '../../assets/testimonial-user.png'; // Replace with actual path
-import engagementImage from '../../assets/social-engagement.png'; // Replace with actual path
-import salesChart from '../../assets/sales-chart.png'; // Optional static image for chart or use a library
+import './AboutUsSection.css'; 
+import profileImage from '../../assets/testimonial-user.png'; 
+import engagementImage from '../../assets/social-engagement.png'; 
+import salesChart from '../../assets/sales-chart.png'; 
 
 const AboutUsSection = () => {
   return (
