@@ -1,7 +1,8 @@
 import Navbar from "../../components/Navbar/Navbar";
 import AboutMain from "../../components/AboutMain/AboutMain";
 import PageHeader from "../../components/PageHeader/PageHeader";
-import { blogPosts } from "../../components/Blog/Blog";
+import AboutSocials from "../../components/AboutSocials/AboutSocials";
+import AboutPartners from "../../components/AboutPartners/AboutPartners";
 
 function About() {
   return (
@@ -9,9 +10,8 @@ function About() {
         <Navbar />
         <PageHeader />
         <AboutMain />
-        blogPosts.map(() => {
-          
-        })
+        <AboutSocials />
+        <AboutPartners />
     </div>
   )
 }

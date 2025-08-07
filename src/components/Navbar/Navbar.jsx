@@ -60,7 +60,7 @@ const Navbar = () => {
                 Events
               </a>
               <Link
-                to="/about"
+                to="/About"
                 className={activeLink === "About Us" ? "active" : ""}
                 onClick={() => handleLinkClick("About Us")}
               >

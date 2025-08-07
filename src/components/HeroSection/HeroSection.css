@@ -28,7 +28,7 @@
 
 .rotating-word {
   background: linear-gradient(to right, #f43f5e, #f59e0b);
-  -webkit-background-clip: text;
+  /*-webkit-background-clip: text;*/
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
