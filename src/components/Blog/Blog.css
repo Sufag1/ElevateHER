@@ -29,6 +29,7 @@
 } */
 
 .blog-subtitle {
+  font-size: var(--font-xxs);
   text-align: center;
   margin-top: var(--space-sm);
   margin-bottom: var(--space-lg);

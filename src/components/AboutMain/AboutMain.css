@@ -1,5 +1,6 @@
 .about-us-section {
   padding: 3rem 2rem;
+  /* padding: 3rem 2rem; */
   background-color: #fff;
   font-family: 'Segoe UI', sans-serif;
 }
@@ -30,6 +31,36 @@
   line-height: 1.6;
 }
 
+.about-us-title > *,  .about-us-title {
+  text-align: center;
+  font-size: var(--font-md);
+  font-family: 'Outfit','Courier New', Courier, monospace;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.about-us-title {
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+}
+
+.highlight-about {
+   background: linear-gradient(to right, #f43f5e, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.about-us-description {
+  font-size: var(--font-xxs);
+  text-align: center;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--space-md);
+}
+
 .about-us-metrics {
   display: flex;
   align-items: center;
@@ -39,6 +70,11 @@
 .about-us-person-img {
   width: 180px;
   border-radius: 1rem;
+  justify-content: center;
+}
+
+.about-us-person-img {
+  width: 200px;
 }
 
 .about-us-engagement-box {

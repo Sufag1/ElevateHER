@@ -1,0 +1,122 @@
+.Partners-Section {
+    background-color: var(--bg-dark);
+    padding: var(--space-xl) var(--space-sm);
+    }
+
+.Partners-Content {
+    display: flex;
+    flex-direction: column;  /* mobile-first: column */
+    align-items: center;
+    gap: var(--space-md);
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+
+.Partners-Title {
+    font-size: var(--font-lg);
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    }
+
+.Partners-Title span {
+    color: var(--color-primary);
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    }
+
+.Partners-Carousel {
+    overflow: hidden;
+    width: 100%;
+    }
+
+.Partners-Logos {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    animation: scroll 20s linear infinite;
+    }
+
+.Partners-Logos img {
+    height: 40px;
+    flex-shrink: 0;
+    }
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+    }
+
+@media (min-width: 320px) {
+    .Partners-Title {
+        font-size: var(--font-lg);
+    }
+.Partners-Logos img {
+        height: 40px;
+    }
+    }
+
+@media (min-width: 375px) {
+    .Partners-Title {
+        font-size: var(--font-xl);
+    }
+    .Partners-Logos img {
+        height: 45px;
+    }
+    }
+
+@media (min-width: 593px) {
+    .Partners-Title {
+        font-size: var(--font-xl);
+    }
+    .Partners-Logos img {
+        height: 50px;
+    }
+    }
+
+@media (min-width: 768px) {
+            html {
+        font-size: 17px;
+    }
+
+.Partners-Content {
+        flex-direction: row;  /* switch to row on tablet+ */
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-lg);
+    }
+
+.Partners-Title {
+        text-align: left;
+        font-size: var(--font-xxl);
+    }
+
+.Partners-Logos img {
+        height: 55px;
+    }
+    }
+
+@media (min-width: 1024px) {
+
+            html {
+        font-size: 20px;
+    }
+
+.Partners-Title {
+        font-size: var(--font-xxl);
+    }
+    .Partners-Logos img {
+        height: 60px;
+    }
+    }
+
+@media (min-width: 1440px) {
+        html {
+        font-size: 25px;
+    }
+    .Partners-Logos img {
+        height: 65px;
+    }
+    }
