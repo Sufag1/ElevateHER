@@ -3,7 +3,7 @@ import eventImage1 from '../../assets/event-1.jpeg'
 import eventImage2 from '../../assets/event-2.jpeg'
 import eventImage3 from '../../assets/event-3.jpeg'
 
-const blogPosts = [
+export const blogPosts = [
   {
     id: 1,
     tag: "AI",
