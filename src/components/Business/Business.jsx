@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./Business.css";
+import '../AI/AI.css';
+
 import {
   FaFacebookF,
   FaTwitter,

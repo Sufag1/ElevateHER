@@ -105,14 +105,14 @@
 /* Large devices (≥1024px) - e.g., tablets in landscape, small laptops */
 @media (min-width: 1024px) {
   .container {
-    max-width: 960px !important;
+    max-width: 960px ;
   }
 }
 
 /* Extra large devices (≥1440px) - e.g., desktops, wide laptops */
 @media (min-width: 1440px) {  
   .container {
-    max-width: 1320px !important;
+    max-width: 1320px ;
   }
 }
 
