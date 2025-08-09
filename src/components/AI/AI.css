@@ -184,12 +184,7 @@
     margin: 0 4px;
   }
 }
-@media (min-width: 375px) {
-  .container {
-    max-width: 350px;
-    /* margin: 0 auto; */
-  }
-}
+
 
 @media (min-width: 375px) {
   html {
@@ -199,9 +194,7 @@
 
 @media (min-width: 593px) {
 
-  .container {
-    max-width: 540px;
-  }
+  
 
   html {
     font-size: 19px;
@@ -212,10 +205,7 @@
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-  
+
 
   html {
     font-size: 17px;
@@ -234,13 +224,12 @@
   .divider-desk-con{
     display: grid;
     grid-template-columns: 70% 30%;
+    gap: 30px;
   }
 }
 
 @media (min-width: 1440px) {
-  .container {
-    max-width: 1320px;
-  }
+  
 
   html {
     font-size: 25px;

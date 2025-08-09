@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // <-- for navigation
-import "./Fullstack.css";
+import '../AI/AI.css';
 
 import eventImage4 from '../../assets/fullstack.png';
 import Reactpic from '../../assets/react-project.png'
