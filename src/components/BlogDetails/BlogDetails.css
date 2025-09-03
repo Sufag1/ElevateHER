@@ -40,6 +40,13 @@
     gap: var(--space-md);
     margin-bottom: var(--space-sm);
     max-height: 100px;
+    text-decoration: none; 
+    color: inherit
+}
+
+.popular-article:hover {
+  background: rgba(0, 0, 0, 0.05); 
+  cursor: pointer;
 }
 
 .article-details {
@@ -78,19 +85,29 @@
 }
 
 .social-icons {
-    display: flex;
-    margin: var(--space-md) 0;
-    gap: var(--space-xs);
-    color: #fff;
-
-    
+  margin-top: var(--space-lg);
 }
 
-.social-icons img {
-    width: 15%;
-    padding: var(--space-xxs);
-    border-radius: 100%;
+.social-icons a {
+  display: inline-block;
+  width: 15%;
+  padding: var(--space-xxs);
+  border-radius: 100%;
+  transition: transform 0.2s ease, background 0.3s ease;
 }
+
+.social-icons a img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.social-icons a:hover {
+  background: rgba(0, 0, 0, 0.1); 
+  transform: scale(1.3); 
+}
+
+
 
 @media (min-width: 320px) {
   .container {
@@ -116,8 +133,8 @@
     max-width: 400px;
   }
 
-  .social-icons img {
-    width: 12%;
+  .social-icons a img {
+    width: 90%;
   }
 }
 
@@ -137,9 +154,8 @@
       height: 100px;
       width: 300px;
   }
-  .social-icons img {
-      width: 10%;
-      padding: var(--space-xxs);
+  .social-icons a img {
+      width: 70%;
 
   }
 
@@ -185,13 +201,18 @@
     .newsletter {
         padding: 0;
     }
-    .social-icons img {
-        width: 18%;
+    .social-icons a img {
+        width: 100%;
   }
 
     .social-icons {
       margin-top: 100px;
       margin-bottom: 0;
+      
+    }
+
+    .social-icons a {
+      width: 20%;
     }
 }
 
@@ -207,7 +228,7 @@
       gap: 2rem;
       max-height: 500px;
   }
-  .social-icons img{
+  .social-icons a{
       width: 18%;
   }
 
@@ -233,7 +254,7 @@
         height: 50px;
     }
 
-    .social-icons img {
+    .social-icons a {
         width: 18%;
     }   
 

@@ -152,7 +152,7 @@ h1 {
 
   .blog-article {
     max-height: 400px;
-    display: flex;
+    display: block;
   }
   .blog-info {
     display: none;
@@ -170,16 +170,14 @@ h1 {
   .blog-article-img {
     padding-top: var(--space-sm);
     width: 100%;
-    max-height: 200px;
+    max-height: 300px;
   }
 
   .blog-article-content {
     height: 100%;
-    /* padding:var(--space-sm); */
   }
 
   .blog-flex {
-    /* padding-top: var(--space-sm); */
     width: 100%;
   }
 
@@ -203,19 +201,21 @@ h1 {
     }
     .blog-article {
       height: 360px;
+      display: flex;
     }
     .blog-article-img {
       max-height: 300px;
     }
-    /* .container {
-      max-width: 960px;
-      height: fit-content;
-    } */
+   
 
     .blog-article-img img {
         height: 350px;
         object-fit: cover;
-}
+    }
+
+    .blog-article-content button {
+      margin-top: 0;
+    }
 }
 @media (min-width: 1440px) {
 
