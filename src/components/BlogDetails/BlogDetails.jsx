@@ -37,7 +37,7 @@ const BlogDetails = () => {
                       ? post.title.slice(0, 45) + '...' 
                       : post.title}
                   </h3>
-                  <i><p>{post.month}, {post.date}</p></i>
+                  <i><p>{post.month},{post.date}</p></i>
                 </div>
               </Link>
             ))}

@@ -40,7 +40,6 @@ const BlogMain = () => {
                   <div className="content">
                     <Link to={`/blog/${post.id}`} className="content-link">Content</Link>
                   </div>
-                 
                 </div>
                 <div className="post-button">
                   <p>{post.description.length > 10 ? post.description.slice(0, 55) + '...' : post.description}</p>
