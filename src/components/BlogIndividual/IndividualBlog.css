@@ -1,10 +1,17 @@
 
 .blog-navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: var(--space-md) 0;
 }
 
+.prev-blog {
+  margin-right: auto;
+}
+
+.next-blog {
+  margin-left: auto;
+}
 .tag-share {
   display: flex;
   align-items: center;
@@ -319,7 +326,13 @@
     width: 70%;
   }
 
- 
+  .next-blog {
+    margin-right: var(--space-md);
+  }
+
+  .tag-share {
+    margin-top: var(--space-md);
+  }
 }
 
 @media (min-width: 1024px) {
