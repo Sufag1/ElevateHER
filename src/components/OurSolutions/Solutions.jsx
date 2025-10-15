@@ -37,6 +37,7 @@ const solutionsData = [
 const Solutions = () => {
 
   return (
+<<<<<<< HEAD
     <>
         <section className="solutions-section">
           <div className="solutions-container container">
@@ -62,22 +63,53 @@ const Solutions = () => {
                           <h2>{String(item.id).padStart(2, "0")}</h2>
                         </div>
                       </div>
+=======
+    <section className="solutions-section">
+      <div className="solutions-container container">
+        <h2 className="solutions-title container">
+          Our <span>Solutions</span> & <br className="responsive-br" /> Features
+        </h2>
+        <p className="solutions-subtitle">
+          Erat dolore consequuntur facere consectetuer beatae beatae
+          habitant conubia porttitor ridiculus cillum animi hic enim dolor,
+          excepteur sapienteriav perspiciatis aliquet.
+        </p>
+        <div className="solutions-cards">
+          {solutionsData.map((item) => (
+            <div className="solution-card" key={item.id}>
+              <img src={ServiceBG} alt="service" className="bg-image" />
+              <div className="card-text">
+                <div className="solution-icon">
+                  <div className="card-style">
+                    <div className={`shapes ${item.shapeClass}`}>
+                      <img src={item.icon} alt="card-logo" className="fg-image" />
+>>>>>>> origin/footer
                     </div>
-                    <h2>{item.title}</h2>
-                    <p>
-                      Assumenda maecenas senectus, dignissimos phasellus recusandae felis
-                      venenatis distinctio netus convallis? Odit volutpat per.
-                    </p>
-                    <div className="learn-more-link">
-                      <Link to="/learn">Learn more...</Link>
+                    <div className="number">
+                      <h2>{String(item.id).padStart(2, "0")}</h2>
                     </div>
                   </div>
                 </div>
-              ))}
+                <h2>{item.title}</h2>
+                <p>
+                  Assumenda maecenas senectus, dignissimos phasellus recusandae felis
+                  venenatis distinctio netus convallis? Odit volutpat per.
+                </p>
+                <div className="learn-more-link">
+                  <Link to="/learn">Learn more...</Link>
+                </div>
+              </div>
             </div>
+<<<<<<< HEAD
           </div>
         </section>
     </>
+=======
+          ))}
+        </div>
+      </div>
+    </section>
+>>>>>>> origin/footer
   );
 };
 

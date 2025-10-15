@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .page-header-section {
     background-color: var(--bg-dark);
 }
@@ -5,3 +6,56 @@
 .page-header-container {
     height: 120px;
 }
+=======
+.page-header{
+  position: relative;
+  padding-left: var(--space-xl);
+  padding-right: var(--space-lg);
+  padding-top: var(--space-xl);
+  text-align: center;
+  height: 250px;
+  background-color: #EFF2FB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-header h1 {
+    font-size: var(--font-xxl);
+    color: var(--text-primary);
+    z-index: 2;
+    position: relative;
+  }
+.bg-icon{
+  position: absolute;
+}
+ .blue-star {
+    top: 150px;
+    left: 10%;
+  }
+  
+  .small-circle {
+    top: 30px;
+    left: 13%;
+  }
+  
+  .big-circle {
+    top: 180px;
+    left: 28%;
+  }
+  
+  .pink-star {
+    top: 55%;
+    right: 10%;
+  }
+  
+  .dots {
+    top: 50px;
+    left: 55%;
+  }
+  
+  .rounded-circle {
+    top: 0%;
+    left: 95%;
+  }
+
+>>>>>>> origin/footer

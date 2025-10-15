@@ -1,11 +1,12 @@
 import React, { useRef, useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import Logo from "../../assets/elevateher_logo_black.svg";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
+  const location = useLocation();
 
   useEffect(() => {
     if (menuRef.current) {
@@ -17,11 +18,30 @@ const Navbar = () => {
     }
   }, [menuOpen]);
 
+  // Automatically highlight active link based on current route
   const [activeLink, setActiveLink] = useState("Home");
 
-  const handleLinkClick = (linkName) => {
-    setActiveLink(linkName);
-  };
+  useEffect(() => {
+    switch (location.pathname) {
+      case "/":
+        setActiveLink("Home");
+        break;
+      case "/portfolio":
+        setActiveLink("Courses");
+        break;
+      case "/events":
+        setActiveLink("Events");
+        break;
+      case "/about":
+        setActiveLink("About Us");
+        break;
+      case "/contact":
+        setActiveLink("Contact Us");
+        break;
+      default:
+        setActiveLink("");
+    }
+  }, [location.pathname]);
 
   return (
     <header className="navbar-section">
@@ -31,52 +51,61 @@ const Navbar = () => {
           <div className="navbar-logo">
             <img src={Logo} alt="Logo" className="logo-icon" />
           </div>
+
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
-          </div>  
+          </div>
+
           <div className="mobile-menu-wrapper" ref={menuRef}>
             <nav className="navbar-links">
               <Link
                 to="/"
                 className={activeLink === "Home" ? "active" : ""}
-                onClick={() => handleLinkClick("Home")}
+                onClick={() => setMenuOpen(false)}
               >
                 Home
               </Link>
-              <a
-                href="/portfolio"
+
+              <Link
+                to="/portfolio"
                 className={activeLink === "Courses" ? "active" : ""}
-                onClick={() => handleLinkClick("Courses")}
+                onClick={() => setMenuOpen(false)}
               >
                 Courses
-              </a>
-              <a
-                href="#"
+              </Link>
+
+              <Link
+                to="/events"
                 className={activeLink === "Events" ? "active" : ""}
-                onClick={() => handleLinkClick("Events")}
+                onClick={() => setMenuOpen(false)}
               >
                 Events
-              </a>
+              </Link>
+
               <Link
-                to="/About"
+                to="/about"
                 className={activeLink === "About Us" ? "active" : ""}
-                onClick={() => handleLinkClick("About Us")}
+                onClick={() => setMenuOpen(false)}
               >
                 About Us
               </Link>
-              <a
-                href="#"
+
+              <Link
+                to="/contact"
                 className={activeLink === "Contact Us" ? "active" : ""}
-                onClick={() => handleLinkClick("Contact Us")}
+                onClick={() => setMenuOpen(false)}
               >
                 Contact Us
-              </a>
+              </Link>
             </nav>
             <div className="navbar-bottom-border"></div>
           </div>
-          <button className="get-started">Get Started</button>
+
+          <Link to="/get-started">
+            <button className="get-started">Get Started</button>
+          </Link>
         </div>
       </div>
     </header>
