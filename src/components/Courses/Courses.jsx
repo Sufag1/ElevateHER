@@ -50,7 +50,6 @@ function Courses() {
 
   return (
     <section className="container">
-      <div className="replacement-div">Header</div>
 
       <div className="latest-projects-section">
         <h2 className="latest-projects-heading">

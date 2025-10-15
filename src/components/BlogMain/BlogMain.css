@@ -12,7 +12,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-lg);
-  margin-top: var(--space-md);
+  margin-top: var(--space-x);
 
 }
 .blog-article {
@@ -21,6 +21,8 @@ h1 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   overflow: hidden;
   transition: transform 0.3s ease;
+  margin-top: var(--space-xxl);
+
 }
 
 .blog-article:hover {
@@ -222,6 +224,7 @@ h1 {
      html {
       font-size: 25px;
     }
+
 
     .blog-flex {
       height: 360px;

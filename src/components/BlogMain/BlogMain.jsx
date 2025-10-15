@@ -2,12 +2,16 @@ import { blogPosts } from '../Blog/Blog';
 import "./BlogMain.css";
 import { Link } from 'react-router-dom';
 import BlogDetails from '../BlogDetails/BlogDetails';
+import NavBar from '../Navbar/Navbar';
 
 
 const BlogMain = () => {
   return (
       <>
-    <h1>NAVIGATION BAR</h1>
+    <div style={{ marginBottom: 'var(--space-xl)' }}>
+      <NavBar />
+    </div>
+
     <div className="blog-page container">
       <div className="blog-posts ">
         {blogPosts.map((post) => (
