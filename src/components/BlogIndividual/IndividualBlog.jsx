@@ -7,6 +7,12 @@ import Share from "../../assets/share.svg";
 import BlogDetails from "../BlogDetails/BlogDetails";
 import { useState } from "react";
 import Footer from '../Footer/Footer.jsx';
+import Facebook from "../../assets/Facebook.svg";
+import Whatsapp from "../../assets/Whatsapp.svg";
+import Youtube from "../../assets/Youtube.svg";
+import Instagram from "../../assets/Instagram.svg";
+import LinkedIn from "../../assets/LinkedIn.svg";
+
 
 
 const IndividualBlog = () => {
@@ -72,29 +78,38 @@ const IndividualBlog = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Facebook
+        <img src={Facebook} alt="facebook" />
       </a>
       <a
         href={`https://twitter.com/intent/tweet?url=${window.location.href}&text=${post.title}`}
         target="_blank"
         rel="noopener noreferrer"
       >
-        Twitter
+        <img src={Whatsapp} alt="whatsapp" />
       </a>
+
       <a
-        href={`https://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}&title=${post.title}`}
+        href={`https://www.youtube.com/sharer/sharer.php?u=${window.location.href}`}
         target="_blank"
         rel="noopener noreferrer"
       >
-        LinkedIn
+        <img src={Youtube} alt="youtube" />
       </a>
       <a
         href={`https://api.whatsapp.com/send?text=${post.title} ${window.location.href}`}
         target="_blank"
         rel="noopener noreferrer"
       >
-        WhatsApp
+        <img src={Instagram} alt="instagram" />
       </a>
+      <a
+        href={`https://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}&title=${post.title}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={LinkedIn} alt="linked in" />
+      </a>
+      
     </div>
   )}
 </div>
