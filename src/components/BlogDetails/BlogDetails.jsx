@@ -2,7 +2,7 @@ import { blogPosts } from '../Blog/Blog';
 import "./BlogDetails.css";
 import { Link } from "react-router-dom";
 import Facebook from "../../assets/Facebook.svg";
-import Whatsapp from "../../assets/WhatsApp.svg";
+import Whatsapp from "../../assets/Whatsapp.svg";
 import Youtube from "../../assets/Youtube.svg";
 import Instagram from "../../assets/Instagram.svg";
 import LinkedIn from "../../assets/LinkedIn.svg";
