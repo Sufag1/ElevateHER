@@ -29,7 +29,7 @@ const Navbar = () => {
       case "/portfolio":
         setActiveLink("Courses");
         break;
-      case "/events":
+      case "/blog":
         setActiveLink("Events");
         break;
       case "/about":
@@ -77,7 +77,7 @@ const Navbar = () => {
               </Link>
 
               <Link
-                to="/events"
+                to="/blog"
                 className={activeLink === "Events" ? "active" : ""}
                 onClick={() => setMenuOpen(false)}
               >

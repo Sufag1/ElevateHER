@@ -6,6 +6,7 @@ import RightArrow from "../../assets/right-arrow.svg";
 import Share from "../../assets/share.svg";
 import BlogDetails from "../BlogDetails/BlogDetails";
 import { useState } from "react";
+import Footer from '../Footer/Footer.jsx';
 
 
 const IndividualBlog = () => {
@@ -26,7 +27,6 @@ const IndividualBlog = () => {
 
   return (
     <>
-    <h1>NAVIGATION BAR</h1>
     <div className="blog-page container">
       <div className="main-blog ">
         <div className="individual-blog-article">
@@ -155,7 +155,7 @@ const IndividualBlog = () => {
         <BlogDetails />
       </div>
     </div>
-    <h1>FOOTER</h1>
+    <Footer />
     </>
   );
 };

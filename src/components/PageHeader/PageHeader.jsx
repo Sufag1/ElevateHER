@@ -1,20 +1,4 @@
-import React from 'react'
-<<<<<<< HEAD
-import './PageHeader.css'
-
-function PageHeader() {
-  return (
-    <section className='page-header-section'>
-      <div className="container">
-        <div className="page-header-container">
-        </div>
-      </div>
-    </section>
-  )
-}
-
-export default PageHeader
-=======
+import React from 'react';
 import './PageHeader.css';
 import BlueStar from '../../assets/PageHeader-Assets/BlueStar.svg';
 import SmallCircle from '../../assets/PageHeader-Assets/SmallCircle.svg';
@@ -23,7 +7,7 @@ import PinkStar from '../../assets/PageHeader-Assets/PinkStar.svg';
 import Dots from '../../assets/PageHeader-Assets/dots.svg';
 import RoundedCircle from '../../assets/PageHeader-Assets/RoundedCircle.svg';
 
-function PageHeader() {
+function PageHeader({ title = "Page Title" }) {
   return (
     <div className="page-header">
       <img src={BlueStar} alt="Blue Star" className="bg-icon blue-star" />
@@ -32,10 +16,9 @@ function PageHeader() {
       <img src={Dots} alt="Dots" className="bg-icon dots" />
       <img src={PinkStar} alt="Pink Star" className="bg-icon pink-star" />
       <img src={RoundedCircle} alt="Rounded Circle" className="bg-icon rounded-circle" />
-      <h1>Contact Us</h1>
+      <h1>{title}</h1>
     </div>
-  )
+  );
 }
 
-export default PageHeader
->>>>>>> origin/footer
+export default PageHeader;

@@ -17,7 +17,7 @@ import Footer from "../../components/Footer/Footer";
 const Contact = () => {
   return (
     <div>
-      <PageHeader />
+      <PageHeader title="Contact Us" />
       <div className="contact-container">
         <div className="contact-info">
           <h2>Feel Free To <span>Contact</span> & Get In Touch !</h2>
