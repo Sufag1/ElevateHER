@@ -18,7 +18,6 @@ const Navbar = () => {
     }
   }, [menuOpen]);
 
-  // Automatically highlight active link based on current route
   const [activeLink, setActiveLink] = useState("Home");
 
   useEffect(() => {

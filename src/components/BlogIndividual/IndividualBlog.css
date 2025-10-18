@@ -65,7 +65,7 @@
 
 .blog-page {
   background: var(--bg-light);
-  padding-top: var(--space-lg);
+  /* padding-top: var(--space-lg); */
   padding-bottom: var(--space-lg);
 }
 .blog-posts {
@@ -364,10 +364,6 @@
   .share-options img {
     width: var(--space-md);
   }
-
-  .blog-details {
-    margin-top: 50px;
-  }
  
 }
 
@@ -389,9 +385,7 @@
     .comment-section input {
       font-size: var(--font-xxs);
     }
-    .blog-details {
-      margin-top: 100px;
-  }
+   
   .individual-blog-article {
     margin-top: 160px;
   }

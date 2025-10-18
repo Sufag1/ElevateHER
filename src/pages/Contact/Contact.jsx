@@ -4,12 +4,11 @@ import code from "../../assets/code.svg";
 import phone from "../../assets/phone.png"
 import email from "../../assets/email.png"
 import location from "../../assets/location.png"
-import facebook from "../../assets/facebook.png"
-import twitter from "../../assets/twitter.png"
-import youtube from "../../assets/youtube.png"
-import instagram from "../../assets/instagram.png"
-import whatsapp from "../../assets/whatsapp.png"
-import pinterest from "../../assets/pinterest.png"
+import Facebook from "../../assets/Facebook.svg"
+import Youtube from "../../assets/youtube.png"
+import Instagram from "../../assets/instagram.png"
+import Whatsapp from "../../assets/Whatsapp.svg"
+import LinkedIn from "../../assets/LinkedIn.svg"
 import Footer from "../../components/Footer/Footer";
 
 
@@ -63,12 +62,42 @@ const Contact = () => {
           <div className="follow">
             <h3>Follow us on social media:</h3>
             <div className="social">
-              <img src={facebook} alt="Facebook" />
-              <img src={twitter} alt="Twitter" />
-              <img src={youtube} alt="Youtube" />
-              <img src={instagram} alt="Instagram" />
-              <img src={whatsapp} alt="Whatsapp" />
-              <img src={pinterest} alt="Pinterest" />
+              <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={Facebook} alt="facebook" />
+                    </a>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={Whatsapp} alt="whatsapp" />
+                    </a>
+              
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={Youtube} alt="youtube" />
+                    </a>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={Instagram} alt="instagram" />
+                    </a>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={LinkedIn} alt="linked in" />
+                    </a>
             </div>
           </div>
         </form>

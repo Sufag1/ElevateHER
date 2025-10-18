@@ -27,11 +27,11 @@ const Footer = ({ wavePosition = "bottom" }) => {
           <h3>Useful Links</h3>
           <div className="divider"></div>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/portfolio">Courses</a></li>
+            <li><a href="/blog">Events</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
 

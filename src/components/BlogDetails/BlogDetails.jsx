@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Facebook from "../../assets/Facebook.svg";
 import Whatsapp from "../../assets/Whatsapp.svg";
 import Youtube from "../../assets/Youtube.svg";
-import Instagram from "../../assets/Instagram.svg";
+import Instagram from "../../assets/instagram.png";
 import LinkedIn from "../../assets/LinkedIn.svg";
 
 const BlogDetails = () => {
