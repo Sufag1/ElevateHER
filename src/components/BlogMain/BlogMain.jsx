@@ -51,8 +51,6 @@ const BlogMain = () => {
                     <button>Read More</button>
                   </Link>
                 </div>
-                 
-                
             </div>
             </div>
           </article>
