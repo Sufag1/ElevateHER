@@ -144,8 +144,16 @@
     max-width: 720px;
   }
   .footer-content {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
+
+  .footer-useful {
+    margin-left: 100px;
+  }
+
+  
+
+
 }
 
 @media (min-width: 992px) {
@@ -164,6 +172,14 @@
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
+  }
+
+  .footer-contact {
+    margin-left: 200px;
+  }
+
+  .footer-useful {
+    margin-left: 200px;
   }
 }
 

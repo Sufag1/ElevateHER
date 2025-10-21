@@ -3,7 +3,7 @@
   text-align: center;
 }
 .latest-projects-section {
-  margin-top: var( --space-xxl) ;
+  margin-top: var( --space-xl) ;
     text-align: center; 
     padding: var(--space-xl) var(--space-xm); 
     background-color: var(--bg-light); 
@@ -41,7 +41,7 @@
   
   .project-grid-section {
     padding: 60px 20px; 
-    font-family: Outfit; 
+    font-family: Outfit(woff2), sans-serif; 
   }
   
   .project-grid-container {
@@ -84,18 +84,20 @@
   
   .project-title {
     font-size: var(--font-xs); 
-    font-weight: bold;
+    font-weight: 600;
     color: var(--text-primary);
-    margin: 15px 20px 5px 20px; 
+    margin: 12px 0px 5px 0px;
   }
   
   .project-category {
     font-size: var( --font-xxs);
     color: var(--text-secondary);
-    margin: 0 20px 20px 20px;
-    font-weight: 200; 
+    margin: 0px 0px 20px 0px;
+    font-weight: 600; 
     text-transform: uppercase; 
     letter-spacing: 0.5px;
+    max-width: fit-content;
+    font-style: italic;
   }
   
   @media (max-width: 768px) {
@@ -103,12 +105,11 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
-    .project-title {
-      margin: 12px 15px 5px 15px;
-    }
+
     .project-category {
-      margin: 0 15px 15px 15px;
+      margin: 0 0px 15px 0px;
     }
+
   }
   
   @media (max-width: 480px) {
@@ -151,6 +152,10 @@
     html {
       font-size: 20px;
     }
+
+    .project-category {
+      margin: 0 0px 15px 0px;
+    }
   
   
   }
@@ -158,6 +163,10 @@
   @media (min-width: 1440px) {
     html {
       font-size: 25px;
+    }
+
+    .project-category {
+      margin: 0 0px 15px 0px;
     }
   
   

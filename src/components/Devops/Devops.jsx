@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import eventImage2 from '../../assets/DevOps.png';
+import eventImage2 from '../../assets/DevOps.webp';
 import Reactpic from '../../assets/Devs.jpg'
 import '../AI/AI.css';
 

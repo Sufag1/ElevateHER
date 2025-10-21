@@ -66,6 +66,7 @@
     font-size: var(--font-xxs);
     color: var(--text-secondary);
     padding-top: var(--space-xxs);
+    max-width: fit-content;
 }
 
 .newsletter {
@@ -206,7 +207,6 @@
   }
 
     .social-icons {
-      margin-top: 100px;
       margin-bottom: 0;
       
     }
@@ -214,6 +214,8 @@
     .social-icons a {
       width: 20%;
     }
+
+
 }
 
 @media (min-width: 1024px) {

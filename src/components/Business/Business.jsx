@@ -10,7 +10,7 @@ import {
   FaPaperPlane
 } from "react-icons/fa";
 import { FiShare2 } from "react-icons/fi"; 
-import eventImage6 from '../../assets/business-development.png';
+import eventImage6 from '../../assets/business-development.webp';
 import Reactpic from '../../assets/busi.jpg'
 
 

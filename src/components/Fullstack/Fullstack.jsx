@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // <-- for navigation
 import '../AI/AI.css';
 
-import eventImage4 from '../../assets/fullstack.png';
+import eventImage4 from '../../assets/fullstack.webp';
 import Reactpic from '../../assets/react-project.png'
 import {
   FaFacebookF,

@@ -1,12 +1,12 @@
 import React from "react";
 import "./Courses.css";
 
-import eventImage1 from '../../assets/AI.png';
-import eventImage2 from '../../assets/DevOps.png';
-import eventImage3 from '../../assets/Backend.png';
-import eventImage4 from '../../assets/fullstack.png';
-import eventImage5 from '../../assets/Frontend.png';
-import eventImage6 from '../../assets/business-development.png';
+import eventImage1 from '../../assets/AI.webp';
+import eventImage2 from '../../assets/DevOps.webp';
+import eventImage3 from '../../assets/Backend.webp';
+import eventImage4 from '../../assets/fullstack.webp';
+import eventImage5 from '../../assets/Frontend.webp';
+import eventImage6 from '../../assets/business-development.webp';
 
 function Courses() {
   const courseList = [

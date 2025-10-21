@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import eventImage1 from '../../assets/AI.png';
+import eventImage1 from '../../assets/AI.svg';
 import "./AI.css";
 import {
   FaFacebookF,

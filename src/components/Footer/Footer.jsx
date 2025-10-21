@@ -23,7 +23,7 @@ const Footer = ({ wavePosition = "bottom" }) => {
             professionals, and connect them with international remote jobs.
           </p>
         </div>
-        <div className="footer-box">
+        <div className="footer-box footer-useful">
           <h3>Useful Links</h3>
           <div className="divider"></div>
           <ul>
@@ -35,7 +35,7 @@ const Footer = ({ wavePosition = "bottom" }) => {
           </ul>
         </div>
 
-        <div className="footer-box">
+        <div className="footer-box footer-contact">
           <h3>Contact</h3>
           <div className="divider"></div>
           <p>No. 1A Asma'u Yakubu Street,<br />off Lamido Crescent, Kano, Nigeria</p>
@@ -43,7 +43,7 @@ const Footer = ({ wavePosition = "bottom" }) => {
           <p>Phone: +234 800 000 0000</p>
         </div>
 
-        <div className="footer-box">
+        {/* <div className="footer-box">
           <h3>Sign Up</h3>
           <div className="divider"></div>
           <p>Stay updated with news, programs, and offers from ElevateHer</p>
@@ -51,7 +51,7 @@ const Footer = ({ wavePosition = "bottom" }) => {
             <input type="email" placeholder="Enter Your Email" />
             <button type="submit" className="btn">SUBMIT</button>
           </form>
-        </div>
+        </div> */}
       </div>
 
       <div className="footer-bottom">

@@ -45,6 +45,7 @@ h1 {
 
 .blog-article-content {
   padding: var(--space-sm);
+  padding-top: 0;
 }
 
 
@@ -84,6 +85,11 @@ h1 {
 
 .blog-info-tab {
   display: none;
+}
+
+.blog-article p {
+  max-width: fit-content;
+  text-align: start;
 }
 
 
@@ -138,6 +144,7 @@ h1 {
 
   .blog-details {
     width: 50%;
+    margin-top: 0;
   }
 
   .about-author h2 {
@@ -147,6 +154,7 @@ h1 {
   .blog-article-img {
     height: 100%;
     width: 100%;
+    padding-top: var(--space-sm);
   }
   .blog-article-img img {
     height: 100%;
@@ -177,6 +185,7 @@ h1 {
 
   .blog-article-content {
     height: 100%;
+    padding-top: var(--space-md);
   }
 
   .blog-flex {
@@ -211,12 +220,17 @@ h1 {
    
 
     .blog-article-img img {
-        height: 350px;
+        height: 250px;
         object-fit: cover;
+        padding-top: var(--space-sm);
     }
 
     .blog-article-content button {
       margin-top: 0;
+    }
+
+    .blog-additional-detail {
+      margin-top: 0px;
     }
 
     
@@ -246,5 +260,9 @@ h1 {
   .blog-article-content button {
     margin-top: 5px;
   }
+
+   .blog-details {
+      margin-top: 0px;
+    }
 
 }
