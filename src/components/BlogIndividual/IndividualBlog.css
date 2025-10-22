@@ -380,7 +380,7 @@
     width: var(--space-md);
   }
 
-  .blog-details {
+  .blogdetails {
     margin-top: 110px;
   }
 
@@ -426,17 +426,14 @@
 
 
 
-/* Extra small devices (≥320px) - e.g., very small phones */
 
 
-/* Small devices (≥375px) - e.g., typical phones like iPhone SE */
 @media (min-width: 375px) {
   .container {
     max-width: 350px;
   }
 }
 
-/* Small-medium devices (≥425px) - e.g., larger phones */
 @media (min-width: 425px) {
   .container {
     max-width: 400px;

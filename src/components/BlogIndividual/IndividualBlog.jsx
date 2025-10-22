@@ -33,7 +33,7 @@ const IndividualBlog = () => {
 
   return (
     <>
-    <div className="blog-page container">
+    <div className="blog-page blogpage container">
       <div className="main-blog ">
         <div className="individual-blog-article">
           <div className="individual-blog-article-img container">
@@ -166,7 +166,7 @@ const IndividualBlog = () => {
         </div>
       </div>
 
-      <div className="blog-details container">
+      <div className="blog-details blogdetails container">
         <BlogDetails />
       </div>
     </div>
