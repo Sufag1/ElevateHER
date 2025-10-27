@@ -206,7 +206,7 @@
 
 .navbar-links a:hover,
 .navbar-links a.active {
-  display: none;
+  /* display: none; */
   color: var(--color-accent);
 }
 
@@ -218,7 +218,7 @@
   bottom: -5px;
   height: 2px;
   width: 100%;
-  background: var(--color-accent);
+  /* background: var(--color-accent); */
   border-radius: 2px;
 }
 
