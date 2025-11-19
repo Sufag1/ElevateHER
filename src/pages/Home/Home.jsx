@@ -10,7 +10,7 @@ import Footer from "../../components/Footer/Footer";
 function Home() {
   return (
     <div>
-        <HeroSection />
+        <HeroSection/>
         <Empower />
         <Testimonial />
         <ClientsReview />

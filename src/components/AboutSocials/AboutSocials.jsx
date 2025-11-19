@@ -31,6 +31,10 @@ const AboutSocials = () => {
     return(
         <section className="About-Socials">
             <div className="container Socials-Container">
+
+                <div>
+                    
+                </div>
                 <div className="SocialDiv SocialDiv1">
                         <img src= {Globeicon} alt="Icon of the Globe" className="socialicons worldicon" />
                         <div className="div-maintext">
@@ -41,7 +45,7 @@ const AboutSocials = () => {
                         </div>
                 </div>
                 <div className="SocialDiv SocialDiv2">
-                        <img src= {Thumbsup} alt="Icon of the Globe" className="socialicons Thumbsup icon" />
+                        <img src= {Thumbsup} alt="Icon of the Globe" className="socialicons Thumbsup " />
                         <div className="div-maintext">
                             Trusted by agile Company
                         </div>

@@ -11,7 +11,7 @@ const BlogDetails = () => {
   return ( 
     <div className="blog-additional-detail">
       <div>
-        <div className="about-author">
+        {/* <div className="about-author">
           <h2>About Author</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vel
@@ -42,7 +42,7 @@ const BlogDetails = () => {
               </Link>
             ))}
           </div>
-        </div>
+        </div> */}
 
         <div className="social-icons">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -62,11 +62,11 @@ const BlogDetails = () => {
           </a>
         </div>
 
-        <div className="newsletter">
+        {/* <div className="newsletter">
           <h2>Newsletter</h2>
           <input type="email" placeholder='Enter Your Email'/><br />
           <button>SUBMIT</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

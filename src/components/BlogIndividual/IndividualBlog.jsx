@@ -167,7 +167,7 @@ const IndividualBlog = () => {
       </div>
 
       <div className="blog-details blogdetails container">
-        <BlogDetails />
+        {/* <BlogDetails /> */}
       </div>
     </div>
     <Footer />

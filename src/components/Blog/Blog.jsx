@@ -9,7 +9,7 @@ export const blogPosts = [
     tag: "AI",
     image: eventImage1,
     date: "08",
-    month: "Aug",
+    month: "August",
     title: "7 Steps in Mapping Out an Effective Social Media Strategy for YouTube",
     description:
       "Magna vestibulum aut consequat velit numquam. Assumenda, ridiculus molestie, minim quas officiis,...",
@@ -19,7 +19,7 @@ export const blogPosts = [
     tag: "DevOps",
     image: eventImage2,
     date: "21",
-    month: "Jul",
+    month: "July",
     title: "Twitter is Working on a New Podcast Tab to Facilitate Discovery",
     description:
       "Magna vestibulum aut consequat velit numquam. Assumenda, ridiculus molestie, minim quas officiis,...",

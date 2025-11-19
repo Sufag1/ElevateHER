@@ -15,7 +15,7 @@ const BlogMain = () => {
     <div className="blog-page container">
       <div className="blog-posts ">
         {blogPosts.map((post) => (
-          <article className="blog-article container" key={post.id}>
+          <article className="blog-article container " key={post.id}>
             <div className="blog-article-img" >
               <img src={post.image} alt={post.title} />
             </div>
@@ -38,19 +38,20 @@ const BlogMain = () => {
               
                   <div className="date">
                     <span className="date">
-                      {post.month},{post.date}
+                      • {post.month}, {post.date}
                     </span>
                   </div>
                   <div className="content">
-                    <Link to={`/blog/${post.id}`} className="content-link">Content</Link>
+                    <Link to={`/blog/${post.id}`} className="content-link">• Content</Link>
                   </div>
                 </div>
                 <div className="post-button">
                   <p>{post.description.length > 10 ? post.description.slice(0, 55) + '...' : post.description}</p>
-                  <Link to={`/blog/${post.id}`}>
-                    <button>Read More</button>
-                  </Link>
+                  
                 </div>
+                <Link to={`/blog/${post.id}`}>
+                    <button className='read-btn'>Read More</button>
+                </Link>
             </div>
             </div>
           </article>

@@ -9,7 +9,7 @@ import RoundedCircle from '../../assets/PageHeader-Assets/RoundedCircle.svg';
 
 function PageHeader({ title = "Page Title" }) {
   return (
-    <div className="page-header container">
+    <div className="page-header">
       <img src={BlueStar} alt="Blue Star" className="bg-icon blue-star" />
       <img src={SmallCircle} alt="Small Circle" className="bg-icon small-circle" />
       <img src={BigCircle} alt="Big Circle" className="bg-icon big-circle" />
