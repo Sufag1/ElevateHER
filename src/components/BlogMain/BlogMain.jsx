@@ -16,7 +16,7 @@ const BlogMain = () => {
       <div className="blog-posts ">
         {blogPosts.map((post) => (
           <article className="blog-article container " key={post.id}>
-            <div className="blog-article-img" >
+            <div className="blog-article-img">
               <img src={post.image} alt={post.title} />
             </div>
             <div className="blog-flex">
@@ -58,6 +58,7 @@ const BlogMain = () => {
         ))}
       </div>
       <div className="blog-details container">
+        <h3 className='h3forblogd'>Follow Us On Social Media</h3>
         <BlogDetails />
       </div>
     </div>

@@ -7,22 +7,34 @@ h1, h2, h3 {
   font-family: 'Outfit', sans-serif;
 }
 
+.contact-div {
+  width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
 .contact-container{
+    width: 100%;
     display: flex;
-    padding: 100px 52px;
-    gap: 50px;
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: center;
 }
 .contact-info{
-    width: 55%;
+    width: 100%;
 }
 .follow h3{
+    font-size: var(--font-md);
+    font-weight: 700;
+    line-height: 1.5;
     color: var(--text-primary);
-    margin-top: var(--space-md);
-    margin-bottom: var(--space-sm);
+    font-family: Outfit;
+    text-align: start;
 }
 .social{
     display: flex;
     gap: 10px;
+    margin-top: var(--font-xxs);
 }
 .social img{
     width: 35px;
@@ -37,31 +49,37 @@ h1, h2, h3 {
     font-weight: 800;
     margin-bottom: var( --space-sm);
     font-family: Nunito, sans-serif;
+    text-align: center;
 }
-.contact-info p{
-    font-size: var(--font-xs);
+.contact-info > p{
+    font-size: var(--font-xxs);
     color: var(--text-secondary);
     font-weight: 400;
+    text-align: center;
 }
 .contact-card {
   display: flex;
   align-items: center;
   background-color: #fff;
-  padding: 20px 30px;
+  padding: 10px 10px;
   border-radius: 50px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   margin-top: var(--space-md);
 }
 
+.ccl {
+  margin-bottom: var(--space-lg);
+}
+
 .icon-wrapper {
-  width: 60px;
-  height: 60px;
+  height: 40px;
   background-color: #f0f3ff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
+  margin-right: 5px;
+  flex-shrink: 0;
 }
 
 .icon {
@@ -69,17 +87,20 @@ h1, h2, h3 {
   height: 30px;
 }
 
-.contact-info h3 {
+.contact-card .contact-info h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: var(--font-xxs);
   color: var(--text-primary);
 }
 .contact-card p{
-    font-size: 16px;
+    font-size: var(--font-xxs);
+    text-align: start;
+    max-width: 100%;
 }
 
- .contact-form{
-    width: 45%;
+
+.contact-form{
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
@@ -108,23 +129,14 @@ h1, h2, h3 {
     height: 450px;
 }
 
+.social a img{
+  width: 100%;
+}
+
 /* Extra small devices (≥320px) - very small phones */
 @media (min-width: 320px) {
   .contact-container {
-    flex-direction: column;
     padding: 40px 20px;
-    align-items: center;
-  }
-
-  .contact-info,
-  .contact-form {
-    width: 100%;
-  }
-  .contact-info h2, p{
-    text-align: center;
-  }
-  .contact-card p{
-    text-align: start;
   }
 }
 
@@ -150,7 +162,7 @@ h1, h2, h3 {
   }
 }
 
-/* Medium devices (≥768px) - tablets in portrait mode */
+/* Medium devices (≥986px) - tablets in portrait mode */
 @media (min-width: 986px) {
   .contact-container {
     flex-direction: row;
@@ -164,9 +176,12 @@ h1, h2, h3 {
   .contact-form {
     width: 45%;
   }
-   .contact-info h2{
+  .contact-info h2{
     text-align: start;
     font-size: var(--font-xxl);
+  }
+  .contact-info > p{
+    text-align: start;
   }
 }
 
@@ -187,6 +202,3 @@ h1, h2, h3 {
     gap: 60px;
   }
 }
-
-
-

@@ -5,7 +5,7 @@ import phone from "../../assets/phone.png"
 import email from "../../assets/email.png"
 import location from "../../assets/location.png"
 import Facebook from "../../assets/Facebook.svg"
-import Youtube from "../../assets/youtube.png"
+import Youtube from "../../assets/Youtube.svg"
 import Instagram from "../../assets/instagram.png"
 import Whatsapp from "../../assets/Whatsapp.svg"
 import LinkedIn from "../../assets/LinkedIn.svg"
@@ -15,7 +15,7 @@ import Footer from "../../components/Footer/Footer";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact-div">
       <PageHeader title="Contact Us" />
       <div className="contact-container">
         <div className="contact-info">
@@ -31,7 +31,7 @@ const Contact = () => {
             </div>
             <div class="contact-info">
               <h3>Email Address :</h3>
-              <p>xyz_comapny@example.com</p>
+              <p className="xyz">xyz@example.com</p>
             </div>
           </div>
           <div class="contact-card">
@@ -43,7 +43,7 @@ const Contact = () => {
               <p>+(001)987 654 321 // (+23) 986-897-333</p>
             </div>
           </div>
-          <div class="contact-card">
+          <div class="contact-card ccl">
             <div class="icon-wrapper">
               <img src={location} alt="Email Icon" class="icon" />
             </div>
@@ -112,7 +112,7 @@ const Contact = () => {
           loading="lazy">
         </iframe>
       </div>
-      <Footer wavePosition="top"/>
+      <Footer />
     </div>
   )
 }
