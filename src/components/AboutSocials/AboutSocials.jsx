@@ -35,7 +35,8 @@ const AboutSocials = () => {
                 <div>
                     
                 </div>
-                <div className="SocialDiv SocialDiv1">
+                <div className="soc">
+                    <div className="SocialDiv SocialDiv1">
                         <img src= {Globeicon} alt="Icon of the Globe" className="socialicons worldicon" />
                         <div className="div-maintext">
                             Operating All over the World
@@ -52,7 +53,10 @@ const AboutSocials = () => {
                         <div className="div-othertext">
                                 Occaecati tellus porta occaecat bibendum placeat porta beatae sunt, taciti.
                         </div>
-                </div>        
+                </div>
+
+                </div>
+                        
                 <div className="Percentbar-Div">
                     <h2 className="maintext-social">Giving <span className="maintextsocial-span"> Solution </span> For Social Media</h2>
                     <div className="Socials-sectext">

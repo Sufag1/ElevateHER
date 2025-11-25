@@ -8,7 +8,7 @@ import NavBar from '../Navbar/Navbar';
 const BlogMain = () => {
   return (
       <>
-    <div style={{ marginBottom: 'var(--space-xl)' }}>
+    <div style={{ marginBottom: 'var(--space-md)' }}>
       <NavBar />
     </div>
 

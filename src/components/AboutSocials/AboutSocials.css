@@ -4,7 +4,7 @@
 }
 
 .Socials-Container{
-    padding-top: 50px;
+    padding-top: 0px;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -169,6 +169,11 @@
     font-size: 17px;
 }
 
+.soc {
+    display: flex;
+    gap: 50px;
+}
+
 .SocialDiv{
     width: 250px;
     height: 350px;
@@ -225,25 +230,36 @@
 .Percentbar-Div {
     text-align: left;
     flex: 0 0 auto;
-    width: 374px;
+    width: 370px;
+    padding-right: var(--space-sm);
     }
 
 .maintext-social,
 .maintextsocial-span {
     text-align: left;
+    font-size: var(--font-xl);
+    padding-top: var(--space-md);
     }
 }
+
+.soc {
+    padding-top: var(--space-md);
+}
+
+
 
 @media (min-width: 1440px) {
     html {
     font-size: 25px;
 }
 
+
+
 .Socials-Container{
     flex-direction: row;
     gap: var(--space-md);
     width: 100%;
-    max-width: 1200px;      /* keep it inside your design width */
+    max-width: 100%;      /* keep it inside your design width */
     margin: 0 auto; 
     justify-content: center;
     flex-wrap: nowrap;
@@ -254,7 +270,7 @@
     flex: 1;                /* make them flexible */
     min-width: 250px;
     width: 334px;
-    height: 344px;
+    height: 400px;
     padding: 40px;
     max-height: none;
     min-height: auto;

@@ -6,7 +6,7 @@ import email from "../../assets/email.png"
 import location from "../../assets/location.png"
 import Facebook from "../../assets/Facebook.svg"
 import Youtube from "../../assets/Youtube.svg"
-import Instagram from "../../assets/instagram.png"
+import Instagram from "../../assets/Instagram.svg"
 import Whatsapp from "../../assets/Whatsapp.svg"
 import LinkedIn from "../../assets/LinkedIn.svg"
 import Footer from "../../components/Footer/Footer";
@@ -17,7 +17,7 @@ const Contact = () => {
   return (
     <div className="contact-div">
       <PageHeader title="Contact Us" />
-      <div className="contact-container">
+      <div className="contact-container container">
         <div className="contact-info">
           <h2>Feel Free To <span>Contact</span> & Get In Touch !</h2>
           <p>
@@ -102,7 +102,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-      <div className="google">
+      <div className="google container">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094125!2d144.9537353153109!3d-37.81627974202121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ5JzAwLjYiUyAxNDTCsDU3JzE0LjMiRQ!5e0!3m2!1sen!2sus!4v1614095295417!5m2!1sen!2sus"
           width="100%"
