@@ -80,7 +80,7 @@
   overflow: hidden;
   transition: transform 0.3s ease;
   margin-bottom: var(--space-lg);
-  margin-top: var(--space-lg);
+  margin-top: var(--space-xxl);
 }
 .individual-blog-article:hover {
   transform: translateY(-5px);
