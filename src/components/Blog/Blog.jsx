@@ -44,8 +44,7 @@ const BlogSection = () => {
                 Latest <span className="highlight-blog">Events</span> & <span className="highlight-news">News</span>
             </h2>
             <p className="blog-subtitle">
-                Erat dolore consequuntur facere consectetur beatae beatae habitant conubia porttitor ridiculus cillum
-                animi hic enim dolor, excepteur sapienterav perspiciatis aliquet.
+                Stay updated with our latest workshops, training programs, and success stories that highlight the impact of our initiatives.
             </p>
 
             <div className="blog-cards">

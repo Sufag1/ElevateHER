@@ -110,7 +110,8 @@ const ClientsReview = () => {
                 </div>
                 <div className="secondtextandbtn">
                     <p className="secondtext">
-                        Erat dolore consequuntur facere consectetuer beatae beatae habitant conubia porttitor ridiculus cillum animi hic enim dolor, excepteur.
+                        Hear what our students have to say about their learning experience, growth, and career journey with us.
+                        {/* Erat dolore consequuntur facere consectetuer beatae beatae habitant conubia porttitor ridiculus cillum animi hic enim dolor, excepteur. */}
                     </p>
                     <button className="btn btn-blue">More About Us</button>
                 </div>

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
-import HeroImage from "../../assets/hero-image-with-bg.webp";
+// import HeroImage from "../../assets/hero-image-with-bg.webp";
+// import HeroImage from "../../assets/hero-image.svg";
+import HeroImage from "../../assets/hero-image.png";
 
 const rotatingWords = ["DevOps", "Artificial Intelligence", "Web Development", "Business Development"];
 
@@ -39,7 +41,8 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="hero-subtitle">
-            We train women to excel and connect them to global  remote opportunities around the world.
+            We equip women with in-demand skills and connect <br /> them to global remote careers.
+            {/* We train women to excel and connect them to global remote opportunities around the world. */}
           </p>
           <div className="hero-buttons">
             <button className="btn btn-blue">Get Started</button>

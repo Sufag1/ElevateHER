@@ -8,8 +8,9 @@ function Testimonial() {
           Real <span className="testimonial-highlight">People</span><span>, True Stories</span>
         </h2>
         <p className="testimonial-subtitle">
-          Hear directly from our full-stack development students as they share their journey,
-          growth, and success in our immersive program.
+          Hear from our students and partners as they share their journeys, growth, and career outcomes through our programs.
+          {/* Hear directly from our full-stack development students as they share their journey,
+          growth, and success in our immersive program. */}
         </p>
 
         <div className="testimonial-videos">

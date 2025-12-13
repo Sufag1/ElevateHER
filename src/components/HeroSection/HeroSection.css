@@ -91,6 +91,7 @@
 
 .hero-person {
   width: 250px;
+  transform: scaleX(-1);
 }
 
 @media (min-width: 375px) {

@@ -7,10 +7,10 @@ import Bizdev from "../../assets/chart.svg";
 import ServiceBG from "../../assets/Services-BG2.png";
 
 const solutionsData = [
-  { id: 1, title: "Web Development", icon: WebDev, shapeClass: "webdev" },
-  { id: 2, title: "Artificial Intelligence", icon: AI, shapeClass: "ai" },
-  { id: 3, title: "DevOps", icon: DevOps, shapeClass: "devops" },
-  { id: 4, title: "Business Development", icon: Bizdev, shapeClass: "bizdev" },
+  { id: 1, title: "Web Development", icon: WebDev, shapeClass: "webdev", text: "Learn to build responsive, user-friendly websites and applications while gaining the skills needed for real-world digital projects." },
+  { id: 2, title: "Artificial Intelligence", icon: AI, shapeClass: "ai", text: "Learn to build intelligent, data-driven systems and applications while gaining the skills needed for real-world AI projects."},
+  { id: 3, title: "DevOps", icon: DevOps, shapeClass: "devops", text: "Learn to build, deploy, and maintain scalable systems while developing skills essential for modern IT operations." },
+  { id: 4, title: "Business Development", icon: Bizdev, shapeClass: "bizdev", text: "Gain practical skills in strategy, entrepreneurship, and market development to thrive in the global business landscape." },
 ];
 
 const Solutions = () => {
@@ -18,13 +18,13 @@ const Solutions = () => {
     <section className="solutions-section">
       <div className="solutions-container container">
         <h2 className="solutions-title container">
-          Our <span>Solutions</span> & <br className="responsive-br" /> Features
+          Our <span>Learning</span> <br className="responsive-br" /> Pathways
         </h2>
         <p className="solutions-subtitle">
-          Erat dolore consequuntur facere consectetuer beatae beatae
+          {/* Erat dolore consequuntur facere consectetuer beatae beatae
           habitant conubia porttitor ridiculus cillum animi hic enim dolor,
-          excepteur sapienteriav perspiciatis aliquet.
-        </p>
+          excepteur sapienteriav perspiciatis aliquet. */}
+          Explore structured programs designed to equip women with the skills, confidence, and mentorship needed to excel in digital careers and access global opportunities.        </p>
         <div className="solutions-cards">
           {solutionsData.map((item) => (
             <div className="solution-card" key={item.id}>
@@ -42,8 +42,7 @@ const Solutions = () => {
                 </div>
                 <h2>{item.title}</h2>
                 <p>
-                  Assumenda maecenas senectus, dignissimos phasellus recusandae felis
-                  venenatis distinctio netus convallis? Odit volutpat per.
+                  {item.text}
                 </p>
                 <div className="learn-more-link">
                   <Link to="/learn">Learn more...</Link>

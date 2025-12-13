@@ -1,6 +1,6 @@
 .testimonial-section {
   background: var(--bg-light);
-  padding-top: var(--space-lg);
+  padding-top: var(--space-md);
   padding-bottom: var(--space-lg);
 }
 
@@ -75,6 +75,6 @@
   }
 
   .testimonial-subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
