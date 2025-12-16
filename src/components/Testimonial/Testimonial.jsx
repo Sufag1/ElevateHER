@@ -16,7 +16,7 @@ function Testimonial() {
         <div className="testimonial-videos">
           <div className="video-card">
             <iframe
-              src="https://www.youtube.com/embed/yhUJHuvxIAo"
+              src="https://www.youtube.com/embed/726ZxOhPBH0?si=s4QOLqh_s2WvfcSq"
               title="Student Experience 1"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
