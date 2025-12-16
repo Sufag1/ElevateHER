@@ -139,6 +139,14 @@
   .empowerImpact-description{
   max-width: 700px;
 }
+
+  .engageCard-image-desktop {
+    width: 300px;
+  }
+
+  .engageCard-image {
+    width: 300px;
+  }
   
 }
 
