@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
-// import HeroImage from "../../assets/hero-image-with-bg.webp";
-// import HeroImage from "../../assets/hero-image.svg";
-import HeroImage from "../../assets/hero-image.png";
+import HeroImageSide from "../../assets/hero-image.png";
+import HeroImageFront from "../../assets/hero-straight-png.png";
 
 const rotatingWords = ["DevOps", "Artificial Intelligence", "Web Development", "Business Development"];
 
@@ -26,7 +25,7 @@ const HeroSection = () => {
     <section className="hero">
       <div className="container hero-container">
         <div className="hero-image">
-          <img className="hero-person" src={HeroImage} alt="Hero" />
+          {/* <img className="hero-person" src={HeroImageFront} alt="Hero" /> */}
         </div>
         <div className="hero-right">
           <p className="tagline">
@@ -42,7 +41,6 @@ const HeroSection = () => {
           </h1>
           <p className="hero-subtitle">
             We equip women with in-demand skills and connect <br /> them to global remote careers.
-            {/* We train women to excel and connect them to global remote opportunities around the world. */}
           </p>
           <div className="hero-buttons">
             <button className="btn btn-blue">Get Started</button>

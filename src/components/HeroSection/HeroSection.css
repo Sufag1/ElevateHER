@@ -87,11 +87,16 @@
   align-items: center;
   justify-content: center;
   margin-bottom: var(--space-xxs);
-}
 
-.hero-person {
+  background-image: url("../../assets/hero-straight-png.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   width: 250px;
+  height: 250px;
   transform: scaleX(-1);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 375px) {
@@ -148,6 +153,11 @@
 .hero-person {
   width: 300px;
 }
+.hero-image {
+  background-image: url("../../assets/hero-image.png");
+  width: 320px;
+  height: 320px;
+}
 }
 
 @media (min-width: 1024px) {
@@ -159,10 +169,6 @@
   html {
     font-size: 20px;
   }
-
-.hero-person {
-  width: 350px;
-}
 }
 
 @media (min-width: 1440px) {
