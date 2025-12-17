@@ -1,6 +1,6 @@
 import './empower.css';
-import EasyImage1 from "../../assets/careers-1.png";
-import EasyImage2 from "../../assets/careers-2.png";
+import EasyImage1 from "../../assets/careers-2-1.png";
+import EasyImage2 from "../../assets/careers-1.png";
 
 export default function EmpowerImpact() {
   return (

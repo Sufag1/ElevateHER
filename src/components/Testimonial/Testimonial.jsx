@@ -16,13 +16,13 @@ function Testimonial() {
         <div className="testimonial-videos">
           <div className="video-card">
             <iframe
-              src="https://www.youtube.com/embed/726ZxOhPBH0?si=s4QOLqh_s2WvfcSq"
+              src="https://www.youtube.com/embed/726ZxOhPBH0?si=s4Y2MQmG4EThFThC"
               title="Student Experience 1"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-            <p className="video-caption">Aisha shares how she built her first full-stack app</p>
+            <p className="video-caption">Fatima shares how she built her first full-stack app</p>
           </div>
           <div className="video-card">
             <iframe

@@ -1,5 +1,4 @@
 .about-us-section {
-  /* padding: 3rem 2rem; */
   background-color: #fff;
   font-family: 'Segoe UI', sans-serif;
 }
@@ -36,26 +35,16 @@
 }
 
 .about-us-description {
-  font-size: var(--font-xxs);
   text-align: center;
   color: var(--text-secondary);
-  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: var(--space-md);
 }
 
-/* .about-us-metrics {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  gap: 30px;
-} */
-
 .about-us-person-img {
   width: 100%;
-  padding-bottom: 20px;
-  height: 350px;
+  padding-bottom: 50px;
 }
 
 .about-us-engagement-box {
@@ -154,19 +143,41 @@
   width: 100%;
   gap: 30px;
 }
+
+.about-us-title {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us-person {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us-description {
+    max-width: 600px;
+}
 }
 
 @media (min-width: 1024px) {
-  .about-us-person-img {
-  width: 100%;
-  padding-bottom: 20px;
-  height: 450px;
-}
 
 .about-us-metrics {
   display: flex;
   justify-content: space-around;
   width: 100%;
   gap: 20px;
+}
+
+.about-us-description {
+    max-width: 700px;
+}
+}
+
+@media (min-width: 1440px) {
+
+.about-us-description {
+    max-width: 1000px;
 }
 }

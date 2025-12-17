@@ -46,7 +46,7 @@ const BlogSection = () => {
             <p className="blog-subtitle">
                 Stay updated with our latest workshops, training programs, and success stories that highlight the impact of our initiatives.
             </p>
-
+            
             <div className="blog-cards">
                 {blogPosts.map((post) => (
                 <div className="blog-card" key={post.id}>

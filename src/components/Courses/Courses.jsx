@@ -4,7 +4,7 @@ import "./Courses.css";
 import eventImage1 from '../../assets/AI-png.png';
 import eventImage2 from '../../assets/devops-png.png';
 import eventImage3 from '../../assets/backend-png.png';
-import eventImage4 from '../../assets/fullstack-dev-png.png';
+import eventImage4 from '../../assets/fullstack-second.png';
 import eventImage5 from '../../assets/Frontend-png.png';
 import eventImage6 from '../../assets/business-development-2.png';
 
@@ -53,8 +53,9 @@ function Courses() {
 
       <div className="latest-projects-section">
         <h2 className="latest-projects-heading">
-          <span className="latest-text">Latest</span>
-          <span className="projects-text">Courses</span>
+          <h2 className="empowerImpact-title">
+            Latest <span className="empowerImpact-highlight">Courses</span> 
+          </h2>
         </h2>
         <p className="latest-projects-description">
           Explore our most recent courses designed to equip you with the skills needed in today’s digital world. From beginner-friendly modules to advanced training.
