@@ -47,9 +47,9 @@ const Navbar = () => {
       <div className="navbar">
         <div className="navbar-top-border"></div>
         <div className="navbar-container">
-          <div className="navbar-logo">
+          <a className="navbar-logo" href="/">
             <img src={Logo} alt="Logo" className="logo-icon" />
-          </div>
+          </a>
 
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="bar"></span>

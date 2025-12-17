@@ -17,7 +17,9 @@ const Footer = ({ wavePosition = "bottom" }) => {
 
       <div className="container footer-content">
         <div className="footer-box">
-          <img src={logo} alt="ElevateHer Logo" className="footer-logo" />
+          <a href="/">
+            <img src={logo} alt="ElevateHer Logo" className="footer-logo" />
+          </a>
           <p>
             At ElevateHer, we empower women to become Full-Stack, AI, and DevOps
             professionals, and connect them with international remote jobs.
