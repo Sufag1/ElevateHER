@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
-import HeroImageSide from "../../assets/hero-image.png";
-import HeroImageFront from "../../assets/hero-straight-png.png";
+import HeroImageSide from "../../assets/hero-image.webp";
+import HeroImageFront from "../../assets/hero-straight-png.webp";
 
 const rotatingWords = ["DevOps", "Artificial Intelligence", "Web Development", "Business Development"];
 

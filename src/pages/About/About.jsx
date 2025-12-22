@@ -7,14 +7,20 @@ import Footer from "../../components/Footer/Footer";
 
 function About() {
   return (
+    <>
     <div>
+      <PageHeader title="About Us" />
+    </div>
+    <div  className="container">
         <Navbar />
-        <PageHeader title="About Us" />
         <AboutMain />
         <AboutSocials />
         <AboutPartners />
         <Footer />
     </div>
+    
+    </>
+    
   )
 }
 

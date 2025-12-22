@@ -12,10 +12,12 @@ import Backend from './pages/Backend-page/Backend-page';
 import Business from './pages/BusinessPage/Business-page';
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

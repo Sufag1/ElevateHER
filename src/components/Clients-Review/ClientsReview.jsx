@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./ClientsReview.css";
 import "../../index.css";
 
+
 //importing the Apostrophe's
 import Vector from "../../assets/Review-Assets/Vector.svg";
 import Vector4 from "../../assets/Review-Assets/Vector4.svg";
@@ -9,6 +10,11 @@ import Vector4 from "../../assets/Review-Assets/Vector4.svg";
 
 //importing Students Pictures
 import Stu1 from "../../assets/Review-Assets/Stu1.webp"
+import Salma from "../../assets/Students/Salma.webp"
+import Fatima from "../../assets/Students/Fatima.webp"
+import Mmesoma from '../../assets/Students/Mmesoma.webp'
+import Tolulope from '../../assets/Students/Tolulope.webp'
+import khadeejaM from '../../assets/Students/khadeejaM.webp'
 
 const ClientsReview = () => {
     const [index, setIndex] = useState(0);
@@ -18,41 +24,41 @@ const ClientsReview = () => {
         {
         id: "Review1",
         apostropheImg: Vector,
-        text: "Provident egestas non debitis sociosqu ante luctus massa beatae modi duis...",
-        img: Stu1,
-        name: "Celia Almeda",
+        text: "The ElevateHer Full Stack Development program was transformative, strengthening my full-stack technical skills and confidence. Through code reviews, technical support, and mentoring others, I deepened my understanding of clean code, debugging, communication, leadership, and teamwork. The experience has had a lasting impact on my growth as a developer and contributor to the tech community.",
+        img: Salma,
+        name: "Salma Abdullahi Saeed",
         position: "STUDENT"
         },
         {
         id: "Review2",
         apostropheImg: Vector4,
-        text: "Aliquam erat volutpat. Integer placerat luctus sem, vitae luctus nunc.",
-        img: Stu1,
-        name: "John Doe",
+        text: "My full-stack journey with ElevateHer Innovation Space was an incredible blend of excitement, learning, and growth. Beyond community, it offered support and belief. I gained hands-on experience building real websites, developed patience, trusted my progress, discovered my capabilities, and strengthened lasting confidence and passion for technology in professional software development.",
+        img: Fatima,
+        name: "Fatima Abubakar Adam",
         position: "STUDENT"
         },
         {
         id: "Review3",
         apostropheImg: Vector,
-        text: "Suspendisse potenti. Duis sollicitudin ligula id placerat ultricies.",
-        img: Stu1,
-        name: "Maria Silva",
-        position: "PARENT"
+        text: "When I got selected for the Full-Stack Developer Track, I was initially clueless as to what to expect. I had to hang on tight; it was a roller-coaster experience on  a steep learning curve. The module outlines are world-class, and the entire study architecture at ElevateHER opens up a world of possibilities from firing up the imagination to redesigning reality. You will just know that your mind has evolved significantly.",
+        img: Tolulope,
+        name: "Tolulope McSmith",
+        position: "STUDENT"
         },
         {
         id: "Review4",
         apostropheImg: Vector4,
-        text: "Praesent eu odio non nulla facilisis suscipit. Curabitur consequat.",
-        img: Stu1,
-        name: "Ahmed Khan",
-        position: "FACILITATOR"
+        text: "I was selected into ElevateHER as a corper, and while starting the program felt easy, keeping up was tough. The projects are realistic and demand consistency. Although the learning is self-paced, the monthly check-ins and tutoring sessions keep you accountable—you really have no option but to grow. Over time, the structure pushes you beyond comfort and helps you build real skills, not just theory.",
+        img: Mmesoma,
+        name: "Mmesoma",
+        position: "STUDENT"
         },
         {
         id: "Review5",
         apostropheImg: Vector,
-        text: "Donec vitae libero a justo sodales aliquam. Sed vitae dictum velit.",
-        img: Stu1,
-        name: "Linda Zhang",
+        text: "ElevateHer innovation program provided an empowering and supportive learning experience. The facilitators were knowledgeable, the lessons practical, and the community uplifting. As a student, I gained valuable skills, confidence, and clarity. I highly recommend ElevateHer to any woman committed to personal and professional growth",
+        img: khadeejaM,
+        name: "Khadeeja Mu'azu",
         position: "STUDENT"
         }
     ];
@@ -61,7 +67,7 @@ const ClientsReview = () => {
     useEffect(() => {
         const slide = setInterval(() => {
         setIndex((prev) => (prev + 1) % reviews.length);
-        }, 4000);
+        }, 8000);
         return () => clearInterval(slide);
     }, []);
 

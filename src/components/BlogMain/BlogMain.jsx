@@ -13,6 +13,12 @@ const BlogMain = () => {
     </div>
 
     <div className="blog-page container">
+      <h2 className="blog-title">
+                Latest <span className="highlight-blog">Events</span> & <span className="highlight-news">News</span>
+            </h2>
+            <p className="blog-subtitle">
+                Stay updated with our latest workshops, training programs, and success stories that highlight the impact of our initiatives.
+            </p>
       <div className="blog-posts ">
         {blogPosts.map((post) => (
           <article className="blog-article container " key={post.id}>
@@ -57,10 +63,10 @@ const BlogMain = () => {
           </article>
         ))}
       </div>
-      <div className="blog-details container">
+      {/* <div className="blog-details container">
         <h3 className='h3forblogd'>Follow Us On Social Media</h3>
         <BlogDetails />
-      </div>
+      </div> */}
     </div>
     </>
   );

@@ -59,7 +59,7 @@ const Contact = () => {
           <input type="text" placeholder="Your Subject..." />
           <textarea placeholder="Your Message (Optional)" rows="5" />
           <button className="btn" type="submit">Send Message</button>
-          <div className="follow">
+          {/* <div className="follow">
             <h3>Follow us on social media:</h3>
             <div className="social">
               <a
@@ -99,7 +99,7 @@ const Contact = () => {
                       <img src={LinkedIn} alt="linked in" />
                     </a>
             </div>
-          </div>
+          </div> */}
         </form>
       </div>
       <div className="google container">

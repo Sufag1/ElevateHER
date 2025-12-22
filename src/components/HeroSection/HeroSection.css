@@ -88,7 +88,7 @@
   justify-content: center;
   margin-bottom: var(--space-xxs);
 
-  background-image: url("../../assets/hero-straight-png.png");
+  background-image: url("../../assets/hero-straight-png.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -154,7 +154,7 @@
   width: 300px;
 }
 .hero-image {
-  background-image: url("../../assets/hero-image.png");
+  background-image: url("../../assets/hero-image.webp");
   width: 320px;
   height: 320px;
 }
