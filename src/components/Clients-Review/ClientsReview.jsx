@@ -9,12 +9,12 @@ import Vector4 from "../../assets/Review-Assets/Vector4.svg";
 
 
 //importing Students Pictures
-import Stu1 from "../../assets/Review-Assets/Stu1.webp"
+// import Stu1 from "../../assets/Review-Assets/Stu1.webp"
 import Salma from "../../assets/Students/Salma.webp"
 import Fatima from "../../assets/Students/Fatima.webp"
 import Mmesoma from '../../assets/Students/Mmesoma.webp'
 import Tolulope from '../../assets/Students/Tolulope.webp'
-import khadeejaM from '../../assets/Students/khadeejaM.webp'
+import khadeejaM from '../../assets/Students/KhadeejaM.webp'
 
 const ClientsReview = () => {
     const [index, setIndex] = useState(0);
@@ -50,7 +50,7 @@ const ClientsReview = () => {
         apostropheImg: Vector4,
         text: "I was selected into ElevateHER as a corper, and while starting the program felt easy, keeping up was tough. The projects are realistic and demand consistency. Although the learning is self-paced, the monthly check-ins and tutoring sessions keep you accountable—you really have no option but to grow. Over time, the structure pushes you beyond comfort and helps you build real skills, not just theory.",
         img: Mmesoma,
-        name: "Mmesoma",
+        name: "Mmesoma Ugwuanyi Happiness",
         position: "STUDENT"
         },
         {
