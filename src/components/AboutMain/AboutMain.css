@@ -12,6 +12,7 @@
 
 .about-us-left, .about-us-right {
   flex: 1 1 45%;
+  padding: 0 1rem;
 }
 
 .about-us-title > *,  .about-us-title {

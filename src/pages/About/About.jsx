@@ -11,7 +11,7 @@ function About() {
     <div>
       <PageHeader title="About Us" />
     </div>
-    <div  className="container">
+    <div>
         <Navbar />
         <AboutMain />
         <AboutSocials />

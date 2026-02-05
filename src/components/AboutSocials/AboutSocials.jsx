@@ -29,8 +29,8 @@ const AboutSocials = () => {
 
 
     return(
-        <section  className="About-Socials">
-            <div className=" Socials-Container">
+        <section  className="About-Socials ">
+            <div className=" Socials-Container container">
 
                 <div>
                     
