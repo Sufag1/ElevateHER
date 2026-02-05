@@ -1,6 +1,7 @@
 .About-Socials{
     background-color: var(--bg-dark);
     justify-items: center;
+    width: 100%;
 }
 
 .Socials-Container{

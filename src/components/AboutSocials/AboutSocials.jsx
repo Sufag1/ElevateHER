@@ -30,7 +30,7 @@ const AboutSocials = () => {
 
     return(
         <section  className="About-Socials">
-            <div className="container Socials-Container">
+            <div className=" Socials-Container">
 
                 <div>
                     
