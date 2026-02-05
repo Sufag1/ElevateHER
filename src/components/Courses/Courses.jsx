@@ -66,7 +66,7 @@ function Courses() {
       <div className="project-grid-section">
         <div className="project-grid-container">
           {courseList.map((course, index) => (
-            <Link key={index} href={course.path} className="project-card">
+            <Link to={course.path} className="project-card" key={index}>
               <div className="project-image-wrapper">
                 <img src={course.image} alt={course.title} className="project-image" />
               </div>

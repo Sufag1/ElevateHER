@@ -8,10 +8,10 @@ import './Portfolio.css'
 function Portfolio() {
   return (
     <div className="portfolio-page">
-        <Navbar />
+        {/* <Navbar /> */}
         <PageHeader title="Courses"/>
         <Courses />
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }
