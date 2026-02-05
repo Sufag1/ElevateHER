@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./Courses.css";
 
 import eventImage1 from '../../assets/AI-png.webp';
@@ -65,13 +66,13 @@ function Courses() {
       <div className="project-grid-section">
         <div className="project-grid-container">
           {courseList.map((course, index) => (
-            <a key={index} href={course.path} className="project-card">
+            <Link key={index} href={course.path} className="project-card">
               <div className="project-image-wrapper">
                 <img src={course.image} alt={course.title} className="project-image" />
               </div>
               <h3 className="project-title">{course.title}</h3>
               <p className="project-category">{course.category}</p>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
