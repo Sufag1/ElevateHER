@@ -43,21 +43,24 @@ const Back= () => {
             Step into the world behind the scenes! This course introduces students to the backbone of modern web applications, where data flows and logic comes to life. From building APIs and handling databases to securing servers and optimizing performance, learners explore the tools that make websites functional and scalable. With hands-on projects and real-world infrastructure, students gain the skills to power robust digital experiences from the inside out.
           </p>
               <div>
+                 <div className="ai-quote-card">
+      <p className="ai-quote-heading">Backend Development Course</p>
+      <blockquote className="ai-quote-paragraph">
+        This course dives deep into the server-side of web development, equipping you with the skills to build secure, scalable, and efficient backend systems. You'll start with Node.js and Express to create robust APIs and handle server logic. You'll then integrate MongoDB or PostgreSQL for database management. The course also covers authentication, authorization, RESTful API design, and deployment. Through real-world projects , you'll learn how to power the logic behind any full-stack application.
+      </blockquote>
+              <p style={{ color: 'grey' }}><i>Duration: 6 months</i>  </p>
+    </div>
               <div className="ai-image-wrapper">
+                            <p className="ai-quote-heading">Project Sample</p>
                 <img src={Reactpic} alt="Full Stack Development" />
               </div>
             </div>
             </section>
             
     <section>
-      <div className="ai-quote-card">
-      <p className="ai-quote-heading">Backend Development Course</p>
-      <blockquote className="ai-quote-paragraph">
-        This course dives deep into the server-side of web development, equipping you with the skills to build secure, scalable, and efficient backend systems. You'll start with Node.js and Express to create robust APIs and handle server logic. You'll then integrate MongoDB or PostgreSQL for database management. The course also covers authentication, authorization, RESTful API design, and deployment. Through real-world projects , you'll learn how to power the logic behind any full-stack application.
-      </blockquote>
-    </div>
+     
     
-            <div className="share-container">
+            {/* <div className="share-container">
               <div className="share-text" onClick={toggleShareOptions}>
                 <FiShare2 /> <span>Share</span>
               </div>
@@ -85,13 +88,13 @@ const Back= () => {
                 <p><strong>Next Cohort:</strong> 12th December 2029</p>
               </div>
               <button className="btn btn-orange"> Apply Now</button>
-            </div>
+            </div> */}
     
     </section>
             
     </div>
           
-        <div className="nav-buttons">
+        {/* <div className="nav-buttons container">
   <a href="/frontend-development" >
       <button className="btn btn-blue">Previous</button>
 
@@ -101,7 +104,7 @@ const Back= () => {
       <button className="btn btn-blue">Next</button>
 
   </a>
-</div>
+</div> */}
     
           </section>
         </section>

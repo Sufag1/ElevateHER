@@ -49,21 +49,25 @@ const Full = () => {
           </p>
 
           <div>
+            <div className="ai-quote-card">
+  <p className="ai-quote-heading">Full-Stack Web Development Course</p>
+  <blockquote className="ai-quote-paragraph">
+This comprehensive course teaches full-stack web development from the ground up. You'll start with HTML and CSS, advance to React for frontend development, and use Node.js, Express, MongoDB, and Mongoose on the backend. Through hands-on projects like a travel site, hotel site, and recipe site, you’ll build a strong portfolio and gain the skills to create real-world applications.earn to build complete web applications from start to finish using front-end and back-end technologies.
+  </blockquote>
+              <p style={{ color: 'grey' }}><i>Duration: 6 months</i>  </p>
+
+</div>
           <div className="ai-image-wrapper">
+            <p className="ai-quote-heading">Project Sample</p>
             <img src={Reactpic} alt="Full Stack Development" />
           </div>
         </div>
         </section>
         
 <section>
-  <div className="ai-quote-card">
-  <p className="ai-quote-heading">Full-Stack Web Development Course</p>
-  <blockquote className="ai-quote-paragraph">
-This comprehensive course teaches full-stack web development from the ground up. You'll start with HTML and CSS, advance to React for frontend development, and use Node.js, Express, MongoDB, and Mongoose on the backend. Through hands-on projects like a travel site, hotel site, and recipe site, you’ll build a strong portfolio and gain the skills to create real-world applications.earn to build complete web applications from start to finish using front-end and back-end technologies.
-  </blockquote>
-</div>
+  
 
-        <div className="share-container">
+        {/* <div className="share-container">
           <div className="share-text" onClick={toggleShareOptions}>
             <FiShare2 /> <span>Share</span>
           </div>
@@ -91,21 +95,21 @@ This comprehensive course teaches full-stack web development from the ground up.
             <p><strong>Next Cohort:</strong> 12th December 2029</p>
           </div>
           <button className="btn btn-orange"> Apply Now</button>
-        </div>
+        </div> */}
 
 </section>
         
 </div>
       
      {/* 🔽 PREVIOUS & NEXT ARROWS SECTION */}
-<div className="nav-buttonss">
+{/* <div className="nav-buttons">
   
   <a href="/artificial-intelligence">
-    {/* <div className="arrow-circle">&#8594;</div> */}
+    <div className="arrow-circle">&#8594;</div>
     <button className="btn btn-blue">Next</button>
 
   </a>
-</div>
+</div> */}
 
       </section>
     </section>

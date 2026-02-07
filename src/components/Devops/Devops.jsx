@@ -42,21 +42,27 @@ const dev = () => {
             DevOps Step into the world of seamless software delivery! This course introduces students to the dynamic field of DevOps where development and operations unite to build, test, and deploy applications faster and smarter. Through hands-on projects, students will learn how automation, collaboration, and cloud tools create modern workflows. An essential course for anyone curious about powering the tech behind the scenes.
           </p>
           <div>
+
+            <div className="ai-quote-card">
+  <p className="ai-quote-heading">DevOps Course</p>
+  <blockquote className="ai-quote-paragraph">
+    This hands-on course will teach you how to bridge the gap between development and operations through automation and continuous delivery. You'll start with version control using Git, then move on to building robust CI/CD pipelines with tools like Jenkins and GitHub Actions. You'll also explore monitoring, logging, and infrastructure automation with Terraform and Ansible. By the end of the course, you’ll be able to build, test, deploy, and scale modern applications with speed and confidence.
+  </blockquote>
+                <p style={{ color: 'grey' }}><i>Duration: 6 months</i>  </p>
+
+</div>
           <div className="ai-image-wrapper">
+            <p className="ai-quote-heading">Project Sample</p>
+
             <img src={Reactpic} alt="Full Stack Development" />
           </div>
         </div>
         </section>
         
 <section>
-  <div className="ai-quote-card">
-  <p className="ai-quote-heading">DevOps Course</p>
-  <blockquote className="ai-quote-paragraph">
-    This hands-on course will teach you how to bridge the gap between development and operations through automation and continuous delivery. You'll start with version control using Git, then move on to building robust CI/CD pipelines with tools like Jenkins and GitHub Actions. You'll also explore monitoring, logging, and infrastructure automation with Terraform and Ansible. By the end of the course, you’ll be able to build, test, deploy, and scale modern applications with speed and confidence.
-  </blockquote>
-</div>
+  
 
-        <div className="share-container">
+        {/* <div className="share-container">
           <div className="share-text" onClick={toggleShareOptions}>
             <FiShare2 /> <span>Share</span>
           </div>
@@ -76,22 +82,22 @@ const dev = () => {
               ))}
             </div>
           )}
-        </div>
+        </div> */}
 
-        <div className="project-card-container">
+        {/* <div className="project-card-container">
           <div className="project-info">
             <p><strong>Duration:</strong> 6 months </p>
             <p><strong>Next Cohort:</strong> 12th December 2029</p>
           </div>
           <button className="btn btn-orange"> Apply Now</button>
-        </div>
+        </div> */}
 
 </section>
         
 </div>
       
     {/* 🔽 PREVIOUS & NEXT ARROWS SECTION */}
-<div className="nav-buttons">
+{/* <div className="nav-buttons">
   <a href="/artificial-intelligence" >
       <button className="btn btn-blue">Previous</button>
 
@@ -101,7 +107,7 @@ const dev = () => {
       <button className="btn btn-blue">Next</button>
 
   </a>
-</div>
+</div> */}
 
       </section>
     </section>

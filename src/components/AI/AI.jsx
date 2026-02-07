@@ -40,22 +40,26 @@ const Ai = () => {
           <p className="ai-paragraph">
             Step into the world of smart technology! This course introduces students to the exciting field of Artificial Intelligence where computers can think, learn, and solve problems like humans. Through fun, practical projects, students will discover how AI powers apps, robots, and more. A great start for anyone curious about the tech that’s changing the world.
           </p>
+          <div className="ai-quote-card">
+          <p className="ai-quote-heading">Artficial Intelligent Course</p>
+          <blockquote className="ai-quote-paragraph">
+            In this hands-on course, you'll explore the fundamentals and real-world applications of Artificial Intelligence.   You'll work on projects such as a chatbot, image recognition system, sentiment analysis tool, and a recommendation engine. By the end, you'll have the practical experience and knowledge to develop AI-driven solutions for real-world challenges. Explore the world of Artificial Intelligence and learn how to build smart systems that can think.
+          </blockquote>
+              <p style={{ color: 'grey' }}><i>Duration: 6 months</i>  </p>
+        </div>
                   <div>
                   <div className="ai-image-wrapper">
+                 <p className="ai-quote-heading">Project Sample</p>
+
                     <img src={Reactpic} alt="Full Stack Development" />
                   </div>
                 </div>
                 </section>
                 
         <section>
-          <div className="ai-quote-card">
-          <p className="ai-quote-heading">Artficial Intelligent Course</p>
-          <blockquote className="ai-quote-paragraph">
-            In this hands-on course, you'll explore the fundamentals and real-world applications of Artificial Intelligence.   You'll work on projects such as a chatbot, image recognition system, sentiment analysis tool, and a recommendation engine. By the end, you'll have the practical experience and knowledge to develop AI-driven solutions for real-world challenges. Explore the world of Artificial Intelligence and learn how to build smart systems that can think.
-          </blockquote>
-        </div>
+          
         
-                <div className="share-container">
+                {/* <div className="share-container">
                   <div className="share-text" onClick={toggleShareOptions}>
                     <FiShare2 /> <span>Share</span>
                   </div>
@@ -83,13 +87,13 @@ const Ai = () => {
                     <p><strong>Next Cohort:</strong> 12th December 2029</p>
                   </div>
                   <button className="btn btn-orange"> Apply Now</button>
-                </div>
+                </div> */}
         
         </section>
                 
         </div>
               
-           <div className="nav-buttons">
+           {/* <div className="nav-buttons">
   <a href="/full-stack-development" >
       <button className="btn btn-blue">Previous</button>
 
@@ -99,8 +103,8 @@ const Ai = () => {
       <button className="btn btn-blue">Next</button>
 
   </a>
-</div>
-              </section>
+</div> */}
+              </section> 
             </section>
 
                );

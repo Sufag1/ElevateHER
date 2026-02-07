@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar";
 import BusinessDev from "../../components/Business/Business";
+import Footer from "../../components/Footer/Footer";
 
 
 function BusinessDevp() {
@@ -7,6 +8,7 @@ function BusinessDevp() {
     <div>
         <Navbar />
         <BusinessDev />
+        <Footer />
        
     </div>
   )

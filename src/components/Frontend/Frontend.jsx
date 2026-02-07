@@ -45,21 +45,27 @@ const Front = () => {
 
     
               <div>
+
+                <div className="ai-quote-card">
+      <p className="ai-quote-heading">Frontend Development Course</p>
+      <blockquote className="ai-quote-paragraph">
+        This course takes you on a journey from the basics of web design to building dynamic and responsive interfaces. You'll start with HTML, CSS, and JavaScript. Then, you'll master modern frontend frameworks like React. You'll also learn APIs, manage user authentication, and optimize performance. Through real-world projects like a portfolio site and e-commerce interface you’ll build a strong foundation in UI/UX, responsive design. By the end, you’ll be ready to create  professional web apps.
+      </blockquote>
+                    <p style={{ color: 'grey' }}><i>Duration: 6 months</i>  </p>
+
+    </div>
               <div className="ai-image-wrapper">
+                      <p className="ai-quote-heading">Project Sample</p>
+
                 <img src={Reactpic} alt="Full Stack Development" />
               </div>
             </div>
             </section>
             
     <section>
-      <div className="ai-quote-card">
-      <p className="ai-quote-heading">Frontend Development Course</p>
-      <blockquote className="ai-quote-paragraph">
-        This course takes you on a journey from the basics of web design to building dynamic and responsive interfaces. You'll start with HTML, CSS, and JavaScript. Then, you'll master modern frontend frameworks like React. You'll also learn APIs, manage user authentication, and optimize performance. Through real-world projects like a portfolio site and e-commerce interface you’ll build a strong foundation in UI/UX, responsive design. By the end, you’ll be ready to create  professional web apps.
-      </blockquote>
-    </div>
+      
     
-            <div className="share-container">
+            {/* <div className="share-container">
               <div className="share-text" onClick={toggleShareOptions}>
                 <FiShare2 /> <span>Share</span>
               </div>
@@ -79,21 +85,21 @@ const Front = () => {
                   ))}
                 </div>
               )}
-            </div>
+            </div> */}
     
-            <div className="project-card-container">
+            {/* <div className="project-card-container">
               <div className="project-info">
                 <p><strong>Duration:</strong> 6 months </p>
                 <p><strong>Next Cohort:</strong> 12th December 2029</p>
               </div>
               <button className="btn btn-orange"> Apply Now</button>
-            </div>
+            </div> */}
     
     </section>
             
     </div>
     {/* 🔽 PREVIOUS & NEXT ARROWS SECTION */}
-<div className="nav-buttons">
+{/* <div className="nav-buttons">
   <a href="/devops" >
     <button className="btn btn-blue">Previous</button>
 
@@ -103,7 +109,7 @@ const Front = () => {
     <button className="btn btn-blue">Next</button>
 
   </a>
-</div>
+</div> */}
     
           </section>
         </section>
