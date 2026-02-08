@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import eventImage1 from '../../assets/AI.webp';
+import eventImage1 from '../../assets/AI-png.webp';
 import "./AI.css";
 import {
   FaFacebookF,
@@ -37,20 +37,22 @@ const Ai = () => {
                 <div className="ai-image-wrapper">
             <img src={eventImage1} alt="Artificial Intelligence" />
           </div>
-          <p className="ai-paragraph">
+          <p className="ai-paragraph empowerImpact-description">
             Step into the world of smart technology! This course introduces students to the exciting field of Artificial Intelligence where computers can think, learn, and solve problems like humans. Through fun, practical projects, students will discover how AI powers apps, robots, and more. A great start for anyone curious about the tech that’s changing the world.
           </p>
           <div className="ai-quote-card">
-          <p className="ai-quote-heading">Artficial Intelligent Course</p>
-          <blockquote className="ai-quote-paragraph">
+<h2 className="blog-title course-ttl">
+                Artificial Intelligence <span className="highlight-blog course-ttl">Course</span>
+            </h2>          <blockquote className="ai-quote-paragraph empowerImpact-description">
             In this hands-on course, you'll explore the fundamentals and real-world applications of Artificial Intelligence.   You'll work on projects such as a chatbot, image recognition system, sentiment analysis tool, and a recommendation engine. By the end, you'll have the practical experience and knowledge to develop AI-driven solutions for real-world challenges. Explore the world of Artificial Intelligence and learn how to build smart systems that can think.
           </blockquote>
               <p style={{ color: 'grey' }}><i>Duration: 6 months</i>  </p>
         </div>
                   <div>
                   <div className="ai-image-wrapper">
-                 <p className="ai-quote-heading">Project Sample</p>
-
+<h2 className="blog-title course-ttl">
+                Project <span className="highlight-blog project-smp">Sample</span>
+            </h2>
                     <img src={Reactpic} alt="Full Stack Development" />
                   </div>
                 </div>

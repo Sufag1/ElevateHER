@@ -11,7 +11,7 @@ function Portfolio() {
         {/* <Navbar /> */}
         <PageHeader title="Courses"/>
         <Courses />
-        {/* <Footer /> */}
+        <Footer />
     </div>
   )
 }

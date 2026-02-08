@@ -10,7 +10,7 @@ import {
   FaPaperPlane
 } from "react-icons/fa";
 import { FiShare2 } from "react-icons/fi"; 
-import eventImage6 from '../../assets/business-development.webp';
+import eventImage6 from '../../assets/business-development-2.webp';
 import Reactpic from '../../assets/busi.jpg'
 
 
@@ -39,20 +39,22 @@ const BusiDev= () => {
             <div className="ai-image-wrapper">
             <img src={eventImage6} alt="Artificial Intelligence" />
           </div>
-          <p className="ai-paragraph">
+          <p className="ai-paragraph empowerImpact-description">
             Step into the world of business development! This course introduces students to the backbone of modern business growth, where strategies are built and partnerships come to life. From building a strong sales pipeline and handling client relationships to securing new markets and optimizing team performance, learners explore the tools that make businesses functional and scalable. With hands-on projects and real-world case studies, students gain the skills to power robust company growth from the inside out.
           </p>
              <div>
               <div className="ai-quote-card">
-     <p className="ai-quote-heading">Business Development Course</p>
-     <blockquote className="ai-quote-paragraph">
+<h2 className="blog-title course-ttl">
+                Business Development <span className="highlight-blog course-ttl">Course</span>
+            </h2>     <blockquote className="ai-quote-paragraph empowerImpact-description">
 This course empowers you with the strategies and tools needed to grow a business in today's competitive landscape. You'll learn core concepts such as market research, customer acquisition, sales funnel creation, and strategic partnerships.  Through case studies and practical projects, you'll develop the skills to identify opportunities, scale operations, and create sustainable value whether you're launching a startup or driving growth in an established company.     </blockquote>
    </div>
                  <p style={{ color: 'grey' }}><i>Duration: 6 months</i>  </p>
 
              <div className="ai-image-wrapper">
-                                          <p className="ai-quote-heading">Project Sample</p>
-
+<h2 className="blog-title course-ttl">
+                Project <span className="highlight-blog project-smp">Sample</span>
+            </h2>
                <img src={Reactpic} alt="Full Stack Development" />
              </div>
            </div>

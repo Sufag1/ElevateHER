@@ -10,7 +10,7 @@ import {
   FaPaperPlane
 } from "react-icons/fa";
 import { FiShare2 } from "react-icons/fi"; 
-import eventImage3 from '../../assets/Backend.webp';
+import eventImage3 from '../../assets/Backend-png.webp';
 import Reactpic from '../../assets/back.jpg'
 
 
@@ -39,20 +39,22 @@ const Back= () => {
             <div className="ai-image-wrapper">
             <img src={eventImage3} alt="Artificial Intelligence" />
           </div>
-          <p className="ai-paragraph">
+          <p className="ai-paragraph empowerImpact-description">
             Step into the world behind the scenes! This course introduces students to the backbone of modern web applications, where data flows and logic comes to life. From building APIs and handling databases to securing servers and optimizing performance, learners explore the tools that make websites functional and scalable. With hands-on projects and real-world infrastructure, students gain the skills to power robust digital experiences from the inside out.
           </p>
               <div>
                  <div className="ai-quote-card">
-      <p className="ai-quote-heading">Backend Development Course</p>
-      <blockquote className="ai-quote-paragraph">
+<h2 className="blog-title course-ttl">
+                Backend Deveolpment <span className="highlight-blog course-ttl">Course</span>
+            </h2>      <blockquote className="ai-quote-paragraph empowerImpact-description">
         This course dives deep into the server-side of web development, equipping you with the skills to build secure, scalable, and efficient backend systems. You'll start with Node.js and Express to create robust APIs and handle server logic. You'll then integrate MongoDB or PostgreSQL for database management. The course also covers authentication, authorization, RESTful API design, and deployment. Through real-world projects , you'll learn how to power the logic behind any full-stack application.
       </blockquote>
               <p style={{ color: 'grey' }}><i>Duration: 6 months</i>  </p>
     </div>
               <div className="ai-image-wrapper">
-                            <p className="ai-quote-heading">Project Sample</p>
-                <img src={Reactpic} alt="Full Stack Development" />
+<h2 className="blog-title course-ttl">
+                Project <span className="highlight-blog project-smp">Sample</span>
+            </h2>                <img src={Reactpic} alt="Full Stack Development" />
               </div>
             </div>
             </section>

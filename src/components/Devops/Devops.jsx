@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import eventImage2 from '../../assets/DevOps.webp';
+import eventImage2 from '../../assets/Devops-png.webp';
 import Reactpic from '../../assets/Devs.jpg'
 import '../AI/AI.css';
 
@@ -38,22 +38,24 @@ const dev = () => {
           <div className="ai-image-wrapper">
             <img src={eventImage2} alt="Artificial Intelligence" />
           </div>
-          <p className="ai-paragraph">
+          <p className="ai-paragraph empowerImpact-description">
             DevOps Step into the world of seamless software delivery! This course introduces students to the dynamic field of DevOps where development and operations unite to build, test, and deploy applications faster and smarter. Through hands-on projects, students will learn how automation, collaboration, and cloud tools create modern workflows. An essential course for anyone curious about powering the tech behind the scenes.
           </p>
           <div>
 
             <div className="ai-quote-card">
-  <p className="ai-quote-heading">DevOps Course</p>
-  <blockquote className="ai-quote-paragraph">
+<h2 className="blog-title course-ttl">
+                Devops <span className="highlight-blog course-ttl">Course</span>
+            </h2>  <blockquote className="ai-quote-paragraph empowerImpact-description">
     This hands-on course will teach you how to bridge the gap between development and operations through automation and continuous delivery. You'll start with version control using Git, then move on to building robust CI/CD pipelines with tools like Jenkins and GitHub Actions. You'll also explore monitoring, logging, and infrastructure automation with Terraform and Ansible. By the end of the course, you’ll be able to build, test, deploy, and scale modern applications with speed and confidence.
   </blockquote>
                 <p style={{ color: 'grey' }}><i>Duration: 6 months</i>  </p>
 
 </div>
           <div className="ai-image-wrapper">
-            <p className="ai-quote-heading">Project Sample</p>
-
+<h2 className="blog-title course-ttl">
+               Project <span className="highlight-blog project-smp">Sample</span>
+            </h2>
             <img src={Reactpic} alt="Full Stack Development" />
           </div>
         </div>

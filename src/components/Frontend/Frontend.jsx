@@ -10,7 +10,7 @@ import {
   FaPaperPlane
 } from "react-icons/fa";
 import { FiShare2 } from "react-icons/fi"; 
-import eventImage5 from '../../assets/Frontend.png';
+import eventImage5 from '../../assets/Frontend-png.webp';
 import Reactpic from '../../assets/travel.png'
 
 
@@ -39,7 +39,7 @@ const Front = () => {
               <div className="ai-image-wrapper">
             <img src={eventImage5} alt="Artificial Intelligence" />
           </div>
-          <p className="ai-paragraph">
+          <p className="ai-paragraph empowerImpact-description">
             Step into the world of stunning digital design! This course immerses students in the art and science of creating user interfaces that captivate and perform. From HTML and CSS to advanced JavaScript frameworks, learners explore the visual and interactive elements that shape the user experience. With hands-on projects and modern design principles, students gain the skills to build responsive, accessible, and engaging web applications.
           </p>
 
@@ -47,16 +47,18 @@ const Front = () => {
               <div>
 
                 <div className="ai-quote-card">
-      <p className="ai-quote-heading">Frontend Development Course</p>
-      <blockquote className="ai-quote-paragraph">
+<h2 className="blog-title course-ttl">
+                Frontend Development <span className="highlight-blog course-ttl">Course</span>
+            </h2>      <blockquote className="ai-quote-paragraph empowerImpact-description">
         This course takes you on a journey from the basics of web design to building dynamic and responsive interfaces. You'll start with HTML, CSS, and JavaScript. Then, you'll master modern frontend frameworks like React. You'll also learn APIs, manage user authentication, and optimize performance. Through real-world projects like a portfolio site and e-commerce interface you’ll build a strong foundation in UI/UX, responsive design. By the end, you’ll be ready to create  professional web apps.
       </blockquote>
                     <p style={{ color: 'grey' }}><i>Duration: 6 months</i>  </p>
 
     </div>
               <div className="ai-image-wrapper">
-                      <p className="ai-quote-heading">Project Sample</p>
-
+<h2 className="blog-title course-ttl">
+                Project <span className="highlight-blog project-smp">Sample</span>
+            </h2>
                 <img src={Reactpic} alt="Full Stack Development" />
               </div>
             </div>

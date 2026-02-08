@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // <-- for navigation
 import '../AI/AI.css';
 
-import eventImage4 from '../../assets/fullstack.webp';
+import eventImage4 from '../../assets/fullstack-second.webp';
 import Reactpic from '../../assets/react-project.png'
 import {
   FaFacebookF,
@@ -44,22 +44,25 @@ const Full = () => {
           <div className="ai-image-wrapper">
             <img src={eventImage4} alt="Full Stack Development" />
           </div>
-          <p className="ai-paragraph">
+          <p className="ai-paragraph empowerImpact-description">
             Step into the world of complete web creation! This course guides students through both the frontend design and backend architecture of modern applications. From building stunning interfaces to managing servers and databases, learners will explore the tools and techniques that bring full-stack solutions to life. With hands-on projects and real-world scenarios, students gain the confidence to craft and deploy powerful web experiences from scratch.
           </p>
 
           <div>
             <div className="ai-quote-card">
-  <p className="ai-quote-heading">Full-Stack Web Development Course</p>
-  <blockquote className="ai-quote-paragraph">
+<h2 className="blog-title course-ttl">
+                Full-Stack Web Development <span className="highlight-blog">Course</span>
+            </h2>
+              <blockquote className="ai-quote-paragraph empowerImpact-description">
 This comprehensive course teaches full-stack web development from the ground up. You'll start with HTML and CSS, advance to React for frontend development, and use Node.js, Express, MongoDB, and Mongoose on the backend. Through hands-on projects like a travel site, hotel site, and recipe site, you’ll build a strong portfolio and gain the skills to create real-world applications.earn to build complete web applications from start to finish using front-end and back-end technologies.
   </blockquote>
               <p style={{ color: 'grey' }}><i>Duration: 6 months</i>  </p>
 
 </div>
           <div className="ai-image-wrapper">
-            <p className="ai-quote-heading">Project Sample</p>
-            <img src={Reactpic} alt="Full Stack Development" />
+<h2 className="blog-title course-ttl">
+                Project <span className="highlight-blog project-smp">Sample</span>
+            </h2>            <img src={Reactpic} alt="Full Stack Development" />
           </div>
         </div>
         </section>
