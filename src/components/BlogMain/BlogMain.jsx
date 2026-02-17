@@ -21,6 +21,7 @@ const BlogMain = () => {
             </p>
       <div className="blog-posts ">
         {blogPosts.map((post) => (
+          <Link to={`/blog/${post.id}`}>
           <article className="blog-article container " key={post.id}>
             <div className="blog-article-img">
               <img src={post.image} alt={post.title} />
@@ -29,11 +30,11 @@ const BlogMain = () => {
                 <div className="blog-info">
                   <div className="date">
                     <span className="date">
-                      {post.month},{post.date}
+                      • {post.month},{post.date}
                     </span>
                   </div>
               <div className="content">
-                <span className="content">Content</span>
+                <span className="content">• Content</span>
               </div>
             </div>
             <div className="blog-article-content">
@@ -43,12 +44,12 @@ const BlogMain = () => {
                 <div className="blog-info-tab">
               
                   <div className="date">
-                    <span className="date">
+                    <span className="date dmc">
                       • {post.month}, {post.date}
                     </span>
                   </div>
                   <div className="content">
-                    <Link to={`/blog/${post.id}`} className="content-link">• Content</Link>
+                    <Link to={`/blog/${post.id}`} className="content-link dmc">• Content</Link>
                   </div>
                 </div>
                 <div className="post-button">
@@ -61,6 +62,7 @@ const BlogMain = () => {
             </div>
             </div>
           </article>
+          </Link>
         ))}
       </div>
       {/* <div className="blog-details container">

@@ -43,7 +43,7 @@ const dev = () => {
           </p>
           <div>
 
-            <div className="ai-quote-card">
+            <div className="ai-quote-card cardtext">
 <h2 className="blog-title course-ttl">
                 Devops <span className="highlight-blog course-ttl">Course</span>
             </h2>  <blockquote className="ai-quote-paragraph empowerImpact-description">

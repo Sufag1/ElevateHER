@@ -225,6 +225,15 @@ h1 {
     max-width: 720px;
     max-height: fit-content;
   } 
+
+    .date span {
+        font-size: 1.1rem;
+    }
+
+    .content a {
+      font-size: 1.1rem;
+    }
+
 } 
 
 @media (min-width: 1024px) {
@@ -274,6 +283,15 @@ h1 {
       flex-direction: column;
       gap: var(--space-sm);
   }
+
+     .date span {
+        font-size: 1.3rem;
+    }
+
+
+    .content a {
+      font-size: 1.3rem;
+    }
 }
 @media (min-width: 1440px) {
 
@@ -308,4 +326,11 @@ h1 {
   .social-icons {
     width: 60%;
   }
+
+  .content a {
+      font-size: 1.1rem;
+    }
+    .date span {
+        font-size: 1.1rem;
+    }
 }

@@ -48,6 +48,7 @@
   max-width: 700px;
 }
 
+
 .ai-quote-heading {
   font-size: 1.2rem;
   font-weight: bold;
@@ -245,6 +246,20 @@
    .ai-image-wrapper img {
     height: 15rem;
   }
+
+  .cardtext {
+  width: 720px;
+  margin: 0px;
+}
+
+  .empowerImpact-description {
+    margin-left: 0px;
+  } 
+
+  .course-ttl {
+    width: 700px;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -271,6 +286,20 @@
    .ai-image-wrapper img {
     height: 19rem;
   }
+
+   .cardtext {
+  width: 100%;
+}
+
+  .empowerImpact-description {
+    margin: 0 auto;
+    margin-top: 1rem;
+  } 
+
+  .course-ttl {
+    margin-top: 1rem;
+
+  }
 }
 
 @media (min-width: 1440px) {
@@ -286,9 +315,7 @@
 
   .ai-image-wrapper img {
     height: 16rem;
-  }
-
-  
+  } 
 }
 
 
