@@ -285,12 +285,12 @@ h1 {
   }
 
      .date span {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
 
     .content a {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
     }
 }
 @media (min-width: 1440px) {
@@ -328,9 +328,9 @@ h1 {
   }
 
   .content a {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
     .date span {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
