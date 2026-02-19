@@ -26,8 +26,8 @@ const BlogMain = () => {
             <div className="blog-article-img">
               <img src={post.image} alt={post.title} />
             </div>
-            <div className="blog-flex">
-                <div className="blog-info">
+            <div className="blog-flex ">
+                <div className="blog-info iflex">
                   <div className="date">
                     <span className="date">
                       • {post.month},{post.date}

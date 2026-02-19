@@ -44,11 +44,11 @@ const IndividualBlog = () => {
             <div className="blog-info-tab">
               <div className="date">
                 <span>
-                  {post.month}, {post.date}
+                  • {post.month}, {post.date}
                 </span>
               </div>
               <div className="content">
-                <Link to={`/blog/${post.id}`} className="content-link">Content</Link>
+                <Link to={`/blog/${post.id}`} className="content-link">• Content</Link>
             </div>
 
             </div>
@@ -129,7 +129,7 @@ const IndividualBlog = () => {
           )}
         </div>
 
-        <div className="comment-section">
+        {/* <div className="comment-section">
           <h2>Add a Comment</h2>
           <p className="your-email">
             Your email address will not be published. Required fields are marked
@@ -163,12 +163,12 @@ const IndividualBlog = () => {
             <br />
             <button>SUBMIT</button>
           </div>
-        </div>
+        </div> */}
       </div>
 
-      <div className="blog-details blogdetails container">
-        {/* <BlogDetails /> */}
-      </div>
+      {/* <div className="blog-details blogdetails container">
+        <BlogDetails />
+      </div> */}
     </div>
     <Footer />
     </>

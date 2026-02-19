@@ -80,7 +80,7 @@
   overflow: hidden;
   transition: transform 0.3s ease;
   margin-bottom: var(--space-lg);
-  margin-top: var(--space-xxl);
+  margin-top: var(--space-xl);
 }
 .individual-blog-article:hover {
   transform: translateY(-5px);
@@ -106,7 +106,7 @@
 
 
 .individual-blog-article-content h2 {
-  margin: 2rem 0;
+  margin: 2rem 0 1rem 0;
   font-size: var(--font-sm);
   color: #3d3d3d;
 }
@@ -135,19 +135,20 @@
   font-size: 0.85rem;
 } 
 
-.blog-info, .blog-info-tab {
+.blog-info-tab {
     display: flex;
     justify-content: space-between;
-    padding: var(--space-sm);
 }
 
 .blog-info {
   padding: var(--space-sm) 0;
 
 }
+
 .blog-info-tab {
-  display: none;
+  padding: 0px 0px 30px 0px;
 }
+
 
 .tags a {
   color: #3d3d3d;
@@ -269,11 +270,22 @@
 }
 
   .individual-blog-article-img{
-    max-height: 300px;
+    max-height: 400px;
   }
 
   .individual-blog-article-img img {
-    height: 300px;
+    height: 350px;
+  }
+
+  .individual-blog-article {
+    margin-top: var(--space-xl);
+  }
+
+  .blog-info-tab {
+    display: flex;
+    justify-content: normal;
+    padding: var(--space-sm) 0;
+    gap: 5rem;
   }
 }
 
@@ -284,9 +296,9 @@
   } */
 
   .individual-blog-article-img {
-    height: 300px;
+    height: 350px;
     width: 100%;
-
+    margin-top: 80px;
     
   }
   .individual-blog-article-img img {
@@ -301,14 +313,15 @@
 
   }
 
-  .blog-info {
+  /* .blog-info {
     display: none;
-  }
+  } */
 
   .blog-info-tab {
     display: flex;
-    justify-content: space-between;
+    justify-content: normal;
     padding: var(--space-sm) 0;
+    gap: 5rem;
   }
 
   .date span{
@@ -321,14 +334,14 @@
       font-size: 1.1rem;
     }
 
-  /* .blog-page {
-    display: flex;
+    .content span {
+      font-size: 1.1rem;
+    }
 
-  } */
+  
 
   .main-blog{
     width: 100%;
-    border-right: 1px solid #c9c9c9;
   }
   /* .blog-details {
     width: 40%;
@@ -367,11 +380,11 @@
     padding-top: var(--space-xs);
   }
   .individual-blog-article-img {
-    max-height: 500px;
+    max-height: 600px;
     margin-top: var(--space-lg);
   }
   .individual-blog-article-img img {
-    max-height: 500px;
+    max-height: 600px;
   }
 
   .individual-blog-article {
@@ -416,7 +429,7 @@
     }
 
     .individual-blog-article-img {
-      height: 500px;
+      height: 600px;
       object-fit: cover;
     }
 
