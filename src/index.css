@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playfair+Display:wght@400..900&display=swap');
 
 * {
   padding: 0px;
@@ -33,29 +33,98 @@
 
 /* ########################################################################################### */
   
-  /* Brand Colors 2*/
-  --color-blue: #00AFEF;     /* Primary brand color */
-  --color-yellow: #FFFF8F;     /* Primary brand color light*/
-  --color-purple: #9A00FF;   /* Secondary brand color */
+  /* Professional Brand Colors */
+  --color-primary: #1a1a1a;     /* Deep black - primary */
+  --color-secondary: #1a1a1a;   /* Dark neutral accent */
+  --color-accent: #d4a373;      /* Warm gold - highlights */
   
-  /* Brand Colors */
-  --color-primary: #FB596F;     /* Primary brand color */
-  --color-primary-light: #F4AF37;     /* Primary brand color light*/
-  --color-secondary: #2779BE;   /* Secondary brand color */
-  --color-secondary-light: #6FB6F3;   /* Secondary brand color light */
-  --color-purple-light: #c288e9;   /* Secondary brand color */
-  --color-accent: #FA2B56;      /* Accent or highlight color */
-
+  --color-blue: #1f4788;        /* Deep blue */
+  --color-neutral: #3d3d3d;     /* Dark neutral accent */
+  --color-gold: #d4a373;        /* Warm gold */
+  --color-white: #ffffff;       /* White */
+  
   /* Background Colors */
-  --bg-primary: #EEFBFF;
-  --bg-light: #FFFFFF;
-  --bg-dark: #EFF2FB;
+  --bg-primary: #fafaf8;        /* Off-white background */
+  --bg-light: #ffffff;          /* Pure white */
+  --bg-dark: #f0eee8;           /* Light gray-beige */
+  --bg-accent: #f5f3f0;         /* Subtle warm accent bg */
 
-    /* Text Colors */
-  --text-primary: #1A3760;      /* Primary text */
-  --text-secondary: #787878;    /* Secondary text */
-  --text-muted: #adb5bd;        /* Muted or placeholder text */
+  /* Text Colors */
+  --text-primary: #1a1a1a;      /* Primary text - deep black */
+  --text-secondary: #6b6b6b;    /* Secondary text - gray */
+  --text-muted: #9b9b9b;        /* Muted text - light gray */
 }
+
+/* Global utilities and components styles for modern, professional UI */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Card defaults */
+.card {
+  background: var(--bg-light);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  padding: 1rem;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.09);
+}
+
+/* Pill CTAs */
+.btn-pill {
+  padding: 12px 20px;
+  border-radius: 999px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.18s ease, background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+.btn-pill.primary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--text-primary);
+}
+.btn-pill.secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--text-primary);
+}
+.btn-pill:hover {
+  transform: translateY(-3px);
+  background-color: rgba(26, 26, 26, 0.06);
+}
+
+/* Utility containers */
+.section { padding: var(--space-lg) 0; }
+.section-compact { padding: var(--space-md) 0; }
+.container { max-width: 1140px; margin: 0 auto; padding: 0 1rem; }
+
+/* Headings */
+h1,h2,h3,h4 { font-family: 'Outfit', sans-serif; font-weight: 800; color: var(--text-primary); }
+
+/* Small helpers */
+.grid-3 { display: grid; grid-template-columns: 1fr; gap: var(--space-md); }
+@media (min-width: 768px) { .grid-3 { grid-template-columns: repeat(3,1fr); } }
+.grid-2 { display: grid; grid-template-columns: 1fr; gap: var(--space-md); }
+@media (min-width: 768px) { .grid-2 { grid-template-columns: repeat(2,1fr); } }
+
+/* Smooth show on scroll helper */
+.reveal { opacity: 0; transform: translateY(6px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
 
 
 /* ############################################################################################# */
@@ -133,17 +202,19 @@
 /* BUTTON TEMPLATE */
 .btn {
   padding: 0.7rem 1.5rem;
-  border: none;
+  border: 2px solid var(--text-primary);
   border-radius: 50px;
-  color: white;
+  background: transparent;
+  color: var(--text-primary);
   font-size: var(--font-xxs);
   font-weight: 400;
   cursor: pointer;
-  transition: transform 0.2s ease;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  box-shadow: none;
 }
 
 .btn:hover {
   transform: scale(1.05);
+  background-color: rgba(26, 26, 26, 0.06);
 }
 

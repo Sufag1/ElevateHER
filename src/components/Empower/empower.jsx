@@ -30,7 +30,7 @@ export default function EmpowerImpact() {
               loading='lazy'
           />
         </div>
-        <div className="impact-list">
+        {/* <div className="impact-list">
           <div className="impact-list-one">
             <div className="impact-item">
               <span className="circle accent"></span> Practical, Job-Ready Training
@@ -50,7 +50,7 @@ export default function EmpowerImpact() {
         </div>
        <div className='impact-btn'>
           <button className="btn btn-blue">More About Us</button>
-       </div>
+       </div> */}
     </div>
 </section>
   );

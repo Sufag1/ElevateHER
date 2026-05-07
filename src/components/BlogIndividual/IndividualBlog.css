@@ -126,14 +126,19 @@
 
 .individual-blog-article-content button {
   margin-top: 1rem;
-  background-color: var(--color-purple);
-  color: white;
+  background-color: transparent;
+  color: var(--text-primary);
   padding: 8px 14px;
-  border: none;
+  border: 2px solid var(--text-primary);
   border-radius: 6px;
   cursor: pointer;
   font-size: 0.85rem;
+  box-shadow: none;
 } 
+
+.individual-blog-article-content button:hover {
+  background-color: rgba(26, 26, 26, 0.06);
+}
 
 .blog-info-tab {
     display: flex;
@@ -228,13 +233,16 @@
 .text-area button {
   width: 50%;
   height: 30px;
-  background: black;
-  color: #fff;
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--text-primary);
   margin-bottom: var(--space-lg);
+  box-shadow: none;
 }
 
 .text-area button:hover {
   transform: scale(1.05);
+  background-color: rgba(26, 26, 26, 0.06);
 }
 
 .content a {
@@ -243,10 +251,14 @@
 }
 
 .orange {
-  background: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--text-primary);
 }
 .blue {
-  background: linear-gradient(to right, var(--color-secondary), var(--color-secondary-light));
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--text-primary);
 }
 
 .about-author, .popular-posts {

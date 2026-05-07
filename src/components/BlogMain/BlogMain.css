@@ -1,6 +1,6 @@
 h1 {
   text-align: center;
-  color: aqua;
+  color: var(--text-primary);
 }
 
 .blog-page {
@@ -71,14 +71,19 @@ h1 {
 
 .blog-article-content button {
   margin-top: 1rem;
-  background-color: var(--color-purple);
-  color: white;
+  background-color: transparent;
+  color: var(--text-primary);
   padding: 8px 14px;
-  border: none;
+  border: 2px solid var(--text-primary);
   border-radius: 6px;
   cursor: pointer;
   font-size: 0.85rem;
+  box-shadow: none;
 } 
+
+.blog-article-content button:hover {
+  background-color: rgba(26, 26, 26, 0.06);
+}
 
 .blog-info, .blog-info-tab {
     display: flex;

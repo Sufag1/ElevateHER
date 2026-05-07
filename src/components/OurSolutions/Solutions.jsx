@@ -27,7 +27,7 @@ const Solutions = () => {
           Explore structured programs designed to equip women with the skills, confidence, and mentorship needed to excel in digital careers and access global opportunities.        </p>
         <div className="solutions-cards">
           {solutionsData.map((item) => (
-            <div className="solution-card" key={item.id}>
+            <div className="solution-card card" key={item.id}>
               <img src={ServiceBG} alt="service" className="bg-image" />
               <div className="card-text">
                 <div className="solution-icon">

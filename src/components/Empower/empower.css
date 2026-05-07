@@ -1,17 +1,25 @@
 .empowerImpact-section{
   background-color: var(--bg-light);
+  padding: var(--space-lg) 0;
 }
 
 .empowerImpact-title, .empowerImpact-title > *{
   text-align: center;
   font-size: var(--font-md);
   font-family: 'Outfit','Courier New', Courier, monospace;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--text-primary);
   margin-top: var(--space-lg);
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.empowerImpact-highlight {
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
 }
 
 .empowerImpact-description{
@@ -22,11 +30,12 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.6;
 }
 
 .latest-projects-heading span{
   font-weight: 700;
-  background: linear-gradient(to right, #f43f5e, #f59e0b);
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -39,27 +48,33 @@
 
 .engageCard-image {
   width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .impact-list {
-  margin: var(--space-sm) 0px var(--space-xs) 0px;
+  margin: var(--space-md) 0px var(--space-xs) 0px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .impact-item {
   display: flex;
   align-items: center;
   font-size: var(--font-xxs);
-  justify-content: start;
-  margin-bottom: var(--space-xs);
+  justify-content: center;
+  margin-bottom: var(--space-sm);
   color: var(--text-secondary);
+  font-weight: 500;
 }
 
 .circle {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  margin-right: 10px;
-  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+  margin-right: 12px;
+  flex-shrink: 0;
 }
 
 .accent {
@@ -71,14 +86,12 @@
 }
 
 .purple {
-  background-color: var(--color-purple);
+  background-color: var(--color-secondary);
 }
 
 .dark {
   background-color: var(--text-primary);
 }
-
-
 
 .impact-btn {
   display: flex;

@@ -22,17 +22,14 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="hero">
-      <div className="container hero-container">
-        <div className="hero-image">
-          {/* <img className="hero-person" src={HeroImageFront} alt="Hero" /> */}
-        </div>
-        <div className="hero-right">
+    <section className="hero" >
+      <div className="hero-container container">
+        <div className="hero-text">
           <p className="tagline">
-            <span role="img" aria-label="wave">👋</span> We Are Shaping the Future of Women!
+            Empowering Women in Tech
           </p>
           <h1>
-            Empowering Digital<br /> Dreams Through<br />
+            Unlock Your Potential in<br />
             <span
               className={`rotating-word ${isSliding ? "slide-bounce" : ""}`}
             >
@@ -40,11 +37,16 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="hero-subtitle">
-            We equip women with in-demand skills and connect <br /> them to global remote careers.
+            We equip women with in-demand digital skills, mentorship, and global career opportunities to thrive in the technology industry.
           </p>
           <div className="hero-buttons">
-            <button className="btn btn-blue">Get Started</button>
-            <button className="btn btn-orange">Apply Now</button>
+            <button className="btn btn-primary">Explore Pathways</button>
+            <button className="btn btn-secondary">Schedule Call</button>
+          </div>
+        </div>
+        <div className="hero-visual">
+          <div className="hero-image">
+            {/* <img className="hero-person" src={HeroImageFront} alt="Hero" /> */}
           </div>
         </div>
       </div>

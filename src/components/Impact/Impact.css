@@ -1,0 +1,6 @@
+.impact-section { background: var(--bg-accent); padding: var(--space-lg) 0; }
+.impact-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-md); text-align: center; }
+@media (min-width: 768px) { .impact-grid { grid-template-columns: repeat(4,1fr); } }
+.impact-item { padding: var(--space-md); background: transparent; box-shadow: none; border-radius: 12px; }
+.impact-number { font-size: 2rem; font-weight: 900; color: var(--text-primary); margin: 0; }
+.impact-label { margin-top: .5rem; color: var(--text-secondary); font-weight: 600; }

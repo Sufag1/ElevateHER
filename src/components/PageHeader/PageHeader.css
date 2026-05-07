@@ -1,7 +1,8 @@
 
 
 .page-header-section {
-    background-color: var(--bg-dark);
+    background-color: var(--bg-light);
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .page-header-container {
@@ -10,12 +11,10 @@
 
 .page-header{
   position: relative;
-  /* padding-left: var(--space-xl);
-  padding-right: var(--space-lg); */
   padding-top: var(--space-xl);
   text-align: center;
   height: 250px;
-  background-color: #EFF2FB;
+  background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-accent) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,6 +27,7 @@
     color: var(--text-primary);
     z-index: 2;
     position: relative;
+    font-weight: 900;
   }
 .bg-icon{
   position: absolute;

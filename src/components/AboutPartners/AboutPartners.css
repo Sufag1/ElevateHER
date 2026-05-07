@@ -1,6 +1,7 @@
 .Partners-Section {
-    background-color: var(--bg-dark);
+    background-color: var(--bg-light);
     padding: var(--space-lg) var(--space-sm);
+    border-top: 1px solid #e5e5e5;
     }
 
 .Partners-Content {
@@ -14,17 +15,19 @@
 
 .Partners-Title {
     font-size: var(--font-lg);
-    font-weight: 700;
+    font-weight: 800;
     color: var(--text-primary);
     font-family: "Outfit", sans-serif;
     text-align: center;
     }
 
 .Partners-Title span {
-    color: var(--color-primary);
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: "Outfit", sans-serif;
     text-align: center;
-    font-weight: 700;
+    font-weight: 900;
     }
 
 .Partners-Carousel {

@@ -5,6 +5,8 @@ import OurSolutions from "../../components/OurSolutions/Solutions";
 import BlogSection from "../../components/Blog/Blog";
 import Testimonial from "../../components/Testimonial/Testimonial";
 import Footer from "../../components/Footer/Footer";
+import Impact from "../../components/Impact/Impact";
+import FinalCTA from "../../components/FinalCTA/FinalCTA";
 
 
 function Home() {
@@ -15,7 +17,9 @@ function Home() {
         <Testimonial />
         <ClientsReview />
         <OurSolutions />
+        <Impact />
         <BlogSection />
+        <FinalCTA />
         <Footer wavePosition="bottom"/>
     </>
   )

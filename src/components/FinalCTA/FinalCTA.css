@@ -1,0 +1,4 @@
+.final-cta { background: linear-gradient(135deg, var(--bg-light), var(--bg-accent)); }
+.final-cta-card { text-align: center; padding: var(--space-lg); border-radius: 12px; }
+.final-cta-card h2 { font-size: var(--font-xl); margin: 0 0 .5rem 0; }
+.final-cta-card p { color: var(--text-secondary); margin: 0 0 1rem 0; }

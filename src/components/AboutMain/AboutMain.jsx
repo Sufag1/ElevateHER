@@ -4,8 +4,8 @@ import profileImage from '../../assets/about-1.webp';
 
 const AboutMain = () => {
   return (
-    <section className="about-us-section ">
-      <div className="about-us-container ">
+    <section className="about-us-section">
+      <div className="about-us-container container">
         <div className="about-us-left">
           <h2 className="about-us-title">
             Empowering Women Through <span className="highlight-about">Skills</span> and Opportunity
