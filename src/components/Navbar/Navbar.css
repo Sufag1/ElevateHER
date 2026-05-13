@@ -23,7 +23,7 @@
 
 .navbar.transparent { background-color: transparent; box-shadow: none; backdrop-filter: none; }
 .navbar.solid { background-color: rgba(255,255,255,0.98); box-shadow: 0 6px 24px rgba(15,23,42,0.06); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); padding: 10px 0px; }
-.navbar-top-border { height: 3px; background: linear-gradient(to right, var(--color-secondary), var(--color-accent)); width: 100%; }
+.navbar-top-border { height: 0; background: transparent; width: 100%; padding-top: 25px; }
 
 .navbar-container {
   padding: 12px var(--space-sm);

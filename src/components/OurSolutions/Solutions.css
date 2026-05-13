@@ -139,31 +139,31 @@
     stroke-width: 2px;
     -webkit-text-stroke-color: rgba(26, 26, 26, 0.08);
     stroke: rgba(26, 26, 26, 0.08);
-    color: #F1F5FB;
+    color: #a3a6aa;
     margin-bottom: 20%;
     margin-left: 20%;
 }
 
 .webdev {
-  --fg-image-bg: #fff2e3;
+  --fg-image-bg: #dab38d;
   box-shadow: 5px 5px 0.5px #d4a373;
   background-color: #f5f3f0;
 }
 
 .ai {
-  --fg-image-bg: #f0f2f5;
+  --fg-image-bg: #636161;
   box-shadow: 5px 5px 0.5px #3d3d3d;
   background-color: #f7f7f7;
 }
 
 .devops {
-  --fg-image-bg: #f0f2f5;
+  --fg-image-bg: #807e7e;
   box-shadow: 5px 5px 0.5px #555;
   background-color: #f0eeeb;
 }
 
 .bizdev {
-  --fg-image-bg: #fff2e3;
+  --fg-image-bg: #dab28b;
   background-color: #f9f7f4;
   box-shadow: 5px 5px 0.5px #d4a373;
 }
