@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import "./Courses.css";
 
-import eventImage1 from '../../assets/AI-png.webp';
-import eventImage2 from '../../assets/devops-png.webp';
-import eventImage3 from '../../assets/backend-png.webp';
-import eventImage4 from '../../assets/fullstack-second.webp';
-import eventImage5 from '../../assets/Frontend-png.webp';
-import eventImage6 from '../../assets/business-development-2.webp';
+import eventImage1 from '../../assets/Pict/ia.webp';
+import eventImage2 from '../../assets/Pict/DEv.webp';
+import eventImage3 from '../../assets/Pict/BE.webp';
+import eventImage4 from '../../assets/Pict/FS.webp';
+import eventImage5 from '../../assets/Pict/FE.webp';
+import eventImage6 from '../../assets/Pict/mana.webp';
 
 function Courses() {
   const courseList = [
@@ -55,7 +55,7 @@ function Courses() {
       <div className="latest-projects-section">
         <h2 className="latest-projects-heading">
           <h2 className="empowerImpact-title">
-            Latest <span className="empowerImpact-highlight">Courses</span> 
+            Latest <span className="empowerImpact-highlight">Courses</span>
           </h2>
         </h2>
         <p className="latest-projects-description">

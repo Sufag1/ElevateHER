@@ -9,59 +9,59 @@ import {
   FaEnvelope,
   FaPaperPlane
 } from "react-icons/fa";
-import { FiShare2 } from "react-icons/fi"; 
-import eventImage3 from '../../assets/backend-png.webp';
-import Reactpic from '../../assets/back.jpg'
+import { FiShare2 } from "react-icons/fi";
+import eventImage3 from '../../assets/Pict/BE.webp';
+import Reactpic from '../../assets/Pict/bee.webp'
 
 
 
-const Back= () => {
+const Back = () => {
   const [showOptions, setShowOptions] = useState(false);
 
   const toggleShareOptions = () => {
     setShowOptions(!showOptions);
   };
 
- const shareLinks = [
-  { name: "Facebook", url: "https://www.facebook.com/sharer/sharer.php?u=YOUR_URL", icon: <FaFacebookF /> },
-  { name: "Twitter", url: "https://twitter.com/intent/tweet?url=YOUR_URL&text=Check%20this%20out!", icon: <FaTwitter /> },
-  { name: "LinkedIn", url: "https://www.linkedin.com/shareArticle?url=YOUR_URL", icon: <FaLinkedinIn /> },
-  { name: "WhatsApp", url: "https://api.whatsapp.com/send?text=YOUR_URL", icon: <FaWhatsapp /> },
-  { name: "Email", url: "mailto:?subject=Check%20this%20out&body=YOUR_URL", icon: <FaEnvelope /> },
-  { name: "Telegram", url: "https://t.me/share/url?url=YOUR_URL", icon: <FaPaperPlane /> },
-];
+  const shareLinks = [
+    { name: "Facebook", url: "https://www.facebook.com/sharer/sharer.php?u=YOUR_URL", icon: <FaFacebookF /> },
+    { name: "Twitter", url: "https://twitter.com/intent/tweet?url=YOUR_URL&text=Check%20this%20out!", icon: <FaTwitter /> },
+    { name: "LinkedIn", url: "https://www.linkedin.com/shareArticle?url=YOUR_URL", icon: <FaLinkedinIn /> },
+    { name: "WhatsApp", url: "https://api.whatsapp.com/send?text=YOUR_URL", icon: <FaWhatsapp /> },
+    { name: "Email", url: "mailto:?subject=Check%20this%20out&body=YOUR_URL", icon: <FaEnvelope /> },
+    { name: "Telegram", url: "https://t.me/share/url?url=YOUR_URL", icon: <FaPaperPlane /> },
+  ];
 
   return (
     <section className="container">
-          <section className="Ai-container">
-    <div className="divider-desk-con">
+      <section className="Ai-container">
+        <div className="divider-desk-con">
           <section className="ai-card-container">
             <div className="ai-image-wrapper">
-            <img src={eventImage3} alt="Artificial Intelligence" />
-          </div>
-          <p className="ai-paragraph empowerImpact-description">
-            Step into the world behind the scenes! This course introduces students to the backbone of modern web applications, where data flows and logic comes to life. From building APIs and handling databases to securing servers and optimizing performance, learners explore the tools that make websites functional and scalable. With hands-on projects and real-world infrastructure, students gain the skills to power robust digital experiences from the inside out.
-          </p>
-              <div>
-                 <div className="ai-quote-card">
-<h2 className="blog-title course-ttl">
-                Backend Deveolpment <span className="highlight-blog course-ttl">Course</span>
-            </h2>      <blockquote className="ai-quote-paragraph empowerImpact-description">
-        This course dives deep into the server-side of web development, equipping you with the skills to build secure, scalable, and efficient backend systems. You'll start with Node.js and Express to create robust APIs and handle server logic. You'll then integrate MongoDB or PostgreSQL for database management. The course also covers authentication, authorization, RESTful API design, and deployment. Through real-world projects , you'll learn how to power the logic behind any full-stack application.
-      </blockquote>
-              <p style={{ color: 'grey' }}><i>Duration: 6 months</i>  </p>
-    </div>
+              <img src={eventImage3} alt="Artificial Intelligence" />
+            </div>
+            <p className="ai-paragraph empowerImpact-description">
+              Step into the world behind the scenes! This course introduces students to the backbone of modern web applications, where data flows and logic comes to life. From building APIs and handling databases to securing servers and optimizing performance, learners explore the tools that make websites functional and scalable. With hands-on projects and real-world infrastructure, students gain the skills to power robust digital experiences from the inside out.
+            </p>
+            <div>
+              <div className="ai-quote-card">
+                <h2 className="blog-title course-ttl">
+                  Backend Deveolpment <span className="highlight-blog course-ttl">Course</span>
+                </h2>      <blockquote className="ai-quote-paragraph empowerImpact-description">
+                  This course dives deep into the server-side of web development, equipping you with the skills to build secure, scalable, and efficient backend systems. You'll start with Node.js and Express to create robust APIs and handle server logic. You'll then integrate MongoDB or PostgreSQL for database management. The course also covers authentication, authorization, RESTful API design, and deployment. Through real-world projects , you'll learn how to power the logic behind any full-stack application.
+                </blockquote>
+                <p style={{ color: 'grey' }}><i>Duration: 6 months</i>  </p>
+              </div>
               <div className="ai-image-wrapper">
-<h2 className="blog-title course-ttl">
-                Project <span className="highlight-blog project-smp">Sample</span>
-            </h2>                <img src={Reactpic} alt="Full Stack Development" />
+                <h2 className="blog-title course-ttl">
+                  Project <span className="highlight-blog project-smp">Sample</span>
+                </h2>                <img src={Reactpic} alt="Full Stack Development" />
               </div>
             </div>
-            </section>
-            
-    <section>
-     
-    
+          </section>
+
+          <section>
+
+
             {/* <div className="share-container">
               <div className="share-text" onClick={toggleShareOptions}>
                 <FiShare2 /> <span>Share</span>
@@ -91,11 +91,11 @@ const Back= () => {
               </div>
               <button className="btn btn-orange"> Apply Now</button>
             </div> */}
-    
-    </section>
-            
-    </div>
-          
+
+          </section>
+
+        </div>
+
         {/* <div className="nav-buttons container">
   <a href="/frontend-development" >
       <button className="btn btn-blue">Previous</button>
@@ -107,10 +107,10 @@ const Back= () => {
 
   </a>
 </div> */}
-    
-          </section>
-        </section>
-      );
-    };
+
+      </section>
+    </section>
+  );
+};
 
 export default Back;

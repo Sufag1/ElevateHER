@@ -1,12 +1,13 @@
-.empowerImpact-section{
+.empowerImpact-section {
   background-color: var(--bg-light);
   padding: var(--space-lg) 0;
 }
 
-.empowerImpact-title, .empowerImpact-title > *{
+.empowerImpact-title,
+.empowerImpact-title>* {
   text-align: center;
   font-size: var(--font-md);
-  font-family: 'Outfit','Courier New', Courier, monospace;
+  font-family: 'Outfit', 'Courier New', Courier, monospace;
   font-weight: 800;
   color: var(--text-primary);
   margin-top: var(--space-lg);
@@ -22,8 +23,8 @@
   font-weight: 900;
 }
 
-.empowerImpact-description{
-  text-align: center;
+.empowerImpact-description {
+  text-align: start;
   margin-top: var(--space-sm);
   margin-bottom: var(--space-md);
   color: var(--text-secondary);
@@ -33,7 +34,7 @@
   line-height: 1.6;
 }
 
-.latest-projects-heading span{
+.latest-projects-heading span {
   font-weight: 700;
   background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
   -webkit-background-clip: text;
@@ -105,13 +106,13 @@
 }
 
 @media (min-width: 375px) {
-   html {
+  html {
     font-size: 18px;
   }
 }
 
 @media (min-width: 593px) {
-   html {
+  html {
     font-size: 19px;
   }
 }
@@ -140,7 +141,7 @@
   .engageCard-image {
     width: 250px;
   }
-  }
+}
 
 
 @media (min-width: 1024px) {
@@ -149,9 +150,9 @@
     font-size: 20px;
   }
 
-  .empowerImpact-description{
-  max-width: 700px;
-}
+  .empowerImpact-description {
+    max-width: 700px;
+  }
 
   .engageCard-image-desktop {
     width: 300px;
@@ -160,7 +161,7 @@
   .engageCard-image {
     width: 300px;
   }
-  
+
 }
 
 @media (min-width: 1440px) {
@@ -168,7 +169,7 @@
     font-size: 25px;
   }
 
-   .engageCard-image-desktop {
+  .engageCard-image-desktop {
     width: 400px;
   }
 
@@ -176,7 +177,7 @@
     width: 400px;
   }
 
-.empowerImpact-description{
-  max-width: 900px;
-}
+  .empowerImpact-description {
+    max-width: 900px;
+  }
 }
