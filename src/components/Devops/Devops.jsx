@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import eventImage2 from '../../assets/Pict/DEv.webp';
-import Reactpic from '../../assets/Pict/Bizn.jpg'
+import Reactpic from '../../assets/Pict/Bizn.webp'
 import '../AI/AI.css';
 
 import {

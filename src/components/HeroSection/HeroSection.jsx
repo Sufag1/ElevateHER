@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
-import HeroImageSide from "../../assets/Pict/DSC_6358.webp";
-import HeroImageFront from "../../assets/Pict/DSC_6482.webp";
+import HeroImg1 from "../../assets/Pict/DSC_6482.webp";
+import HeroImg2 from "../../assets/Pict/DSC_6394.webp";
+import HeroImg3 from "../../assets/Pict/DSC_6358.webp";
+import HeroImg4 from "../../assets/Pict/DSC_6101.webp";
 
 const rotatingWords = ["DevOps", "Artificial Intelligence", "Web Development", "Business Development"];
 
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isSliding, setIsSliding] = useState(true);
+
+  const heroImages = [HeroImg1, HeroImg2, HeroImg3, HeroImg4];
+  const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -19,6 +24,14 @@ const HeroSection = () => {
     }, 2500);
 
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const heroInterval = setInterval(() => {
+      setCurrentHeroIndex((prev) => (prev + 1) % heroImages.length);
+    }, 6000);
+
+    return () => clearInterval(heroInterval);
   }, []);
 
   return (
@@ -46,7 +59,15 @@ const HeroSection = () => {
         </div>
         <div className="hero-visual">
           <div className="hero-image">
-            {/* <img className="hero-person" src={HeroImageFront} alt="Hero" /> */}
+            {heroImages.map((src, idx) => (
+              <img
+                key={idx}
+                src={src}
+                alt={`Hero ${idx}`}
+                className={idx === currentHeroIndex ? "active" : ""}
+                loading="lazy"
+              />
+            ))}
           </div>
         </div>
       </div>

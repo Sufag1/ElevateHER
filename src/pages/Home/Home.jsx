@@ -14,9 +14,10 @@ function Home() {
     <>
         <HeroSection/>
         <Empower />
+        <OurSolutions />
         <Testimonial />
         <ClientsReview />
-        <OurSolutions />
+        
         <Impact />
         <BlogSection />
         <FinalCTA />

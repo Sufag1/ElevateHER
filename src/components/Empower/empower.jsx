@@ -1,6 +1,7 @@
 import './empower.css';
 import EasyImage1 from "../../assets/Pict/homepg.webp";
 import EasyImage2 from "../../assets/Pict/anty.webp";
+import EasyImage3 from "../../assets/Pict/mana.webp";
 
 export default function EmpowerImpact() {
   return (
@@ -27,6 +28,13 @@ export default function EmpowerImpact() {
             src={EasyImage2}
             alt="Empowering Woman"
             className="engageCard-image-desktop"
+            loading='lazy'
+          />
+
+          <img
+            src={EasyImage3}
+            alt="Empowering Woman"
+            className="engageCard-image"
             loading='lazy'
           />
         </div>

@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import { FiShare2 } from "react-icons/fi";
 import eventImage6 from '../../assets/Pict/mana.webp';
-import Reactpic from '../../assets/Pict/bizzz.jpg'
+import Reactpic from '../../assets/Pict/bizzz.webp'
 
 
 
