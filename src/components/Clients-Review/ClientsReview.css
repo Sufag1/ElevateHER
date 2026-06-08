@@ -360,8 +360,6 @@
     .Review-divContainer>div{
         flex: 0 0 auto;              
         width: 430px;          
-        min-height: 380px;          
-        /* max-height: 380px; */
         overflow-x: hidden;
     }
 }
@@ -385,7 +383,7 @@
     .Review-divContainer>div{
         flex: 0 0 auto;              
         width: 590px;          
-        min-height: 335px;          
+        /* min-height: 335px;           */
         /* max-height: 335px; */
         overflow-x: hidden;
         padding-bottom: 50px;

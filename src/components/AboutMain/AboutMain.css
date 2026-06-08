@@ -46,7 +46,6 @@
 
 .about-us-person-img {
   width: 100%;
-  padding-bottom: 50px;
 }
 
 .about-us-engagement-box {
@@ -158,11 +157,11 @@
   margin-right: auto;
 }
 
-.about-us-person {
+/* .about-us-person {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .about-us-description {
     max-width: 600px;

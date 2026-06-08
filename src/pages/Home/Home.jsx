@@ -7,6 +7,7 @@ import Testimonial from "../../components/Testimonial/Testimonial";
 import Footer from "../../components/Footer/Footer";
 import Impact from "../../components/Impact/Impact";
 import FinalCTA from "../../components/FinalCTA/FinalCTA";
+import Partners from "../../components/AboutPartners/AboutPartners"
 
 
 function Home() {
@@ -16,11 +17,11 @@ function Home() {
         <Empower />
         <OurSolutions />
         <Testimonial />
-        <ClientsReview />
-        
+        <ClientsReview /> 
         <Impact />
         <BlogSection />
         <FinalCTA />
+        <Partners />
         <Footer wavePosition="bottom"/>
     </>
   )
