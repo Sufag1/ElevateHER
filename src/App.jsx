@@ -11,6 +11,7 @@ import Frontend from './pages/Frontend-page/Frontend-page';
 import Backend from './pages/Backend-page/Backend-page';
 import Business from './pages/BusinessPage/Business-page';
 import About from "./pages/About/About";
+import Startup from "./pages/Startup/Startup";
 import Contact from "./pages/Contact/Contact";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
@@ -23,7 +24,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<AllBlogs />} />
         <Route path="/blog/:id" element={<OneBlog />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/port" element={<Home />} />
+        <Route path="/courses" element={<Portfolio />} />
         <Route path="/artificial-intelligence" element={<Artficial />} />
         <Route path="/devops" element={<Devops />} />
         <Route path="/full-stack-development" element={<Fulstack />} />
@@ -31,6 +33,7 @@ function App() {
         <Route path="/backend-development" element={<Backend />} />
         <Route path="/business-development" element={<Business />} />
         <Route path="/about" element={<About />} />
+        <Route path="/startup/:name" element={<Startup />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>

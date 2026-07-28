@@ -39,7 +39,8 @@
     display: flex;
     align-items: center;
     gap: var(--space-lg);
-    animation: scroll 5s linear infinite;
+    animation: scroll 10s linear infinite;
+    width: max-content;
     }
 
 .Partners-Logos img {
@@ -49,7 +50,7 @@
 
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    100% { transform: translateX(-33.3333%); }
     }
 
 @media (min-width: 320px) {

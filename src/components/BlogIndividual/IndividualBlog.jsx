@@ -12,6 +12,10 @@ import Whatsapp from "../../assets/Whatsapp.svg";
 import Youtube from "../../assets/Youtube.svg";
 import Instagram from "../../assets/Instagram.svg";
 import LinkedIn from "../../assets/LinkedIn.svg";
+import Cyber1 from "../../assets/CyberA1.jpeg";
+import Cyber2 from "../../assets/CyberA2.jpeg";
+import Cyber3 from "../../assets/CyberA3.jpeg";
+import Cyber4 from "../../assets/CyberA4.jpeg";
 
 
 
@@ -44,19 +48,21 @@ const IndividualBlog = () => {
             <div className="blog-info-tab">
               <div className="date">
                 <span>
-                  • {post.month}, {post.date}
+                  • {post.month}, {post.date} {post.year}
                 </span>
               </div>
-              <div className="content">
+              {/* <div className="content">
                 <Link to={`/blog/${post.id}`} className="content-link">• Content</Link>
-            </div>
+            </div> */}
 
             </div>
             <p>{post.description}</p>
           </div>
+          <div className="other-event-pics"><img src={Cyber2} alt="" /><img src={Cyber3} alt="" /><img src={Cyber4} alt="" />
+          </div>
         </div>
 
-        <div className="tag-share">
+        {/* <div className="tag-share">
           <div className="tags-div">
             <i className="tag">Tags:</i>{" "}
             <i className="tags">
@@ -114,7 +120,7 @@ const IndividualBlog = () => {
   )}
 </div>
 
-        </div>
+        </div> */}
         <div className="blog-navigation">
           {prevPost && (
             <Link to={`/blog/${prevPost.id}`} className="prev-blog">

@@ -22,6 +22,11 @@ const AboutMain = () => {
                 alt="Surprised man pointing"
                 className="about-us-person-img"
               />
+              <img
+                src={profileImage}
+                alt="Surprised man pointing"
+                className="about-us-person-img"
+              />
             </div>
             {/* <div className="about-us-person">
               <img

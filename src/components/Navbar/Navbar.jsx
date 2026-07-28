@@ -19,6 +19,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [portfolioDropdown, setPortfolioDropdown] = useState(false);
   const menuRef = useRef(null);
+  const portfolioDropdownRef = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -32,6 +33,22 @@ const Navbar = () => {
   }, [menuOpen, portfolioDropdown]);
 
   useEffect(() => {
+    if (!portfolioDropdown) return;
+
+    const handleClickOutside = (event) => {
+      if (
+        portfolioDropdownRef.current &&
+        !portfolioDropdownRef.current.contains(event.target)
+      ) {
+        setPortfolioDropdown(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [portfolioDropdown]);
+
+  useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll);
@@ -43,7 +60,11 @@ const Navbar = () => {
   useEffect(() => {
     if (location.pathname === "/") {
       setActiveLink("Home");
-    } else if (location.pathname === "/portfolio" || coursePaths.includes(location.pathname)) {
+    } else if (
+      location.pathname === "/port" ||
+      location.pathname === "/courses" ||
+      coursePaths.includes(location.pathname)
+    ) {
       setActiveLink("Portfolio");
     } else if (location.pathname === "/blog") {
       setActiveLink("Blog");
@@ -90,14 +111,22 @@ const Navbar = () => {
                 Home
               </Link>
 
-              <div className="nav-dropdown portfolio-dropdown">
-                <div className={`portfolio-dropdown-trigger ${activeLink === "Portfolio" ? "active" : ""}`}>
+              {/* <Link
+                to="/port"
+                className={activeLink === "Portfolio" ? "active" : ""}
+                onClick={closeMobileMenu}
+              >
+                Portfolio
+              </Link> */}
+
+              <div className="nav-dropdown port-dropdown" ref={portfolioDropdownRef}>
+                <div className={`portfolio-dropdown-trigger ${activeLink === "Port" ? "active" : ""}`}>
                   <Link
-                    to="/portfolio"
-                    className={`portfolio-link ${activeLink === "Portfolio" ? "active" : ""}`}
+                    to="/courses"
+                    className={`port-link ${activeLink === "Port" ? "active" : ""}`}
                     onClick={closeMobileMenu}
                   >
-                    Portfolio
+                    Courses
                   </Link>
                   <button
                     type="button"
@@ -106,7 +135,7 @@ const Navbar = () => {
                     aria-expanded={portfolioDropdown}
                     onClick={() => setPortfolioDropdown(!portfolioDropdown)}
                   >
-                    <span aria-hidden="true">{portfolioDropdown ? "v" : ">"}</span>
+                    <span aria-hidden="true">{portfolioDropdown ? "v":">"}</span>
                   </button>
                 </div>
 
@@ -131,7 +160,7 @@ const Navbar = () => {
                 className={activeLink === "Blog" ? "active" : ""}
                 onClick={closeMobileMenu}
               >
-                Blog
+                Events
               </Link>
 
               <Link
@@ -139,7 +168,7 @@ const Navbar = () => {
                 className={activeLink === "About Us" ? "active" : ""}
                 onClick={closeMobileMenu}
               >
-                About Us
+                Portfolio
               </Link>
 
               <Link

@@ -41,8 +41,8 @@ const Footer = ({ wavePosition = "bottom" }) => {
           <h3>Contact</h3>
           <div className="divider"></div>
           <p>No. 1A Asma'u Yakubu Street,<br />off Lamido Crescent, Kano, Nigeria</p>
-          <p>Email: <a href="mailto:info@elevateher.nigeria">info@elevateher.nigeria</a></p>
-          <p>Phone: +234 800 000 0000</p>
+          <p>Email:<a href="mailto:info@elevateher.nigeria">khadija@elevateher.com</a></p>
+          <p>Phone: +2349016966819 <br/>+2348155185040</p>
         </div>
 
         {/* <div className="footer-box">

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./ClientsReview.css";
 import "../../index.css";
 
@@ -119,7 +120,9 @@ const ClientsReview = () => {
                         Hear what our students have to say about their learning experience, growth, and career journey with us.
                         {/* Erat dolore consequuntur facere consectetuer beatae beatae habitant conubia porttitor ridiculus cillum animi hic enim dolor, excepteur. */}
                     </p>
-                    <button className="btn btn-blue">More About Us</button>
+                    <Link to="/about">
+                      <button className="btn btn-blue">More About Us</button>
+                    </Link>
                 </div>
 
                     <div className="reviewsRow">

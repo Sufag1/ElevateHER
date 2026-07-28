@@ -126,11 +126,13 @@
 .navbar-links .dropdown-toggle {
   padding: var(--space-xs) var(--space-sm);
   text-align: left;
-  color: #1a1a1a;
+  color: #2d2d2d;
   font-size: var(--font-xxs);
   font-weight: 600;
+  font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0.3px;
   border-top: 1px solid #eee;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
   position: relative;
   border: none;
   background: none;
@@ -143,11 +145,14 @@
 .navbar-links .dropdown-toggle.active {
   color: var(--color-secondary);
   font-weight: 700;
+  letter-spacing: 0.4px;
+  text-shadow: 0 0 1px rgba(255, 105, 75, 0.1);
 }
 
 .navbar-links a:hover,
 .navbar-links .dropdown-toggle:hover {
   color: var(--color-secondary);
+  font-weight: 650;
 }
 
 .nav-dropdown {
@@ -168,14 +173,18 @@
 .dropdown-item {
   padding: var(--space-xs) var(--space-md) !important;
   border-top: none !important;
-  color: var(--text-secondary) !important;
+  color: #3d3d3d !important;
   font-weight: 500 !important;
   font-size: 0.85rem !important;
+  font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  letter-spacing: 0.2px !important;
+  transition: color 0.3s ease, background-color 0.3s ease !important;
 }
 
 .dropdown-item:hover {
   color: var(--color-secondary) !important;
-  background-color: #f0f0f0;
+  background-color: rgba(255, 105, 75, 0.06) !important;
+  font-weight: 600 !important;
 }
 
 .hamburger {
@@ -217,6 +226,33 @@
     padding: 0 !important;
     border: none !important;
     position: relative;
+    font-size: 0.95rem;
+    color: #2d2d2d;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+
+  .navbar-links a:hover,
+  .navbar-links .dropdown-toggle:hover {
+    color: var(--color-secondary);
+    transform: translateY(-2px);
+  }
+
+  .navbar-links a.active,
+  .navbar-links .dropdown-toggle.active {
+    color: var(--color-secondary);
+    position: relative;
+  }
+
+  .navbar-links a.active::after,
+  .navbar-links .dropdown-toggle.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-accent));
+    border-radius: 1px;
   }
 
   .nav-dropdown {
@@ -233,8 +269,8 @@
     left: 0;
     background-color: white;
     border: 1px solid #e5e5e5;
-    border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     min-width: 220px;
     border-left: none;
     margin-top: 8px;
@@ -247,10 +283,15 @@
     border-radius: 0;
     display: block;
     white-space: nowrap;
+    color: #3d3d3d !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
   }
 
   .dropdown-item:hover {
-    background-color: var(--bg-accent);
+    background-color: rgba(255, 105, 75, 0.08) !important;
+    color: var(--color-secondary) !important;
+    padding-left: calc(var(--space-md) + 4px) !important;
   }
 
   .hamburger {
@@ -504,6 +545,7 @@
   justify-content: space-between;
   border-top: 1px solid var(--text-secondary);
   width: 100%;
+  gap: 4px;
 }
 
 .navbar-links .portfolio-link {
@@ -519,6 +561,7 @@
   justify-content: center;
   min-width: 44px;
   width: auto;
+  padding: 0 var(--space-xs);
 }
 
 .portfolio-toggle span {
@@ -533,7 +576,7 @@
 
   .portfolio-dropdown-trigger {
     border-top: 0;
-    gap: 6px;
+    gap: 4px;
     width: auto;
   }
 

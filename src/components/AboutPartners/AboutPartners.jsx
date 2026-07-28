@@ -31,6 +31,12 @@ const AboutPartners = () => {
                         <img src={Partner4} alt="Partner 4" />
                         <img src={Partner5} alt="Partner 5" />
                         <img src={Partner6} alt="Partner 6" />
+                        <img src={Partner1} alt="Partner 1" />
+                        <img src={Partner2} alt="Partner 2" />
+                        <img src={Partner3} alt="Partner 3" />
+                        <img src={Partner4} alt="Partner 4" />
+                        <img src={Partner5} alt="Partner 5" />
+                        <img src={Partner6} alt="Partner 6" />
                     </div>
                 </div>
             </div>

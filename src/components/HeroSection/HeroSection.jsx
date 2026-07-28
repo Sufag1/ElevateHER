@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./HeroSection.css";
 import HeroImg1 from "../../assets/Pict/DSC_6482.webp";
 import HeroImg2 from "../../assets/Pict/DSC_6394.webp";
@@ -53,8 +54,10 @@ const HeroSection = () => {
             We equip women with in-demand digital skills, mentorship, and global career opportunities to thrive in the technology industry.
           </p>
           <div className="hero-buttons">
-            <button className="btn btn-primary">Explore Pathways</button>
-            <button className="btn btn-secondary">Schedule Call</button>
+            {/* <button className="btn btn-primary">Explore Pathways</button> */}
+            <Link to="/contact">
+              <button className="btn btn-secondary">Contact Us</button>
+            </Link>
           </div>
         </div>
         <div className="hero-visual">

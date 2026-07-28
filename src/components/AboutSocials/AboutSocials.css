@@ -12,15 +12,25 @@
     align-items: center;
     gap: var(--space-lg);
 }
+.startups-msg {
+    margin-top: 4rem;
+}
+.soc {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+    width: 100%;
+    justify-items: center;
+}
 
 .SocialDiv{
     border-radius: 30px;
     box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.15);
     padding: 40px;
     background-color: var(--bg-light);
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     min-height: 320px;
-    max-height: 320px;
     justify-items: center;
     align-content: center;
     text-align: center;
@@ -29,7 +39,7 @@
     justify-content: center;      
     align-items: center;    
     gap: var(--space-xs);   
-    margin-bottom: 50px;
+    margin-bottom: 0;
 }
 
 .SocialDiv1{
@@ -61,7 +71,7 @@
 }
 
 .socialicons{
-    width: 100px;
+    /* width: 100px; */
     height: 100px;
 }
 
@@ -175,12 +185,14 @@
 
 
 .soc {
-    display: flex;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
 .SocialDiv{
-    width: 250px;
+    width: 100%;
+    max-width: 340px;
     height: 350px;
 }
 

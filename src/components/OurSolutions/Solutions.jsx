@@ -7,10 +7,10 @@ import Bizdev from "../../assets/chart.svg";
 import ServiceBG from "../../assets/Services-BG2.png";
 
 const solutionsData = [
-  { id: 1, title: "Web Development", icon: WebDev, shapeClass: "webdev", text: "Learn to build responsive, user-friendly websites and applications while gaining the skills needed for real-world digital projects." },
-  { id: 2, title: "Artificial Intelligence", icon: AI, shapeClass: "ai", text: "Learn to build intelligent, data-driven systems and applications while gaining the skills needed for real-world AI projects."},
-  { id: 3, title: "DevOps", icon: DevOps, shapeClass: "devops", text: "Learn to build, deploy, and maintain scalable systems while developing skills essential for modern IT operations." },
-  { id: 4, title: "Business Development", icon: Bizdev, shapeClass: "bizdev", text: "Gain practical skills in strategy, entrepreneurship, and market development to thrive in the global business landscape." },
+  { id: 1, title: "Web Development", icon: WebDev, shapeClass: "webdev", path: "/frontend-development", text: "Learn to build responsive, user-friendly websites and applications while gaining the skills needed for real-world digital projects." },
+  { id: 2, title: "Artificial Intelligence", icon: AI, shapeClass: "ai", path: "/artificial-intelligence", text: "Learn to build intelligent, data-driven systems and applications while gaining the skills needed for real-world AI projects."},
+  { id: 3, title: "DevOps", icon: DevOps, shapeClass: "devops", path: "/devops", text: "Learn to build, deploy, and maintain scalable systems while developing skills essential for modern IT operations." },
+  { id: 4, title: "Business Development", icon: Bizdev, shapeClass: "bizdev", path: "/business-development", text: "Gain practical skills in strategy, entrepreneurship, and market development to thrive in the global business landscape." },
 ];
 
 const Solutions = () => {
@@ -45,7 +45,7 @@ const Solutions = () => {
                   {item.text}
                 </p>
                 <div className="learn-more-link">
-                  <Link to="/learn">Learn more...</Link>
+                  <Link to={item.path}>Learn more...</Link>
                 </div>
               </div>
             </div>

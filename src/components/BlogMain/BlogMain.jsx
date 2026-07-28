@@ -30,12 +30,12 @@ const BlogMain = () => {
                 <div className="blog-info iflex">
                   <div className="date">
                     <span className="date">
-                      • {post.month},{post.date}
+                      • {post.month},{post.date} {post.year}
                     </span>
                   </div>
-              <div className="content">
+              {/* <div className="content">
                 <span className="content">• Content</span>
-              </div>
+              </div> */}
             </div>
             <div className="blog-article-content">
               <h2>{post.title}</h2>
@@ -45,12 +45,12 @@ const BlogMain = () => {
               
                   <div className="date">
                     <span className="date dmc">
-                      • {post.month}, {post.date}
+                      • {post.month}, {post.date} {post.year}
                     </span>
                   </div>
-                  <div className="content">
+                  {/* <div className="content">
                     <Link to={`/blog/${post.id}`} className="content-link dmc">• Content</Link>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="post-button">
                   <p>{post.description.length > 10 ? post.description.slice(0, 55) + '...' : post.description}</p>
