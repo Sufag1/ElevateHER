@@ -48,7 +48,7 @@ const AboutSocials = () => {
                         <div key={s.slug} className={`SocialDiv ${s.slug === 'shepall' ? 'SocialDiv1' : 'SocialDiv2'}`}>
                             <img src={s.img} alt={s.name} className="socialicons" />
                             <div className="div-maintext">{s.name}</div>
-                            <div className="div-othertext">{truncate(s.description, 9)}</div>
+                            <div className="div-othertext">{truncate(s.description, 8)}</div>
                             <div className="card-text"><Link to={`/startup/${s.slug}`}>Learn More...</Link></div>
                         </div>
                     ))}

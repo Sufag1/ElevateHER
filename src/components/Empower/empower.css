@@ -42,26 +42,58 @@
 }
 
 .empower-image-container {
-  display: flex;
-  justify-content: center;
-  gap: var(--space-md);
-  width: 100%;
+  display: grid;
+  place-items: center;
+  width: min(100%, 320px);
   max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
   box-sizing: border-box;
-  flex-wrap: wrap;
 }
 
-.engageCard-image {
-  width: 250px;
+.engageCard-image,
+.engageCard-image-desktop {
+  grid-area: 1 / 1;
+  width: 100%;
   max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: empowerMobileSlide 12s infinite ease-in-out;
+  animation-delay: -1s;
+  opacity: 0;
 }
 
 .empower-image-container img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.empower-image-container img:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.empower-image-container img:nth-child(3) {
+  animation-delay: 7s;
+}
+
+@keyframes empowerMobileSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(80%) scale(0.96);
+  }
+
+  8%,
+  28% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+
+  36%,
+  100% {
+    opacity: 0;
+    transform: translateX(-80%) scale(0.96);
+  }
 }
 
 .impact-list {
@@ -112,10 +144,6 @@
   margin-bottom: var(--space-lg);
 }
 
-.engageCard-image-desktop {
-  display: none;
-}
-
 @media (min-width: 375px) {
   html {
     font-size: 18px;
@@ -134,6 +162,17 @@
     font-size: 17px;
   }
 
+  .empower-image-container {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow: visible;
+    flex-wrap: wrap;
+  }
+
   .empower-lower {
     display: flex;
   }
@@ -147,10 +186,28 @@
   .engageCard-image-desktop {
     width: 250px;
     display: block;
+    animation: none;
+    opacity: 1;
   }
 
   .engageCard-image {
     width: 250px;
+    animation: none;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .empower-image-container img {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) and (max-width: 767px) {
+  .empower-image-container img:not(:first-child) {
+    display: none;
   }
 }
 

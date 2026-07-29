@@ -9,7 +9,7 @@ function About() {
   return (
     <>
     <div>
-      <PageHeader title="About Us" />
+      <PageHeader title="Portfolio" />
     </div>
     <div>
         <Navbar />

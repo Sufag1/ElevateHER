@@ -12,6 +12,12 @@ import Saferum from '../components/StartupDetail/startupimg/saferum.png'
 import Saferum1 from '../components/StartupDetail/startupimg/saferum1.png'
 import CampusL from '../components/StartupDetail/startupimg/campusL.png'
 import Wapcon from '../components/StartupDetail/startupimg/wapcon.jpg'
+import Schoobylogo from '../components/StartupDetail/startupimg/schooby.jpeg'
+import Schooby1 from '../components/StartupDetail/startupimg/schooby1.jpeg'
+import Schooby2 from '../components/StartupDetail/startupimg/schooby2.jpeg'
+import Schooby3 from '../components/StartupDetail/startupimg/schooby3.jpeg'
+import Schooby4 from '../components/StartupDetail/startupimg/schooby4.jpeg'
+import Schooby5 from '../components/StartupDetail/startupimg/schooby5.jpeg'
 
 export const STARTUPS_DATA = {
   shepall: {
@@ -23,9 +29,10 @@ export const STARTUPS_DATA = {
   },
   schooby: {
     name: 'Schooby',
-    img: Thumbsup,
-    description: 'Schooby is a startup that ... add full description here.',
-    images: [],
+    img: Schoobylogo,
+    description: "Schooby is an AI-powered educational technology platform transforming secondary school education in Nigeria by replacing rote memorization with true conceptual understanding. Designed around the WAEC, NECO, and JAMB curricula, Schooby delivers short, engaging lessons using AI avatars, visual animations, localized analogies, and interactive assessments. The platform helps students master difficult subjects by making abstract concepts easy to understand, improving knowledge retention, reducing exam anxiety, and enabling learners to confidently apply what they have learned. Schooby's mission is to bridge the mastery gap in education and empower students across Nigeria and West Africa with a more effective, accessible, and engaging way to learn.",
+    description2: "Schooby has already demonstrated its potential as an innovative solution to one of the biggest challenges in secondary education—the -illusion of mastery-. Its approach was recognized at Kano Startup Weekend, where it earned 2nd Place among competing startups. This achievement validated both the platform's educational model and its market potential, with positive recognition from entrepreneurs, educators, mentors, and ecosystem leaders.The award reflects growing confidence in Schooby's vision to transform digital learning by combining artificial intelligence, visual learning, and gamification into a solution that addresses real classroom challenges. This milestone marks the beginning of Schooby's journey toward scaling its impact, reaching more students, and becoming a leading educational technology platform across Northern Nigeria and eventually the wider West African region." ,
+    images: [Schooby1, Schooby2, Schooby3, Schooby4, Schooby5],
   },
   'marriage-maven': {
     name: 'Marriage Maven',

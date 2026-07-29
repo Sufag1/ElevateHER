@@ -14,7 +14,7 @@ const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isSliding, setIsSliding] = useState(true);
 
-  const heroImages = [HeroImg1, HeroImg2, HeroImg3, HeroImg4, HeroImg5, HeroImg6];
+  const heroImages = [HeroImg1, HeroImg3, HeroImg5, HeroImg6, HeroImg2, HeroImg4];
   const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
 
   useEffect(() => {

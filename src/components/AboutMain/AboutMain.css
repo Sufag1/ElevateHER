@@ -45,17 +45,45 @@
 }
 
 .about-us-person {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  display: grid;
+  gap: 0;
+  place-items: center;
+  overflow: hidden;
   width: 100%;
 }
 
 .about-us-person-img {
+  grid-area: 1 / 1;
   width: 100%;
   border-radius: 1rem;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
   object-fit: cover;
+  animation: aboutMobileSlide 8s infinite ease-in-out;
+  animation-delay: -0.8s;
+  opacity: 0;
+}
+
+.about-us-person-img:nth-child(2) {
+  animation-delay: 3.2s;
+}
+
+@keyframes aboutMobileSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(80%) scale(0.96);
+  }
+
+  10%,
+  42% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+
+  52%,
+  100% {
+    opacity: 0;
+    transform: translateX(-80%) scale(0.96);
+  }
 }
 
 .about-us-engagement-box {
@@ -168,6 +196,7 @@
 }
 
 .about-us-person {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 1.5rem;
@@ -175,6 +204,9 @@
 
 .about-us-person-img {
   width: calc(50% - 0.75rem);
+  animation: none;
+  opacity: 1;
+  transform: none;
 }
 
 .about-us-description {
@@ -201,4 +233,18 @@
 .about-us-description {
     max-width: 1000px;
 }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-us-person-img {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) and (max-width: 767px) {
+  .about-us-person-img:not(:first-child) {
+    display: none;
+  }
 }

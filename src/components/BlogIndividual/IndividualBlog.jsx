@@ -1,21 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { blogPosts } from "../Blog/Blog";
 import "./IndividualBlog.css";
-import LeftArrow from "../../assets/left-arrow.svg";
-import RightArrow from "../../assets/right-arrow.svg";
-import Share from "../../assets/share.svg";
-import BlogDetails from "../BlogDetails/BlogDetails";
-import { useState } from "react";
 import Footer from '../Footer/Footer.jsx';
-import Facebook from "../../assets/Facebook.svg";
-import Whatsapp from "../../assets/Whatsapp.svg";
-import Youtube from "../../assets/Youtube.svg";
-import Instagram from "../../assets/Instagram.svg";
-import LinkedIn from "../../assets/LinkedIn.svg";
-import Cyber1 from "../../assets/CyberA1.jpeg";
-import Cyber2 from "../../assets/CyberA2.jpeg";
-import Cyber3 from "../../assets/CyberA3.jpeg";
-import Cyber4 from "../../assets/CyberA4.jpeg";
 
 
 
@@ -23,11 +9,6 @@ const IndividualBlog = () => {
   const { id } = useParams();
   const currentId = parseInt(id);
   const post = blogPosts.find((post) => post.id === currentId);
-  const [showShareOptions, setShowShareOptions] = useState(false);
-
-  const toggleShareOptions = () => {
-    setShowShareOptions(!showShareOptions);
-  };
 
   if (!post) return <h2>Blog post not found</h2>;
 
@@ -58,8 +39,17 @@ const IndividualBlog = () => {
             </div>
             <p>{post.description}</p>
           </div>
-          <div className="other-event-pics"><img src={Cyber2} alt="" /><img src={Cyber3} alt="" /><img src={Cyber4} alt="" />
-          </div>
+          {post.otherEventPics?.length > 0 && (
+            <div className="other-event-pics">
+              {post.otherEventPics.map((pic, index) => (
+                <img
+                  key={`${post.id}-event-pic-${index}`}
+                  src={pic.image}
+                  alt={pic.alt}
+                />
+              ))}
+            </div>
+          )}
         </div>
 
         {/* <div className="tag-share">
