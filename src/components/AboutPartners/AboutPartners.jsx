@@ -14,7 +14,7 @@ const AboutPartners = () => {
         <section className="Partners-Section">
             <div className="container Partners-Content">
                 <h2 className="Partners-Title">
-                    Our Genuine <span>Trusted</span> Partners & Clients
+                    Our <span>Trusted</span> Partners & Clients
                 </h2>
                 <div className="Partners-Carousel">
                     <div className="Partners-Logos">

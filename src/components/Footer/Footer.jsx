@@ -32,7 +32,7 @@ const Footer = ({ wavePosition = "bottom" }) => {
             <li><a href="/">Home</a></li>
             <li><a href="/portfolio">Courses</a></li>
             <li><a href="/blog">Events</a></li>
-            <li><a href="/about">About Us</a></li>
+            <li><a href="/about">Portfolio</a></li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
@@ -41,7 +41,7 @@ const Footer = ({ wavePosition = "bottom" }) => {
           <h3>Contact</h3>
           <div className="divider"></div>
           <p>No. 1A Asma'u Yakubu Street,<br />off Lamido Crescent, Kano, Nigeria</p>
-          <p>Email:<a href="mailto:info@elevateher.nigeria">khadija@elevateher.com</a></p>
+          <p>Email:<a href="khadija@elevateher.com.ng">khadija@elevateher.com.ng</a></p>
           <p>Phone: +2349016966819 <br/>+2348155185040</p>
         </div>
 

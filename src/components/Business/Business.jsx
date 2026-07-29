@@ -12,6 +12,7 @@ import {
 import { FiShare2 } from "react-icons/fi";
 import eventImage6 from '../../assets/Pict/mana.webp';
 import Reactpic from '../../assets/Pict/bizzz.webp'
+import Reactpic1 from '../../assets/Pict/allinall.webp'
 
 
 
@@ -55,7 +56,11 @@ const BusiDev = () => {
                 <h2 className="blog-title course-ttl">
                   Project <span className="highlight-blog project-smp">Sample</span>
                 </h2>
-                <img src={Reactpic} alt="Full Stack Development" />
+                <div className="proj-div">
+<img src={Reactpic} alt="Full Stack Development" />
+<img src={Reactpic1} alt="Full Stack Development" />
+                </div>
+                
               </div>
             </div>
           </section>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutMain.css';
 import profileImage from '../../assets/Pict/DSC_6420.webp';
+import profileImage1 from '../../assets/Pict/anty1.webp';
 
 const AboutMain = () => {
   return (
@@ -23,7 +24,7 @@ const AboutMain = () => {
                 className="about-us-person-img"
               />
               <img
-                src={profileImage}
+                src={profileImage1}
                 alt="Surprised man pointing"
                 className="about-us-person-img"
               />

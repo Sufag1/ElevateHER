@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import "./AboutSocials.css"
-import Globeicon from "../StartupDetail/startupimg/shepalllogo.png"
-import Thumbsup  from "../../assets/Review-Assets/Thumbsup-icon.svg"
-import MarriageM from "../StartupDetail/startupimg/Sara6.jpeg"
+import { getStartupsArray } from "../../data/startupsData";
+
 
 
 const AboutSocials = () => {
@@ -29,12 +28,7 @@ const AboutSocials = () => {
 }, []);
 
 
-    const startups = [
-        { name: 'Shepall', slug: 'shepall', img: Globeicon, desc: 'Shepall is a secure, offline-first digital data and document management platform that helps individuals, businesses, and institutions safely store, share, and verify vital digital credentials. Based out of Kano, Nigeria, the platform utilizes AI and military-grade encryption to eliminate document fraud and paper waste across Africa' },
-        { name: 'Schooby', slug: 'schooby', img: Thumbsup, desc: 'Occaecati tellus porta occaecat bibendum placeat porta beatae sunt, taciti.' },
-        { name: 'Marriage Maven', slug: 'marriage-maven', img: MarriageM, desc: 'Marriage Maven is an Islamic marriage education and support platform designed to help individuals and couples build healthy, successful marriages based on the Qur’an, Sunnah, and sound psychological principles. Our mission is to reduce the rate of divorce by providing practical, faith-based guidance at every stage of the marriage journey.' },
-        { name: 'SIWES Startup', slug: 'siwes-startup', img: Thumbsup, desc: 'Occaecati tellus porta occaecat bibendum placeat porta beatae sunt, taciti.' },
-    ];
+    const startups = getStartupsArray();
 
     const truncate = (text, maxWords = 9) => {
         const words = text.trim().split(/\s+/);
@@ -44,18 +38,17 @@ const AboutSocials = () => {
 
     return(
         <section  className="About-Socials ">
-            
-            <div className=" Socials-Container container">
-
-                <div className="startups-msg">
+            <div className="startups-msg">
                     <h1>Startups Developed Under Elevateher Innovation Space</h1>
                 </div>
+            
+            <div className=" Socials-Container container">
                 <div className="soc">
                     {startups.map((s) => (
                         <div key={s.slug} className={`SocialDiv ${s.slug === 'shepall' ? 'SocialDiv1' : 'SocialDiv2'}`}>
                             <img src={s.img} alt={s.name} className="socialicons" />
                             <div className="div-maintext">{s.name}</div>
-                            <div className="div-othertext">{truncate(s.desc, 9)}</div>
+                            <div className="div-othertext">{truncate(s.description, 9)}</div>
                             <div className="card-text"><Link to={`/startup/${s.slug}`}>Learn More...</Link></div>
                         </div>
                     ))}

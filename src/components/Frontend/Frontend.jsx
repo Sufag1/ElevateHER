@@ -12,6 +12,7 @@ import {
 import { FiShare2 } from "react-icons/fi";
 import eventImage5 from '../../assets/Pict/FE.webp';
 import Reactpic from '../../assets/travel.png'
+import Reactpic1 from '../StartupDetail/startupimg/Sara3.jpeg'
 
 
 
@@ -59,7 +60,9 @@ const Front = () => {
                 <h2 className="blog-title course-ttl">
                   Project <span className="highlight-blog project-smp">Sample</span>
                 </h2>
-                <img src={Reactpic} alt="Full Stack Development" />
+                <div className="proj-div"><img src={Reactpic} alt="Full Stack Development" />
+                <img src={Reactpic1} alt="Full Stack Development" /></div>
+                
               </div>
             </div>
           </section>

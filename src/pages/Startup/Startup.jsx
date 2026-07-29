@@ -7,7 +7,7 @@ const Startup = () => {
 
   return (
     <div className="startup-page container">
-      <Link to="/about">← Back to Portfolio</Link>
+      {/* <Link to="/about">← Back to Portfolio</Link> */}
       <StartupDetail slug={name} />
     </div>
   );

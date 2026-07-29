@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { FiShare2 } from "react-icons/fi";
 import Reactpic from '../../assets/inte.png'
+import Reactpic1 from '../StartupDetail/startupimg/Sara1.jpeg'
 
 
 const Ai = () => {
@@ -53,7 +54,10 @@ const Ai = () => {
                 <h2 className="blog-title course-ttl">
                   Project <span className="highlight-blog project-smp">Sample</span>
                 </h2>
-                <img src={Reactpic} alt="Full Stack Development" />
+                <div className="proj-div">
+                                <img src={Reactpic} alt="Full Stack Development" />
+                                <img src={Reactpic1} alt="Full Stack Development" />
+                                </div>
               </div>
             </div>
           </section>

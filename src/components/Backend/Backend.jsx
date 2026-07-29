@@ -12,6 +12,7 @@ import {
 import { FiShare2 } from "react-icons/fi";
 import eventImage3 from '../../assets/Pict/BE.webp';
 import Reactpic from '../../assets/Pict/bee.webp'
+import Reactpic1 from '../../assets/Pict/group1.webp'
 
 
 
@@ -54,7 +55,9 @@ const Back = () => {
               <div className="ai-image-wrapper">
                 <h2 className="blog-title course-ttl">
                   Project <span className="highlight-blog project-smp">Sample</span>
-                </h2>                <img src={Reactpic} alt="Full Stack Development" />
+                </h2>                
+                <div className="proj-div"><img src={Reactpic} alt="Full Stack Development" /><img src={Reactpic1} alt="Full Stack Development" /></div>
+                
               </div>
             </div>
           </section>

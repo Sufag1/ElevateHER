@@ -5,6 +5,8 @@ import HeroImg1 from "../../assets/Pict/DSC_6482.webp";
 import HeroImg2 from "../../assets/Pict/DSC_6394.webp";
 import HeroImg3 from "../../assets/Pict/DSC_6358.webp";
 import HeroImg4 from "../../assets/Pict/DSC_6101.webp";
+import HeroImg5 from "../../assets/Pict/anty1.webp";
+import HeroImg6 from "../../assets/Pict/allinall.webp";
 
 const rotatingWords = ["DevOps", "Artificial Intelligence", "Web Development", "Business Development"];
 
@@ -12,7 +14,7 @@ const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isSliding, setIsSliding] = useState(true);
 
-  const heroImages = [HeroImg1, HeroImg2, HeroImg3, HeroImg4];
+  const heroImages = [HeroImg1, HeroImg2, HeroImg3, HeroImg4, HeroImg5, HeroImg6];
   const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
 
   useEffect(() => {

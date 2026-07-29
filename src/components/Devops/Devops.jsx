@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import eventImage2 from '../../assets/Pict/DEv.webp';
-import Reactpic from '../../assets/Pict/Bizn.webp'
+import Reactpic from '../../assets/Pict/BE.webp'
+import Reactpic1 from '../../assets/Pict/bee.webp'
+
 import '../AI/AI.css';
 
 import {
@@ -56,7 +58,11 @@ const dev = () => {
                 <h2 className="blog-title course-ttl">
                   Project <span className="highlight-blog project-smp">Sample</span>
                 </h2>
+                <div className="proj-div">
                 <img src={Reactpic} alt="Full Stack Development" />
+                <img src={Reactpic1} alt="Full Stack Development" />
+                </div>
+                
               </div>
             </div>
           </section>

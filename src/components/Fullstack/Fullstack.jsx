@@ -4,6 +4,7 @@ import '../AI/AI.css';
 
 import eventImage4 from '../../assets/Pict/FS.webp';
 import Reactpic from '../../assets/react-project.png'
+import Reactpic1 from '../../assets/Pict/class.webp'
 import {
   FaFacebookF,
   FaTwitter,
@@ -62,7 +63,9 @@ const Full = () => {
               <div className="ai-image-wrapper">
                 <h2 className="blog-title course-ttl">
                   Project <span className="highlight-blog project-smp">Sample</span>
-                </h2>            <img src={Reactpic} alt="Full Stack Development" />
+                </h2>            
+                <div className="proj-div"><img src={Reactpic} alt="Full Stack Development" /><img src={Reactpic1} alt="Full Stack Development" /></div>
+                
               </div>
             </div>
           </section>

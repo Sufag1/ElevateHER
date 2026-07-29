@@ -5,9 +5,13 @@ import "./Courses.css";
 import eventImage1 from '../../assets/Pict/ia.webp';
 import eventImage2 from '../../assets/Pict/DEv.webp';
 import eventImage3 from '../../assets/Pict/BE.webp';
-import eventImage4 from '../../assets/Pict/FS.webp';
+import eventImage4 from '../../assets/Pict/mali1.webp';
 import eventImage5 from '../../assets/Pict/FE.webp';
 import eventImage6 from '../../assets/Pict/mana.webp';
+import eventImage7 from '../../assets/Pict/group1.webp';
+// import eventImage8 from '../../assets/Pict/mana.webp';
+
+
 
 function Courses() {
   const courseList = [
@@ -16,6 +20,7 @@ function Courses() {
       category: "Web Development",
       path: "/full-stack-development",
       image: eventImage4,
+      
     },
     {
       title: "Artificial Intelligence",
