@@ -23,6 +23,10 @@
     justify-items: center;
 }
 
+.ctd a{
+    padding: 10px 2px;
+}
+
 .SocialDiv{
     border-radius: 30px;
     box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.15);

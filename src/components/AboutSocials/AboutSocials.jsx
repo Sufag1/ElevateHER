@@ -49,7 +49,7 @@ const AboutSocials = () => {
                             <img src={s.img} alt={s.name} className="socialicons" />
                             <div className="div-maintext">{s.name}</div>
                             <div className="div-othertext">{truncate(s.description, 8)}</div>
-                            <div className="card-text"><Link to={`/startup/${s.slug}`}>Learn More...</Link></div>
+                            <div className="card-text ctd"><Link to={`/startup/${s.slug}`}>Learn More...</Link></div>
                         </div>
                     ))}
 
