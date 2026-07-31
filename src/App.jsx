@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import AllBlogs from "./pages/BlogPage/AllBlogs";
@@ -14,12 +14,15 @@ import About from "./pages/About/About";
 import Startup from "./pages/Startup/Startup";
 import Contact from "./pages/Contact/Contact";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+// import AdminApp from "./admin/Admin";
 
-function App() {
+function AppRoutes() {
+  const location = useLocation();
+  const isAdminRoute = location.pathname.startsWith("/admin");
+
   return (
-    <Router>
-      <ScrollToTop />
-      <Navbar />
+    <>
+      {!isAdminRoute && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<AllBlogs />} />
@@ -35,7 +38,17 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/startup/:name" element={<Startup />} />
         <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/admin/*" element={<AdminApp />} /> */}
       </Routes>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <ScrollToTop />
+      <AppRoutes />
     </Router>
   );
 }

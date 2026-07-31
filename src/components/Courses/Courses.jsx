@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import "./Courses.css";
+import { fetchCourses, subscribeToTable } from "../../services/contentService";
 
 import eventImage1 from '../../assets/Pict/ia.webp';
 import eventImage2 from '../../assets/Pict/DEv.webp';
@@ -11,48 +12,68 @@ import eventImage6 from '../../assets/Pict/mana.webp';
 import eventImage7 from '../../assets/Pict/group1.webp';
 // import eventImage8 from '../../assets/Pict/mana.webp';
 
-
+const defaultCourseList = [
+  {
+    title: "Full Stack Development",
+    category: "Web Development",
+    path: "/full-stack-development",
+    image: eventImage4,
+  },
+  {
+    title: "Artificial Intelligence",
+    category: "Tech & Innovation",
+    path: "/artificial-intelligence",
+    image: eventImage1,
+  },
+  {
+    title: "DevOps",
+    category: "Tech & IT",
+    path: "/devops",
+    image: eventImage2,
+  },
+  {
+    title: "Frontend Development",
+    category: "Web Development",
+    path: "/frontend-development",
+    image: eventImage5,
+  },
+  {
+    title: "Backend Development",
+    category: "Web Development",
+    path: "/backend-development",
+    image: eventImage3,
+  },
+  {
+    title: "Business Development",
+    category: "Business & Strategy",
+    path: "/business-development",
+    image: eventImage6,
+  },
+];
 
 function Courses() {
-  const courseList = [
-    {
-      title: "Full Stack Development",
-      category: "Web Development",
-      path: "/full-stack-development",
-      image: eventImage4,
-      
-    },
-    {
-      title: "Artificial Intelligence",
-      category: "Tech & Innovation",
-      path: "/artificial-intelligence",
-      image: eventImage1,
-    },
-    {
-      title: "DevOps",
-      category: "Tech & IT",
-      path: "/devops",
-      image: eventImage2,
-    },
-    {
-      title: "Frontend Development",
-      category: "Web Development",
-      path: "/frontend-development",
-      image: eventImage5,
-    },
-    {
-      title: "Backend Development",
-      category: "Web Development",
-      path: "/backend-development",
-      image: eventImage3,
-    },
-    {
-      title: "Business Development",
-      category: "Business & Strategy",
-      path: "/business-development",
-      image: eventImage6,
-    },
-  ];
+  const [courseList, setCourseList] = useState(defaultCourseList);
+
+  useEffect(() => {
+    let mounted = true;
+
+    const loadCourses = async () => {
+      try {
+        const courses = await fetchCourses();
+        if (mounted && courses !== null) setCourseList(courses);
+      } catch (error) {
+        console.warn("Unable to load Supabase courses", error);
+      }
+    };
+
+    loadCourses();
+    const unsubscribe = subscribeToTable("courses", loadCourses);
+
+    return () => {
+      mounted = false;
+      unsubscribe();
+    };
+  }, []);
 
   return (
     <section className="container">
@@ -71,7 +92,7 @@ function Courses() {
       <div className="project-grid-section">
         <div className="project-grid-container">
           {courseList.map((course, index) => (
-            <Link to={course.path} className="project-card" key={index}>
+            <Link to={course.path} className="project-card" key={course.id || course.path || index}>
               <div className="project-image-wrapper">
                 <img src={course.image} alt={course.title} className="project-image" />
               </div>
